@@ -1,0 +1,4660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+  targetNamespace="atr" xmlns="atr">
+  <xs:element name="SpolecneAtributyVsechObjektu">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="ID"/>
+        <xs:element ref="IDZmeny"/>
+        <xs:element ref="PopisObjektu" minOccurs="0"/>
+        <xs:element ref="IDEditora"/>
+        <xs:element ref="DatumVkladu"/>
+        <xs:element ref="VkladOsoba"/>
+        <xs:element ref="DatumZmeny"/>
+        <xs:element ref="ZmenaOsoba"/>
+        <xs:element ref="DatumPlatnosti"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ID" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>ID objektu</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IDZmeny" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>ID změny</xs:documentation>
+    </xs:annotation>  
+  </xs:element>
+  <xs:element name="PopisObjektu" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Popis objektu</xs:documentation>
+    </xs:annotation>  
+  </xs:element>
+  <xs:element name="IDEditora" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>ID editora</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DatumVkladu">
+    <xs:annotation>
+      <xs:documentation>Datum vložení objektu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:date xs:dateTime" />
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="VkladOsoba" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Osoba, která provedla vklad objektu</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DatumZmeny">
+    <xs:annotation>
+      <xs:documentation>Datum poslední změny na objektu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:date xs:dateTime" />
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="ZmenaOsoba" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Osoba, která provedla změnu objektu</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ICS" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Identifikační číslo stavby. Případných více záznamů IČS bude odděleno středníkem.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DatumPlatnosti" type="xs:dateTime">
+    <xs:annotation>
+      <xs:documentation>Datum platnosti objektu - vztaženo k vygenerování XML dokumentu</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="SpolecneAtributyObjektuZPS">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="UrovenUmisteniObjektuZPS"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UrovenUmisteniObjektuZPS">
+    <xs:annotation>
+      <xs:documentation>Úroveň umístění objektu ZPS vzhledem k povrchu (level)</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="-3">
+          <xs:annotation>
+            <xs:documentation>-3</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="-2">
+          <xs:annotation>
+            <xs:documentation>-2</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="-1">
+          <xs:annotation>
+            <xs:documentation>-1</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="0">
+          <xs:annotation>
+            <xs:documentation>0</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>1</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>2</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>3</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="SpolecneAtributyObjektuTI">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="IDVlastnika" minOccurs="0"/>
+        <xs:element ref="IDProvozovateleZeZakona" minOccurs="0"/>
+        <xs:element ref="IDSpravce" minOccurs="0"/>
+        <xs:element ref="IDProvozovatele" minOccurs="0"/>
+        <xs:element ref="IDExterni" minOccurs="0"/>
+        <xs:element ref="NeuplnaData"/>
+        <xs:element ref="TridaPresnostiPoloha"/>
+        <xs:element ref="TridaPresnostiVyska"/>
+        <xs:element ref="UrovenUmisteniObjektuTI" minOccurs="0"/>
+        <xs:element ref="EvidencniCisloObjektu"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SpolecneAtributyObjektuDI">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="IDVlastnika" minOccurs="0"/>
+        <xs:element ref="IDSpravce" minOccurs="0"/>
+        <xs:element ref="IDProvozovatele" minOccurs="0"/>
+        <xs:element ref="IDExterni" minOccurs="0"/>
+        <xs:element ref="NeuplnaData"/>
+        <xs:element ref="TridaPresnostiPoloha"/>
+        <xs:element ref="TridaPresnostiVyska"/>
+        <xs:element ref="UrovenUmisteniObjektuDI" minOccurs="0"/>
+        <xs:element ref="EvidencniCisloObjektu"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SpolecneAtributyObjektuZameru">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="IDVlastnika" minOccurs="0"/>
+        <xs:element ref="IDSpravce" minOccurs="0"/>
+        <xs:element ref="IDProvozovatele" minOccurs="0"/>
+        <xs:element ref="IDExterni" minOccurs="0"/>
+        <xs:element ref="EvidencniCisloObjektu"/>
+        <xs:element ref="Zdroj"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IDVlastnika" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Id vlastníka - vazba do seznamu vlastníků, správců a provozovatelů</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IDProvozovateleZeZakona" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Id provozovatele ze zákona - vazba do seznamu vlastníků, správců a provozovatelů</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IDSpravce" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Id správce - vazba do seznamu vlastníků, správců a provozovatelů</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IDProvozovatele" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Id provozovatele - vazba do seznamu vlastníků, správců a provozovatelů</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IDExterni" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Id objektu v externím systému editora</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="NeuplnaData">
+    <xs:annotation>
+      <xs:documentation>Neúplná data</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="0">
+          <xs:annotation>
+            <xs:documentation>NE</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>ANO</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>  
+  <xs:element name="TridaPresnosti">
+    <xs:annotation>
+      <xs:documentation>Třída přesnosti</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>1</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>2</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>3</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>4</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>5</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="9">
+          <xs:annotation>
+            <xs:documentation>9</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="UrovenUmisteniObjektuTI">
+    <xs:annotation>
+      <xs:documentation>Úroveň umístění objektu TI vzhledem k povrchu (level)</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="-1">
+          <xs:annotation>
+            <xs:documentation>-1</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="0">
+          <xs:annotation>
+            <xs:documentation>0</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>1</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="UrovenUmisteniObjektuDI">
+    <xs:annotation>
+      <xs:documentation>Úroveň umístění objektu DI vzhledem k povrchu (level)</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="-3">
+          <xs:annotation>
+            <xs:documentation>-3</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="-2">
+          <xs:annotation>
+            <xs:documentation>-2</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="-1">
+          <xs:annotation>
+            <xs:documentation>-1</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="0">
+          <xs:annotation>
+            <xs:documentation>0</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>1</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>2</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>3</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="EvidencniCisloObjektu" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Evidenční číslo objektu</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="OznaceniKomunikace" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Označení pozemní komunikace</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="PrevazujiciPovrch">
+    <xs:annotation>
+      <xs:documentation>Převažující povrch</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>asfalt</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>beton</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>dlažba</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>R-materiál</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>písek, štěrkopísek</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>šotolina</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>nezpevněno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="KategoriePozemniKomunikace">
+    <xs:annotation>
+      <xs:documentation>Kategorie pozemní komunikace</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>dálnice I. třídy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>dálnice II. třídy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>silnice I. třídy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>silnice II. třídy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>silnice III. třídy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>místní komunikace I. třídy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>místní komunikace II. třídy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="8">
+          <xs:annotation>
+            <xs:documentation>místní komunikace III. třídy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="9">
+          <xs:annotation>
+            <xs:documentation>místní komunikace IV. třídy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="10">
+          <xs:annotation>
+            <xs:documentation>účelové komunikace</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="11">
+          <xs:annotation>
+            <xs:documentation>neveřejně přístupná účelová komunikace</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="CisloETahu" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Číslo E-Tahu</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TypUsekuPozemniKomunikace">
+    <xs:annotation>
+      <xs:documentation>Typ úseku pozemní komunikace</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>zemní těleso komunikace</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>most</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>tunel</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PocetJizdnichPruhu" type="xs:integer">
+    <xs:annotation>
+      <xs:documentation>Počet jízdních pruhů</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TridaDopravnihoZatizeni">
+    <xs:annotation>
+      <xs:documentation>Třída dopravního zatížení</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>TDZ S</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>TDZ I</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>TDZ II</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>TDZ III</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>TDZ IV</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>TDZ V</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>TDZ VI</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>  
+  <xs:element name="TypPozemniKomunikace">
+    <xs:annotation>
+      <xs:documentation>Typ pozemní komunikace</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>komunikace</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>okružní křižovatka</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>prostranství bezprostředně sloužící provozu a údržbě pozemní komunikace</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="OznaceniCyklostezky" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Označení cyklostezky (evidenční číslo)</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TypUsekuZeleznicniTrate">
+    <xs:annotation>
+      <xs:documentation>Typ úseku železniční tratě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>zemní těleso</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>most</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>tunel</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>  
+  <xs:element name="KategorieZeleznicniTrate">
+    <xs:annotation>
+      <xs:documentation>Kategorie železniční tratě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>celostátní</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>regionální</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>místní</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>vlečka</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>zkušební</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>speciální</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiná</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypZeleznicniTrate">
+    <xs:annotation>
+      <xs:documentation>Typ železniční tratě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>vysokorychlostní</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>konvenční</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>  
+  <xs:element name="OznaceniTrate" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Označení tratě</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="PocetKoleji" type="xs:integer">
+    <xs:annotation>
+      <xs:documentation>Počet kolejí</xs:documentation>
+    </xs:annotation>
+  </xs:element> 
+  <xs:element name="ElektrizaceZeleznicniTrate">
+    <xs:annotation>
+      <xs:documentation>Elektrizace železniční tratě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>elektrizovaná</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>neelektrizovaná</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="ZpusobPorizeniDI">
+    <xs:annotation>
+      <xs:documentation>Způsob pořízení objektu DI</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>geodeticky - terestricky</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>geodeticky - fotogrammetricky</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>geodeticky - pozemním laserovým skenováním</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>přibližný zákres</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="RokGeodetickehoPorizeni" type="xs:nonNegativeInteger">
+    <xs:annotation>
+      <xs:documentation>Rok geodetického pořízení</xs:documentation>
+    </xs:annotation>
+  </xs:element> 
+  <xs:element name="RozchodKoleji">
+    <xs:annotation>
+      <xs:documentation>Rozchod kolejí</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>1435 mm</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>760 mm</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>splítka</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="DruhDopravyLanoveDrahy">
+    <xs:annotation>
+      <xs:documentation>Druh dopravy lanové dráhy</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>nákladní doprava</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>osobní doprava</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="ZpusobPorizeniZPS">
+    <xs:annotation>
+      <xs:documentation>Způsob pořízení objektu ZPS</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>geodeticky - terestricky</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>geodeticky - fotogrammetricky</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>geodeticky - pozemním laserovým skenováním</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>přibližný zákres</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypZeleznicniStanice">
+    <xs:annotation>
+      <xs:documentation>Typ železniční stanice</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>stanice</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>zastávka</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiné dopravně významné místo</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="OznaceniObjektu" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Označení objektu</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="NazevSledovaneVodniCesty" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Název sledované vodní cesty</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="CisloSledovaneVodniCesty" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Číslo sledované vodní cesty</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ZarazeniSledovaneVodniCesty">
+    <xs:annotation>
+      <xs:documentation>Zařazení sledované vodní cesty</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>dopravně významná využívaná</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>dopravně významná využitelná</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>účelová</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>plánovaná</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TridaDopravneVyznamneVodniCesty">
+    <xs:annotation>
+      <xs:documentation>Třída dopravně významné vodní cesty</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>místního významu třídy 0</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>místního významu třídy I</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>mezinárodního významu třídy IV</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>mezinárodního významu třídy Va</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>mezinárodního významu třídy Vb</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypSledovaneVodniCesty">
+    <xs:annotation>
+      <xs:documentation>Typ sledované vodní cesty</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>vedená řekou</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>vedená plavebním kanálem</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>    
+  <xs:element name="TypPristavu">
+    <xs:annotation>
+      <xs:documentation>Typ přístavu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>přístav veřejný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>přístav neveřejný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="OchrannaFunkce">
+    <xs:annotation>
+      <xs:documentation>Ochranná funkce</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>ano</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="0">
+          <xs:annotation>
+            <xs:documentation>ne</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypPovrchuVzletovePristavaciDrahy">
+    <xs:annotation>
+      <xs:documentation>Typ povrchu vzletové a přistávací dráhy</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>asfaltobeton</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>cementobeton</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>travnatá</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>    
+  <xs:element name="DruhLetiste">
+    <xs:annotation>
+      <xs:documentation>Druh letiště</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>veřejné s vnitrostátním provozem</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>veřejné s mezinárodním provozem</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>neveřejné s vnitrostátním provozem</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>neveřejné s mezinárodním provozem</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>vojenské</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="OznaceniLetiste" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Označení letiště</xs:documentation>
+    </xs:annotation>
+  </xs:element> 
+  <xs:element name="OznaceniHeliportu" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Označení heliportu</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="UmisteniHeliportu">
+    <xs:annotation>
+      <xs:documentation>Umístění heliportu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>úrovňový</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>mimoúrovňový</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypLeteckeStavby">
+    <xs:annotation>
+      <xs:documentation>Typ letecké stavby</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>podzemní letecká stavba</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>ostatní letecká stavba</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element> 
+    <xs:element name="TypZarizeniProLeteckyProvoz">
+    <xs:annotation>
+      <xs:documentation>Typ zařízení pro letecký provoz</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>přehledový systém</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>radionavigační zařízení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>radiokomunikační systém</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>světelné zařízení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>ostatní zařízení pro letecký provoz</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>  
+  <xs:element name="TypMostu">
+    <xs:annotation>
+      <xs:documentation>Typ mostu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>silniční</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>železniční</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>most pro vodní dopravu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>lávka pro pěší a cyklisty</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>přechod pro volně žijící živočichy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>sdružený</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>  
+  <xs:element name="OznaceniKomunikaceTrate" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Označení komunikace nebo tratě</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TypTunelu">
+    <xs:annotation>
+      <xs:documentation>Typ tunelu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>železniční</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>silniční</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>pro cyklisty a chodce</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>tunel pro vodní dopravu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>sdružený</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>  
+  <xs:element name="TypNabijecihoVydejnihoMedia">
+    <xs:annotation>
+      <xs:documentation>Typ nabíjecího/výdejního média</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>nabíjení elektromobilních zařízení (vč. plavidel)</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>CNG</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>LPG</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>LNG</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>benzín/nafta</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>vodík</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>ostatní média</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypSvodidla">
+    <xs:annotation>
+      <xs:documentation>Typ svodidla</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>jednoduché</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>zdvojené</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypVodniNadrze">
+    <xs:annotation>
+      <xs:documentation>Typ vodní nádrže</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>vodní nádrž</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>průmyslová nádrž</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>dešťová usazovací nádrž</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>dešťová průsaková nádrž</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>požární nádrž</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný typ nádrže</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="ZpusobPorizeniTI">
+    <xs:annotation>
+      <xs:documentation>Způsob pořízení objektu TI</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>geodeticky - terestricky</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>geodeticky - terestricky před záhozem</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>geodeticky - terestricky po záhozu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>geodeticky - fotogrammetricky</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>geodeticky - pozemním laserovým skenováním</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>přibližný zákres</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>vyhledáno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="DruhMelioracnichOpatreni">
+    <xs:annotation>
+      <xs:documentation>Druh melioračních opatření</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>odvodnění</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>závlaha</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>opatření proti vodní erozi - příkop</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>opatření proti vodní erozi - průleh</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>opatření proti větrné erozi</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>revitalizace půdy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>vsakovací objekt</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="RokVystavby" type="xs:integer">
+    <xs:annotation>
+      <xs:documentation>Rok výstavby</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="Material" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Materiál</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TypStavbyObjektuZarizeniOchranaPredPovodnemi">
+    <xs:annotation>
+      <xs:documentation>Typ stavby, objektu nebo zařízení k ochraně před povodněmi</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>protipovodňová hráz</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>protipovodňový val</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>protipovodňová zeď</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>stavební základy protipovodňové mobilní zábrany</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypObjektuZarizeniOchranaPredPovodnemi">
+    <xs:annotation>
+      <xs:documentation>Typ objektu nebo zařízení k ochraně před povodněmi</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>hradítko, hradidlové šachty</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>hrazení, uzávěr, vrata</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>patka protipovodňové stěny</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="StavObjektu">
+    <xs:annotation>
+      <xs:documentation>Stav objektu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>provozováno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>neprovozováno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypKabelovodu">
+    <xs:annotation>
+      <xs:documentation>Typ kabelovodu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>kabelová lávka</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>kabelový žlab</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>kabelová komora</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>chránička</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypRozvadeceIS">
+    <xs:annotation>
+      <xs:documentation>Typ rozvaděče IS</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>sdružený</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>elektro</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>plyn</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>síť EK</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypPodpernehoZarizeni">
+    <xs:annotation>
+      <xs:documentation>Typ podpěrného zařízení</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>stožár příhradový</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>sloup</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>sloup veřejného osvětlení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>sloup trakčního vedení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>nástěnná konzola</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>střešník</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>portál</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="8">
+          <xs:annotation>
+            <xs:documentation>hák</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>    
+  <xs:element name="TypSloupu">
+    <xs:annotation>
+      <xs:documentation>Typ sloupu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>betonový</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>dřevěný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>kovový</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypTrasyElektrickeSite">
+    <xs:annotation>
+      <xs:documentation>Typ trasy elektrické sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>silové vedení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>zemnící lano</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="MaximalniNapetovaHladina">
+    <xs:annotation>
+      <xs:documentation>Maximálni napěťová hladina</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>NN</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>VN</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>VVN</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>ZVN</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="MaximalniProvozniNapeti">
+    <xs:annotation>
+      <xs:documentation>Maximální provozní napětí</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>0,4 kV</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>0,5 kV</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>3 kV</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>5 kV</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>6 kV</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>10 kV</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>22 kV</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="8">
+          <xs:annotation>
+            <xs:documentation>35 kV</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="9">
+          <xs:annotation>
+            <xs:documentation>110 kV</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="10">
+          <xs:annotation>
+            <xs:documentation>220 kV</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="11">
+          <xs:annotation>
+            <xs:documentation>400 kV</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="ProvozniNapeti" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Provozní napětí</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="IzolaceVenkovnihoVedeni">
+    <xs:annotation>
+      <xs:documentation>Izolace venkovního vedení</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>izolace základní</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>bez izolace</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypTrasyMistniElektrickeSite">
+    <xs:annotation>
+      <xs:documentation>Typ trasy místní elektrické sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>veřejné osvětlení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>světelná signalizace</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>trakční vedení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>osvětlovací síť staveb</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypZarizeniElektrickeSite">
+    <xs:annotation>
+      <xs:documentation>Typ zařízení elektrické sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>skříň elektrické sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypVyrobnyElektriny">
+    <xs:annotation>
+      <xs:documentation>Typ výrobny elektřiny</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>geotermální elektrárna</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>jaderná elektrárna</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>vodní elektrárna</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>fotovoltaická elektrárna</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>tepelná elektrárna</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>větrná elektrárna</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>bioplynová elektrárna</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="InstalovanyVykon" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Instalovaný výkon</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TypStaniceRozvodneSite">
+    <xs:annotation>
+      <xs:documentation>Typ stanice rozvodné sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>transformační stanice</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>distribuční stanice</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>spínací stanice</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>měnírna</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiná</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="DruhStaniceRozvodneSite">
+    <xs:annotation>
+      <xs:documentation>Druh stanice rozvodné sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>kompaktní a zděná</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>stožárová</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>věžová</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>venkovní</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>vestavěná</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypJadernehoZarizeni">
+    <xs:annotation>
+      <xs:documentation>Typ jaderného zařízení</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>reaktor</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>sklad</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>úložiště</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="MaterialTrasySiteEK">
+    <xs:annotation>
+      <xs:documentation>Materiál trasy sítě elektronických komunikací</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>kovová</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>optická</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>kovová + optická</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="MaterialOchranyVedeniSiteEK">
+    <xs:annotation>
+      <xs:documentation>Materiál ochrany vedení sítě elektronických komunikací</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>bez ochrany vedení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>plastová trubka</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>svazek mikrotrubiček</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypZarizeniSiteEK">
+    <xs:annotation>
+      <xs:documentation>Typ zařízení sítě elektronických komunikací</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>telefonní automat</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>skříň sítě EK</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>přípojný bod sítě EK</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="UmisteniObjektu">
+    <xs:annotation>
+      <xs:documentation>Umístění objektu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>samostatně stojící</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>na objektu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypTechnologickehoObjektuSiteEK">
+    <xs:annotation>
+      <xs:documentation>Typ technologického objektu sítě elektronických komunikací</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>radioteleskop</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>ústředna</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>telekomunikační věž</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>technologický kontejner sítě EK</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TlakovaHladinaPlynovodniSite">
+    <xs:annotation>
+      <xs:documentation>Tlaková hladina plynovodní sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>NTL</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>STL</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>VTL</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>VVTL</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypMediaPlynovodniSite">
+    <xs:annotation>
+      <xs:documentation>Typ média plynovodní sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>zemní plyn</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>propan-butan</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>biometan</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>vodík</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>ostatní druhy plynu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="Dimenze" type="xs:nonNegativeInteger">
+    <xs:annotation>
+      <xs:documentation>Dimenze (DN)</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TypZarizeniPlynovodniSite">
+    <xs:annotation>
+      <xs:documentation>Typ zařízení plynovodní sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>šoupě plynovodní sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>skříň plynovodní sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>plynová lampa veřejného osvětlení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>šachta plynovodní sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypTechnologickehoObjektuPlynovodniSite">
+    <xs:annotation>
+      <xs:documentation>Typ technologického objektu plynovodní sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>kompresní stanice</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>regulační stanice</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>distribuční regulátor</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>odorizační stanice</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>výrobna plynu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>stanice katodové ochrany</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>podzemní zásobník plynu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="8">
+          <xs:annotation>
+            <xs:documentation>plnírna plynu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="9">
+          <xs:annotation>
+            <xs:documentation>plynojem</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="10">
+          <xs:annotation>
+            <xs:documentation>armaturní uzel</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="11">
+          <xs:annotation>
+            <xs:documentation>nadzemní zásobník plynu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypTrasyVodovodniSite">
+    <xs:annotation>
+      <xs:documentation>Typ trasy vodovodní sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>zásobovací vodovodní řad</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>řad rozvodné vodovodní sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypMediaVodovodniSite">
+    <xs:annotation>
+      <xs:documentation>Typ média vodovodní sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>voda pitná</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>voda surová</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>voda užitková</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypZarizeniVodovodniSite">
+    <xs:annotation>
+      <xs:documentation>Typ zařízení vodovodní sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>šoupě vodovodní sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>hydrant vodovodní sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>výústní objekt vodovodní sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>pítko</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>šachta vodovodní sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>redukční ventil vodovodní sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>výtokový stojan</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="8">
+          <xs:annotation>
+            <xs:documentation>plnící místo</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="9">
+          <xs:annotation>
+            <xs:documentation>přerušovací komora</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypZarizeniDomovniPripojkyVodovodniSite">
+    <xs:annotation>
+      <xs:documentation>Typ zařízení domovní přípojky vodovodní sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>šachta vodovodní</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>šachta měrná a kontrolní</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypTechnologickehoObjektuVodovodniSite">
+    <xs:annotation>
+      <xs:documentation>Typ technologického objektu vodovodní sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>vodojem</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>úpravna vody</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>manipulační objekt</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>čerpací stanice vodovodní sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>ATS vodovodní sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>odkyselovací a odradonovací stanice</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>  
+  <xs:element name="TypVodojemu">
+    <xs:annotation>
+      <xs:documentation>Typ vodojemu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>věžový</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>podzemní zasypaný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>podzemní nezasypaný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>  
+  <xs:element name="ObjemVodojemu" type="xs:nonNegativeInteger">
+    <xs:annotation>
+      <xs:documentation>Objem vodojemu</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="MinVyskaHladinyVodojemu" type="xs:nonNegativeInteger">
+    <xs:annotation>
+      <xs:documentation>Minimální výška hladiny vodojemu</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="KapacitaUpravnyVody" type="xs:nonNegativeInteger">
+    <xs:annotation>
+      <xs:documentation>Kapacita úpravny vody</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TypPrivadece">
+    <xs:annotation>
+      <xs:documentation>Typ přivaděče</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>odkrytý</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>trubní</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypZarizeniPrivadeceVody">
+    <xs:annotation>
+      <xs:documentation>Typ zařízení přivaděče vody</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>vstupní šachta</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>    
+  <xs:element name="TypTechnologickehoObjektuPrivadeceVody">
+    <xs:annotation>
+      <xs:documentation>Typ technologického objektu přivaděče vody</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>odvzdušňovací zařízení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>vyrovnávací komora</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element> 
+  <xs:element name="TypTrasyKanalizacniSite">
+    <xs:annotation>
+      <xs:documentation>Typ trasy kanalizační sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>kanalizační stoka</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>veřejná část kanalizační přípojky</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>odlehčovací stoka</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypKanalizacniSite">
+    <xs:annotation>
+      <xs:documentation>Typ kanalizační sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>jednotná</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>dešťová</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>splašková</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>drenáž</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>kalové potrubí</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypPohybuKanalizacnihoMedia">
+    <xs:annotation>
+      <xs:documentation>Typ pohybu kanalizačního média</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>gravitační</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>tlaková</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>podtlaková</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypZarizeniKanalizacniSite">
+    <xs:annotation>
+      <xs:documentation>Typ zařízení kanalizační sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>šachta kanalizační sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>vpusť kanalizační sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>uzávěr kanalizační sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>čístící zařízení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>vyústění kanalizační sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>lapol</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>odlučovač lehkých kapalin</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiné</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypZarizeniDomovniPripojkyKanalizacniSite">
+    <xs:annotation>
+      <xs:documentation>Typ zařízení domovní přípojky kanalizační sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>šachta kanalizační</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>šachta měrná a kontrolní</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>domovní čerpací stanice</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>vsakovací zařízení s přepadem</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiné</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypLiniovehoZarizeniKanalizacniSite">
+    <xs:annotation>
+      <xs:documentation>Typ liniového zařízení kanalizační sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>liniový odvodňovač</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypTechnologickehoObjektuKanalizacniSite">
+    <xs:annotation>
+      <xs:documentation>Typ technologického objektu kanalizační sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>čistírna odpadních vod</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>čerpací stanice kanalizační sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>odlehčovací komora</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>liniový odvodňovač</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>kanalizační výusť</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>dešťová nádrž na kanalizační síti</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>podtlaková stanice na kanalizační síti</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="KapacitaCOVEO" type="xs:nonNegativeInteger">
+    <xs:annotation>
+      <xs:documentation>Kapacita ČOV (EO)</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="KapacitaCOV" type="xs:nonNegativeInteger">
+    <xs:annotation>
+      <xs:documentation>Kapacita ČOV (m3/den)</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TypMediaProduktovodu">
+    <xs:annotation>
+      <xs:documentation>Typ média produktovodu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>mazut (olej)</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>pohonné hmoty</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>odpad</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>ropa</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>stlačený nebo zředěný vzduch</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>technický plyn</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypZarizeniSiteProduktovodu">
+    <xs:annotation>
+      <xs:documentation>Typ zařízení sítě produktovodu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>šachta sítě produktovodu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypTrasyTeplovodniSite">
+    <xs:annotation>
+      <xs:documentation>Typ trasy teplovodní sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>primární síť</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>sekundární síť</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypTeplovodniSite">
+    <xs:annotation>
+      <xs:documentation>Typ teplovodní sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>teplovod</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>horkovod</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>parovod</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypZarizeniTeplovodniSite">
+    <xs:annotation>
+      <xs:documentation>Typ zařízení teplovodní sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>odvětrávání teplovodu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>šachta teplovodní sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypTechnologickehoObjektuTeplovodniSite">
+    <xs:annotation>
+      <xs:documentation>Typ technologického objektu teplovodní sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>teplárna</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>kotelna</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>    
+  <xs:element name="TypZarizeniPotrubniPosty">
+    <xs:annotation>
+      <xs:documentation>Typ zařízení potrubní pošty</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>šoupě potrubní pošty</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>    
+  <xs:element name="TypPovrchovehoZnakuTI">
+    <xs:annotation>
+      <xs:documentation>Typ povrchového znaku TI</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>šachta vstupní</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>šachta kabelovodní</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>zařízení elektrické sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>zařízení sítě EK</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>zařízení plynovodní sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>zařízení vodovodní sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>zařízení kanalizační sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="8">
+          <xs:annotation>
+            <xs:documentation>zařízení sítě produktovodu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="9">
+          <xs:annotation>
+            <xs:documentation>zařízení teplovodní sítě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný povrchový znak zařízení TI</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypInzenyrskeSite">
+    <xs:annotation>
+      <xs:documentation>Typ inženýrské sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>elektrické vedení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>elektronické komunikace</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>plynovod</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>vodovod</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>kanalizace</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>produktovod</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>teplovod</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypPKO">
+    <xs:annotation>
+      <xs:documentation>Typ protikorozní ochrany</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>katodická</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>elektropolarizovaná drenáž</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>anoda</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>propojovací kabeláž</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypInzenyrskeSitePKO">
+    <xs:annotation>
+      <xs:documentation>Typ inženýrské sítě s protikorozní ochranou</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>plynovod</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>vodovod</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>kanalizace</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>produktovod</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>teplovod</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypJinehoZarizeniSpecialnichStaveb">
+    <xs:annotation>
+      <xs:documentation>Typ jiného zařízení speciálních staveb</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>hlásič IZS</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>reproduktor</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>venkovní hodiny</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="StavSkladkyOdpadu">
+    <xs:annotation>
+      <xs:documentation>Stav skládky odpadu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>v provozu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>uzavřeno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="ZpusobRekultivace" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Způsob rekultivace</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="DatumRekultivace" type="xs:date">
+    <xs:annotation>
+      <xs:documentation>Datum rekultivace</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TypOdpadu">
+    <xs:annotation>
+      <xs:documentation>Typ odpadu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>inertní odpad</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>nebezpečný odpad</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="Kapacita" type="xs:nonNegativeInteger">
+    <xs:annotation>
+      <xs:documentation>Kapacita</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TypZarizeniOdstranovaniOdpadu">
+    <xs:annotation>
+      <xs:documentation>Typ zařízení na odstraňování odpadů</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>zařízení na odstraňování BRO</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>zařízení na odstraňování nebezpečného odpadu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiná zařízení na odstraňování odpadů</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PovoleniNakladaniNebezpecnymOdpadem">
+    <xs:annotation>
+      <xs:documentation>Povolení nakládání s nebezpečným odpadem</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>povoleno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>bez povolení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypDrobneSakralniStavby">
+    <xs:annotation>
+      <xs:documentation>Typ drobné sakrální stavby</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>kříž</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>boží muka</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>kaplička</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypDrobneKulturniStavby">
+    <xs:annotation>
+      <xs:documentation>Typ drobné kulturní stavby</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>kašna</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>vodotrysk, fontána</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>pomník</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>socha</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>mohyla</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>zvonice</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="DruhPlotu">
+    <xs:annotation>
+      <xs:documentation>Druh plotu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>plot dřevěný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>plot drátěný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>plot kovový</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>plot zděný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>plot živý</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PrujezdnaSirka" type="xs:nonNegativeInteger">
+    <xs:annotation>
+      <xs:documentation>Průjezdná šířka</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="PrujezdnaVyska" type="xs:nonNegativeInteger">
+    <xs:annotation>
+      <xs:documentation>Průjezdná výška</xs:documentation>
+    </xs:annotation>
+  </xs:element>  
+  <xs:element name="DruhSchodiste">
+    <xs:annotation>
+      <xs:documentation>Druh schodiště</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>vícestupňové</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>platforma s jedním stupněm</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypVrtu">
+    <xs:annotation>
+      <xs:documentation>Typ vrtu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>geotermální vrt</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypNosiceTechnickehoZarizeni">
+    <xs:annotation>
+      <xs:documentation>Typ nosiče technického zařízení</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>informační tabule</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>billboard</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>kamera kamerového systému</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>reklamní sloup</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>vlajkový stožár</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>sdružené</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypZemedelskePlochy">
+    <xs:annotation>
+      <xs:documentation>Typ zemědělské plochy</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>orná půda</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>vinice</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>chmelnice</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>ovocný sad</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>trvalý travní porost</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypUdrzovaneZelene">
+    <xs:annotation>
+      <xs:documentation>Typ udržované zeleně</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>městská parková zeleň</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>udržovaná travnatá a okrasná plocha</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>skupina stromů a keřů</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>    
+  <xs:element name="TypTerenniHrany">
+    <xs:annotation>
+      <xs:documentation>Typ terénní hrany</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>hrana</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>pata</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TridaPresnostiPoloha">
+    <xs:annotation>
+      <xs:documentation>Třída přesnosti v poloze</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>1</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>2</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>3</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>4</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>5</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="9">
+          <xs:annotation>
+            <xs:documentation>9</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TridaPresnostiVyska">
+    <xs:annotation>
+      <xs:documentation>Třída přesnosti ve výšce</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>1</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>2</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>3</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>4</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>5</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="9">
+          <xs:annotation>
+            <xs:documentation>9</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="CisloBodu" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Číslo bodu</xs:documentation>
+    </xs:annotation>
+  </xs:element> 
+  <xs:element name="VyskaNaTerenu" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Výška na terénu</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="Zdroj" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Zdroj (záměru)</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="PopisOP" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Popis ochranného pásma</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TypOPSiteProduktovodu">
+    <xs:annotation>
+      <xs:documentation>Typ ochranného pásma sítě produktovodu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>OP produktovodu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>OP ropovodu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypOPSiteEK">
+    <xs:annotation>
+      <xs:documentation>Typ ochranného pásma sítě elektronických komunikací</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>OP rádiového zařízení a rádiového směrového spoje</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>OP komunikačního vedení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PopisBP" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Popis bezpečnostního pásma</xs:documentation>
+    </xs:annotation>
+  </xs:element>  
+  <xs:element name="TypOPOdpadovehoHospodarstvi">
+    <xs:annotation>
+      <xs:documentation>Typ ochranného pásma odpadového hospodářství</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>OP skládky</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>OP spalovny</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>OP zařízení BRO</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>OP zařízení na odstraňování NO</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="IDObjektuSilnicniStavby" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>ID objektu silniční stavby</xs:documentation>
+    </xs:annotation>
+  </xs:element>  
+  <xs:element name="TypOPPozemniKomunikace">
+    <xs:annotation>
+      <xs:documentation>Typ ochranného pásma pozemní komunikace</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>OP dálnice I. třídy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>OP dálnice II. třídy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>OP silnice I. třídy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>OP silnice II. třídy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>OP silnice III. třídy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>OP místní komunikace I. třídy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>OP místní komunikace II. třídy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="IDObjektuDrazniStavby" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>ID objektu drážní stavby</xs:documentation>
+    </xs:annotation>
+  </xs:element>  
+  <xs:element name="TypOPDrazniStavby">
+    <xs:annotation>
+      <xs:documentation>Typ ochranného pásma drážní stavby</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>OP železniční tratě</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>OP tramvajové dráhy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>OP pozemní lanové dráhy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>OP speciální železniční dráhy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>OP visuté lannové dráhy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>OP trolejbusové dráhy</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>    
+  <xs:element name="IDObjektuLetiste" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>ID objektu letiště</xs:documentation>
+    </xs:annotation>
+  </xs:element>  
+  <xs:element name="TypOPLetiste">
+    <xs:annotation>
+      <xs:documentation>Typ ochranného pásma letiště</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>OP se zákazem staveb</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>OP s výškovým omezením staveb</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>OP proti nebezpečným a klamavým světlům</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>OP se zákazem laserových zařízení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>OP s omezením staveb vzdušných - vedení VN a VVN</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>OP hlukové</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>OP ornitologické</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element> 
+  <xs:element name="TypOPLeteckychZabezpecovacichZarizeni">
+    <xs:annotation>
+      <xs:documentation>Typ ochranného pásma leteckých zabezpečovacích zařízení</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>OP přehledového systému</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>OP radionavigačního zařízení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>OP radiokomunikačního systému</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>OP světelného zařízení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>OP podzemní letecké stavby</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="IDObjektuStavbyProVodniDopravu" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>ID objektu stavby pro vodni dopravu</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="TypStavby">
+    <xs:annotation>
+      <xs:documentation>Typ stavby</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>podezdívka</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>rampa</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>terasa</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>komín</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>skleník</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>zahradní bazén</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>patka, deska, monolit, pilíř</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="8">
+          <xs:annotation>
+            <xs:documentation>stavba pro zpevnění povrchu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="9">
+          <xs:annotation>
+            <xs:documentation>čelo propustku</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="10">
+          <xs:annotation>
+            <xs:documentation>drobná sakrální stavba</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="11">
+          <xs:annotation>
+            <xs:documentation>drobná kulturní stavba</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="12">
+          <xs:annotation>
+            <xs:documentation>ostatní zastřešená stavba</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="13">
+          <xs:annotation>
+            <xs:documentation>zastřešení</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypZdi">
+    <xs:annotation>
+      <xs:documentation>Typ zdi</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>zeď</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>opěrná zeď</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>zárubní zeď</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>městské hradby</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypDopravniStavbyNeboPlochy">
+    <xs:annotation>
+      <xs:documentation>Typ dopravní stavby nebo plochy</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>pozemní komunikace</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>chodník</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>cyklostezka</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>parkoviště, odstavná plocha</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>dopravní ostrůvek</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>dělící pás</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>nájezd, sjezd, vjezd</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="8">
+          <xs:annotation>
+            <xs:documentation>přidružená plocha</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="9">
+          <xs:annotation>
+            <xs:documentation>tramvajová dráha</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="10">
+          <xs:annotation>
+            <xs:documentation>pozemní lanová dráha</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="11">
+          <xs:annotation>
+            <xs:documentation>speciální železniční dráha</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="12">
+          <xs:annotation>
+            <xs:documentation>manipulační plocha</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="13">
+          <xs:annotation>
+            <xs:documentation>mostní váha</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="14">
+          <xs:annotation>
+            <xs:documentation>příkop, násyp, zářez dopravní stavby</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="15">
+          <xs:annotation>
+            <xs:documentation>nástupiště</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="16">
+          <xs:annotation>
+            <xs:documentation>mostovka</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="17">
+          <xs:annotation>
+            <xs:documentation>portál tunelu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="18">
+          <xs:annotation>
+            <xs:documentation>průběh tunelu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="19">
+          <xs:annotation>
+            <xs:documentation>portál podchodu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="20">
+          <xs:annotation>
+            <xs:documentation>průběh podchodu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="21">
+          <xs:annotation>
+            <xs:documentation>plocha železnice</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="98">
+          <xs:annotation>
+            <xs:documentation>jiný</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypPrirodnihoPoloprirodnihoObjektu">
+    <xs:annotation>
+      <xs:documentation>Typ přírodního a polopřírodního objektu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>vodní tok</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>jezero</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>vodní plocha neurčená</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>zemědělská plocha</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>zahrada</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>les</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>hospodářsky nevyužívaná plocha</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypVodnihoDila">
+    <xs:annotation>
+      <xs:documentation>Typ vodního díla</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>vodní nádrž – vodní nádrž</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>vodní nádrž – průmyslová nádrž</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>vodní nádrž – dešťová usazovací nádrž</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>vodní nádrž – dešťová průsaková nádrž</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>vodní nádrž – požární nádrž</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>vodní nádrž – jiný typ nádrže</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>vodní nádrž – nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="8">
+          <xs:annotation>
+            <xs:documentation>hráz, jez</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="9">
+          <xs:annotation>
+            <xs:documentation>přeliv, stupeň</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="10">
+          <xs:annotation>
+            <xs:documentation>stavebně upravené koryto</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="11">
+          <xs:annotation>
+            <xs:documentation>meliorační příkop, žlab</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="12">
+          <xs:annotation>
+            <xs:documentation>protipovodňová zábrana – hráz</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="13">
+          <xs:annotation>
+            <xs:documentation>protipovodňová zábrana – val</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="14">
+          <xs:annotation>
+            <xs:documentation>protipovodňová zábrana – zeď</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="15">
+          <xs:annotation>
+            <xs:documentation>protipovodňová zábrana – stavební základy mobilní zábrany</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="16">
+          <xs:annotation>
+            <xs:documentation>protipovodňová zábrana - nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="17">
+          <xs:annotation>
+            <xs:documentation>suchá nádrž</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TypOstatniPlochy">
+    <xs:annotation>
+      <xs:documentation>Typ ostatní plochy</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>důl, lom</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>plocha rekultivace</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>úložné místo těžebního odpadu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>jiné důlní dílo, důlní stavba</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>hřiště</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>hřbitov</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="7">
+          <xs:annotation>
+            <xs:documentation>dvůr, nádvoří</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="99">
+          <xs:annotation>
+            <xs:documentation>nezjištěno</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="HraniceJinehoObjektu">
+    <xs:annotation>
+      <xs:documentation>Hranice jiného objektu</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>ano</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="0">
+          <xs:annotation>
+            <xs:documentation>ne</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="CisloUzlu" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Číslo uzlu</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="CislaKrizujicichKomunikaci" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Čísla křižujících komunikací</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="CharakteristikaUzluSilnicniSite">
+    <xs:annotation>
+      <xs:documentation>Charakteristika uzlu silniční sítě</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:enumeration value="1">
+          <xs:annotation>
+            <xs:documentation>křižovatka</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="2">
+          <xs:annotation>
+            <xs:documentation>odpočívka</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="3">
+          <xs:annotation>
+            <xs:documentation>hraniční přechod ČR</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="4">
+          <xs:annotation>
+            <xs:documentation>hranice přívozu</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="5">
+          <xs:annotation>
+            <xs:documentation>hranice nevybudovaného úseku</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="6">
+          <xs:annotation>
+            <xs:documentation>hranice vojenského prostoru</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+</xs:schema>

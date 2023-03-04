@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+  targetNamespace="dopinf" xmlns="dopinf">
+  <xs:element name="DoprovodneInformace">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="UdajeOZmenach" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="ZaznamZmeny" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UdajeOVlastnicichSpravcichProvozovatelich" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="ZaznamVSP" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IdentifikacniCislaStaveb" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="ZaznamICS" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ZaznamZmeny">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="IDZmeny"/>
+        <xs:element ref="NazevZakazky"/>
+        <xs:element ref="CisloStavbyZakazky"/>
+        <xs:element ref="PartnerInvestor"/>
+        <xs:element ref="Zpracovatel"/>
+        <xs:element ref="OrganizaceZpracovatele"/>
+        <xs:element ref="DatumMereni"/>
+        <xs:element ref="DatumZpracovani"/>
+        <xs:element ref="UOZI"/>
+        <xs:element ref="DatumOvereni"/>
+        <xs:element ref="CisloOvereni"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ZaznamVSP">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="IDVSP"/>
+        <xs:element ref="NazevVSP"/>
+        <xs:element ref="IdentifikacniCisloVSP"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ZaznamICS">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="ICS"/>
+        <xs:element name="ObjektyDTM">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="IDZaznamuObjektuDTM" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>  
+  <xs:element name="IDZmeny" type="xs:string"/>
+  <xs:element name="NazevZakazky" type="xs:string"/>
+  <xs:element name="CisloStavbyZakazky" type="xs:string"/>
+  <xs:element name="PartnerInvestor" type="xs:string"/>
+  <xs:element name="Zpracovatel" type="xs:string"/>
+  <xs:element name="OrganizaceZpracovatele" type="xs:string"/>
+  <xs:element name="DatumMereni">
+    <xs:simpleType>
+      <xs:union memberTypes="xs:date xs:dateTime" />
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="DatumZpracovani">
+    <xs:simpleType>
+      <xs:union memberTypes="xs:date xs:dateTime" />
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="UOZI" type="xs:string"/>
+  <xs:element name="DatumOvereni">
+    <xs:simpleType>
+      <xs:union memberTypes="xs:date xs:dateTime" />
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="CisloOvereni" type="xs:string"/>
+  <xs:element name="IDVSP" type="xs:string"/>
+  <xs:element name="NazevVSP" type="xs:string"/>
+  <xs:element name="IdentifikacniCisloVSP" type="xs:string"/>
+  <xs:element name="ICS" type="xs:string"/>
+  <xs:element name="IDZaznamuObjektuDTM" type="xs:string"/>
+</xs:schema>

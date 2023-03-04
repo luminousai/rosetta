@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    xmlns:cmn="cmn" xmlns:dopinf="dopinf" xmlns:ext="ext"
+    xmlns:bpplsi="bpplsi" xmlns:bpzpko="bpzpko" xmlns:buddef="buddef" xmlns:cepdef="cepdef" xmlns:chodef="chodef" xmlns:cykdef="cykdef"
+    xmlns:deldef="deldef" xmlns:duldef="duldef" xmlns:doodef="doodef" xmlns:dksdef="dksdef" xmlns:dssdef="dssdef" xmlns:dvndef="dvndef"
+    xmlns:hnpdef="hnpdef" xmlns:hrjdef="hrjdef" xmlns:hrbdef="hrbdef" xmlns:hridef="hridef" xmlns:jezdef="jezdef" xmlns:jdddef="jdddef"
+    xmlns:komdef="komdef" xmlns:lesdef="lesdef" xmlns:mapdef="mapdef" xmlns:mpzdef="mpzdef" xmlns:movdef="movdef" xmlns:mosdef="mosdef"
+    xmlns:nsvdef="nsvdef" xmlns:nasdef="nasdef" xmlns:paodef="paodef" xmlns:pdmdef="pdmdef" xmlns:poddef="poddef" xmlns:neliob="neliob"
+    xmlns:poodef="poodef" xmlns:ppodef="ppodef" xmlns:ptudef="ptudef" xmlns:pokdef="pokdef" xmlns:plddef="plddef" xmlns:prsdef="prsdef"
+    xmlns:pnzdef="pnzdef" xmlns:przdef="przdef" xmlns:prpdef="prpdef" xmlns:prtdef="prtdef" xmlns:ramdef="ramdef" xmlns:rekdef="rekdef"
+    xmlns:schdef="schdef" xmlns:skldef="skldef" xmlns:szddef="szddef" xmlns:szpdef="szpdef" xmlns:sukdef="sukdef" xmlns:sundef="sundef"
+    xmlns:terdef="terdef" xmlns:tradef="tradef" xmlns:upzdef="upzdef" xmlns:utodef="utodef" xmlns:votdef="votdef" xmlns:vondef="vondef"
+    xmlns:zabdef="zabdef" xmlns:zahdef="zahdef" xmlns:zeddef="zeddef" xmlns:zepdef="zepdef" xmlns:zszpol="zszpol" xmlns:svodid="svodid"
+    xmlns:drkust="drkust" xmlns:drsast="drsast" xmlns:helbod="helbod" xmlns:hrabud="hrabud" xmlns:hradsp="hradsp" xmlns:hraosp="hraosp"
+    xmlns:hrapoo="hrapoo" xmlns:hrappo="hrappo" xmlns:hrasch="hrasch" xmlns:hrasta="hrasta" xmlns:hraudz="hraudz" xmlns:hravod="hravod"
+    xmlns:hrazdi="hrazdi" xmlns:idebod="idebod" xmlns:jazbod="jazbod" xmlns:jitsti="jitsti" xmlns:jzobod="jzobod" xmlns:jizsti="jizsti"
+    xmlns:kabelo="kabelo" xmlns:kolekt="kolekt" xmlns:ltsbod="ltsbod" xmlns:melios="melios" xmlns:neboob="neboob" xmlns:noteza="noteza"
+    xmlns:obzopp="obzopp" xmlns:obvodr="obvodr" xmlns:omobod="omobod" xmlns:obvopk="obvopk" xmlns:ocsavr="ocsavr" xmlns:odkbod="odkbod"
+    xmlns:opdrst="opdrst" xmlns:opjaza="opjaza" xmlns:opkoka="opkoka" xmlns:oplezz="oplezz" xmlns:opleti="opleti" xmlns:opobel="opobel"
+    xmlns:opobka="opobka" xmlns:opobvo="opobvo" xmlns:opobve="opobve" xmlns:opplsi="opplsi" xmlns:opsist="opsist" xmlns:opsiek="opsiek"
+    xmlns:opsipr="opsipr" xmlns:opstvd="opstvd" xmlns:optesi="optesi" xmlns:opvodi="opvodi" xmlns:opzodh="opzodh" xmlns:opzpko="opzpko"
+    xmlns:orislo="orislo" xmlns:osahzm="osahzm" xmlns:oskpld="oskpld" xmlns:oskszd="oskszd" xmlns:plkpol="plkpol" xmlns:pripol="pripol"
+    xmlns:osktra="osktra" xmlns:osazet="osazet" xmlns:osampz="osampz" xmlns:osapok="osapok" xmlns:osapld="osapld" xmlns:osasvc="osasvc"
+    xmlns:osaszd="osaszd" xmlns:osatra="osatra" xmlns:osavld="osavld" xmlns:osazel="osazel" xmlns:pladra="pladra" xmlns:budobv="budobv"
+    xmlns:plkbod="plkbod" xmlns:budpol="budpol" xmlns:ceppol="ceppol" xmlns:chopol="chopol" xmlns:cykpol="cykpol" xmlns:delpol="delpol"
+    xmlns:dulpol="dulpol" xmlns:doopol="doopol" xmlns:dkspol="dkspol" xmlns:dsspol="dsspol" xmlns:dvnpol="dvnpol" xmlns:helpol="helpol"
+    xmlns:hnppol="hnppol" xmlns:hrjpol="hrjpol" xmlns:hrbpol="hrbpol" xmlns:hripol="hripol" xmlns:jezpol="jezpol" xmlns:jddpol="jddpol"
+    xmlns:kompol="kompol" xmlns:lespol="lespol" xmlns:letpol="letpol" xmlns:mappol="mappol" xmlns:mpzpol="mpzpol" xmlns:movpol="movpol"
+    xmlns:mospol="mospol" xmlns:nsvpol="nsvpol" xmlns:naspol="naspol" xmlns:paopol="paopol" xmlns:pdmpol="pdmpol" xmlns:vncldp="vncldp"
+    xmlns:podpol="podpol" xmlns:poopol="poopol" xmlns:ppopol="ppopol" xmlns:ptupol="ptupol" xmlns:pokpol="pokpol" xmlns:pldpol="pldpol"
+    xmlns:prspol="prspol" xmlns:pnzpol="pnzpol" xmlns:przpol="przpol" xmlns:prppol="prppol" xmlns:prtpol="prtpol" xmlns:rampol="rampol"
+    xmlns:rekpol="rekpol" xmlns:schpol="schpol" xmlns:sklpol="sklpol" xmlns:szdpol="szdpol" xmlns:szppol="szppol" xmlns:sukpol="sukpol"
+    xmlns:sunpol="sunpol" xmlns:terpol="terpol" xmlns:trapol="trapol" xmlns:upzpol="upzpol" xmlns:utopol="utopol" xmlns:votpol="votpol"
+    xmlns:vonpol="vonpol" xmlns:vpdpol="vpdpol" xmlns:zabpol="zabpol" xmlns:zahpol="zahpol" xmlns:zedpol="zedpol" xmlns:zprpol="zprpol"
+    xmlns:zeppol="zeppol" xmlns:plotli="plotli" xmlns:podzar="podzar" xmlns:pobzps="pobzps" xmlns:poznti="poznti" xmlns:pribod="pribod"
+    xmlns:pjtsti="pjtsti" xmlns:prupro="prupro" xmlns:prteko="prteko" xmlns:rozisb="rozisb" xmlns:rozisl="rozisl" xmlns:skobod="skobod"
+    xmlns:slvoce="slvoce" xmlns:slteko="slteko" xmlns:spabod="spabod" xmlns:sesbod="sesbod" xmlns:suvjpo="suvjpo" xmlns:stuvep="stuvep"
+    xmlns:tokbod="tokbod" xmlns:topbod="topbod" xmlns:torbod="torbod" xmlns:tosbod="tosbod" xmlns:toobod="toobod" xmlns:tolbod="tolbod"
+    xmlns:tovbod="tovbod" xmlns:terhra="terhra" xmlns:trdpes="trdpes" xmlns:trdpks="trdpks" xmlns:trdpps="trdpps" xmlns:trdpvs="trdpvs"
+    xmlns:trelsi="trelsi" xmlns:trkasi="trkasi" xmlns:trmesi="trmesi" xmlns:trprko="trprko" xmlns:trplsi="trplsi" xmlns:trpopo="trpopo"
+    xmlns:trprvo="trprvo" xmlns:trrars="trrars" xmlns:trsiek="trsiek" xmlns:trsipr="trsipr" xmlns:trtesi="trtesi" xmlns:trvosi="trvosi"
+    xmlns:vnclbs="vnclbs" xmlns:vrtbod="vrtbod" xmlns:vynast="vynast" xmlns:velbod="velbod" xmlns:vybote="vybote" xmlns:vytcho="vytcho"
+    xmlns:zabrad="zabrad" xmlns:zacybo="zacybo" xmlns:zahebo="zahebo" xmlns:zajzbo="zajzbo" xmlns:zasopl="zasopl" xmlns:zaszpl="zaszpl"
+    xmlns:zajvbo="zajvbo" xmlns:zajobo="zajobo" xmlns:zakabe="zakabe" xmlns:zakoli="zakoli" xmlns:zalsbo="zalsbo" xmlns:zasppl="zasppl"
+    xmlns:zalebo="zalebo" xmlns:zampbo="zampbo" xmlns:zaosbo="zaosbo" xmlns:zaozop="zaozop" xmlns:zaobdr="zaobdr" xmlns:zaobpk="zaobpk"
+    xmlns:zahzmz="zahzmz" xmlns:zaomli="zaomli" xmlns:zaospk="zaospk" xmlns:zaoszt="zaoszt" xmlns:zapdli="zapdli" xmlns:zapkbo="zapkbo"
+    xmlns:zaplli="zaplli" xmlns:zapsbo="zapsbo" xmlns:zapzbo="zapzbo" xmlns:zasobo="zasobo" xmlns:zavcli="zavcli" xmlns:zajopl="zajopl"
+    xmlns:zaspbo="zaspbo" xmlns:zaszli="zaszli" xmlns:zasebo="zasebo" xmlns:zasnbo="zasnbo" xmlns:zatabo="zatabo" xmlns:zatlbo="zatlbo"
+    xmlns:zatcbo="zatcbo" xmlns:zatubo="zatubo" xmlns:zatdbo="zatdbo" xmlns:zatobo="zatobo" xmlns:zatjli="zatjli" xmlns:zateli="zateli"
+    xmlns:zatkli="zatkli" xmlns:zatmli="zatmli" xmlns:zatpli="zatpli" xmlns:zatili="zatili" xmlns:zatrrs="zatrrs" xmlns:zatsli="zatsli"
+    xmlns:zatrli="zatrli" xmlns:zattli="zattli" xmlns:zatvli="zatvli" xmlns:zavlli="zavlli" xmlns:zavnbo="zavnbo" xmlns:zacypl="zacypl"
+    xmlns:zavebo="zavebo" xmlns:zavdbo="zavdbo" xmlns:zazalp="zazalp" xmlns:zazpbo="zazpbo" xmlns:zazsbo="zazsbo" xmlns:zadpks="zadpks"
+    xmlns:zadpvs="zadpvs" xmlns:zaelsi="zaelsi" xmlns:zakasb="zakasb" xmlns:zakasl="zakasl" xmlns:zarplp="zarplp" xmlns:zapkob="zapkob"
+    xmlns:zaplsi="zaplsi" xmlns:zapopo="zapopo" xmlns:zaprvo="zaprvo" xmlns:zasiek="zasiek" xmlns:zasipr="zasipr" xmlns:zatesi="zatesi"
+    xmlns:zavosi="zavosi" xmlns:zedlin="zedlin" xmlns:zszbod="zszbod" xmlns:douzss="douzss" xmlns:ppldef="ppldef" xmlns:pplpol="pplpol" 
+    xmlns:pplobv="pplobv" xmlns:zelpol="zelpol" xmlns:ltspol="ltspol" xmlns:omopol="omopol" xmlns:proste="proste" xmlns:velpol="velpol"
+    xmlns:sespol="sespol" xmlns:jazpol="jazpol" xmlns:tospol="tospol" xmlns:toppol="toppol" xmlns:tovpol="tovpol" xmlns:torpol="torpol"
+    xmlns:tokpol="tokpol" xmlns:toopol="toopol" xmlns:tolpol="tolpol" xmlns:skopol="skopol" xmlns:spapol="spapol" xmlns:jzopol="jzopol"
+    xmlns:odkpol="odkpol" xmlns:ozsdef="ozsdef" xmlns:ozspol="ozspol" xmlns:ozsobv="ozsobv" xmlns:zasdef="zasdef" xmlns:zaspol="zaspol"
+    xmlns:zasobv="zasobv" xmlns:prprel="prprel" xmlns:opstel="opstel" xmlns:opzael="opzael" xmlns:pokobv="pokobv" xmlns:choobv="choobv"
+    xmlns:cykobv="cykobv" xmlns:paoobv="paoobv" xmlns:dooobv="dooobv" xmlns:delobv="delobv" xmlns:nsvobv="nsvobv" xmlns:traobv="traobv"
+    xmlns:pldobv="pldobv" xmlns:szdobv="szdobv" xmlns:pnzobv="pnzobv" xmlns:nasobv="nasobv" xmlns:mapobv="mapobv" xmlns:mosobv="mosobv"
+    xmlns:ptuobv="ptuobv" xmlns:prtobv="prtobv" xmlns:ppoobv="ppoobv" xmlns:prpobv="prpobv" xmlns:movobv="movobv" xmlns:vonobv="vonobv"
+    xmlns:hrjobv="hrjobv" xmlns:prsobv="prsobv" xmlns:sukobv="sukobv" xmlns:mpzobv="mpzobv" xmlns:przobv="przobv" xmlns:sunobv="sunobv"
+    xmlns:dulobv="dulobv" xmlns:rekobv="rekobv" xmlns:utoobv="utoobv" xmlns:jddobv="jddobv" xmlns:hriobv="hriobv" xmlns:dksobv="dksobv"
+    xmlns:hrbobv="hrbobv" xmlns:dssobv="dssobv" xmlns:podobv="podobv" xmlns:schobv="schobv" xmlns:zedobv="zedobv" xmlns:ramobv="ramobv"
+    xmlns:terobv="terobv" xmlns:sklobv="sklobv" xmlns:zabobv="zabobv" xmlns:komobv="komobv" xmlns:pdmobv="pdmobv" xmlns:szpobv="szpobv"
+    xmlns:dvnobv="dvnobv" xmlns:cepobv="cepobv" xmlns:pooobv="pooobv" xmlns:votobv="votobv" xmlns:jezobv="jezobv" xmlns:zepobv="zepobv"
+    xmlns:zahobv="zahobv" xmlns:lesobv="lesobv" xmlns:hnpobv="hnpobv" xmlns:upzobv="upzobv" xmlns:zakopl="zakopl" xmlns:zatepl="zatepl"
+    xmlns:zatjpl="zatjpl" xmlns:zavepl="zavepl" xmlns:zasepl="zasepl" xmlns:zajzpl="zajzpl" xmlns:zatspl="zatspl" xmlns:zaospl="zaospl"
+    xmlns:zatppl="zatppl" xmlns:zatlpl="zatlpl" xmlns:zatvpl="zatvpl" xmlns:zatopl="zatopl" xmlns:zatkpl="zatkpl" xmlns:zatapl="zatapl"
+    xmlns:zatrpl="zatrpl" xmlns:zatupl="zatupl" xmlns:zattpl="zattpl" xmlns:zatdpl="zatdpl" xmlns:zavnpl="zavnpl" xmlns:zamppl="zamppl"
+    xmlns:zaompl="zaompl" xmlns:zapzpl="zapzpl" xmlns:zasnpl="zasnpl" xmlns:zatipl="zatipl" xmlns:zatcpl="zatcpl" xmlns:zazppl="zazppl"
+    xmlns:zatmpl="zatmpl" xmlns:zaplpl="zaplpl" xmlns:zavlpl="zavlpl" xmlns:zazspl="zazspl" xmlns:zapkpl="zapkpl" xmlns:zavcpl="zavcpl"
+    xmlns:zapdpl="zapdpl" xmlns:zapspl="zapspl" xmlns:zajvpl="zajvpl" xmlns:zavdpl="zavdpl" xmlns:zalepl="zalepl" xmlns:zahepl="zahepl"
+    xmlns:zalspl="zalspl" xmlns:zeldef="zeldef" xmlns:zelobv="zelobv" targetNamespace="objtyp" xmlns:objtyp="objtyp">
+    <xs:import schemaLocation="..\common\common.xsd" namespace="cmn"/>
+    <xs:import schemaLocation="..\common\doprovodne_informace.xsd" namespace="dopinf"/>
+    <xs:import schemaLocation="..\common\extenze.xsd" namespace="ext"/>
+    <xs:import schemaLocation="..\objekty\bp_plynovodni_site.xsd" namespace="bpplsi"/>
+    <xs:import schemaLocation="..\objekty\bp_zarizeni_PKO.xsd" namespace="bpzpko"/>
+    <xs:import schemaLocation="..\objekty\def_bod_budovy.xsd" namespace="buddef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_cela_propustku.xsd" namespace="cepdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_chodniku.xsd" namespace="chodef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_cyklostezky.xsd" namespace="cykdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_deliciho_pasu.xsd" namespace="deldef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_dolu_lomu.xsd" namespace="duldef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_dopravniho_ostruvku.xsd" namespace="doodef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_drobne_kulturni_stavby.xsd" namespace="dksdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_drobne_sakralni_stavby.xsd" namespace="dssdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_dvoru_nadvori.xsd" namespace="dvndef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_hospodarsky_nevyuzivane_plochy.xsd" namespace="hnpdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_hraze_jezu.xsd" namespace="hrjdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_hrbitova.xsd" namespace="hrbdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_hriste.xsd" namespace="hridef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_jezera.xsd" namespace="jezdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_jineho_dulniho_dila_stavby.xsd" namespace="jdddef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_kominu.xsd" namespace="komdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_lesa.xsd" namespace="lesdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_manipulacni_plochy.xsd" namespace="mapdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_melioracniho_prikopu_zlabu.xsd" namespace="mpzdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_mostni_vahy.xsd" namespace="movdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_mostovky.xsd" namespace="mosdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_najezdu_sjezdu_vjezdu.xsd" namespace="nsvdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_nastupiste.xsd" namespace="nasdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_parkoviste_odstavne_plochy.xsd" namespace="paodef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_patky_desky_monolitu_pilire.xsd" namespace="pdmdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_podezdivky.xsd" namespace="poddef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_podzemniho_objektu_ZPS.xsd" namespace="poodef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_portalu_podchodu.xsd" namespace="ppodef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_portalu_tunelu.xsd" namespace="ptudef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_pozemni_komunikace.xsd" namespace="pokdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_pozemni_lanove_drahy.xsd" namespace="plddef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_prelivu_stupne.xsd" namespace="prsdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_prikopu_nasypu_zarezu_dopravni_stavby.xsd" namespace="pnzdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_protipovodnove_zabrany.xsd" namespace="przdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_prubehu_podchodu.xsd" namespace="prpdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_prubehu_tunelu.xsd" namespace="prtdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_rampy.xsd" namespace="ramdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_rekultivace.xsd" namespace="rekdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_schodiste.xsd" namespace="schdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_skleniku.xsd" namespace="skldef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_specialni_zeleznicni_drahy.xsd" namespace="szddef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_stavby_pro_zpevneni_povrchu.xsd" namespace="szpdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_stavebne_upraveneho_koryta.xsd" namespace="sukdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_suche_nadrze.xsd" namespace="sundef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_terasy.xsd" namespace="terdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_tramvajove_drahy.xsd" namespace="tradef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_udrzovane_plochy_zelene.xsd" namespace="upzdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_ulozneho_mista_tezebniho_odpadu.xsd" namespace="utodef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_vodniho_toku.xsd" namespace="votdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_vodni_nadrze.xsd" namespace="vondef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_zahradniho_bazenu.xsd" namespace="zabdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_zahrady.xsd" namespace="zahdef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_zdi.xsd" namespace="zeddef"/>
+    <xs:import schemaLocation="..\objekty\def_bod_zemedelske_plochy.xsd" namespace="zepdef"/>
+    <xs:import schemaLocation="..\objekty\drobna_kulturni_stavba.xsd" namespace="drkust"/>
+    <xs:import schemaLocation="..\objekty\drobna_sakralni_stavba.xsd" namespace="drsast"/>
+    <xs:import schemaLocation="..\objekty\heliport_bod.xsd" namespace="helbod"/>
+    <xs:import schemaLocation="..\objekty\hranice_budovy.xsd" namespace="hrabud"/>
+    <xs:import schemaLocation="..\objekty\hranice_dopravni_stavby_plochy.xsd" namespace="hradsp"/>
+    <xs:import schemaLocation="..\objekty\hranice_ostatni_plochy.xsd" namespace="hraosp"/>
+    <xs:import schemaLocation="..\objekty\hranice_podzemniho_objektu_ZPS.xsd" namespace="hrapoo"/>
+    <xs:import schemaLocation="..\objekty\hranice_prirodniho_poloprirodniho_objektu.xsd" namespace="hrappo"/>
+    <xs:import schemaLocation="..\objekty\hranice_schodiste.xsd" namespace="hrasch"/>
+    <xs:import schemaLocation="..\objekty\hranice_stavby.xsd" namespace="hrasta"/>
+    <xs:import schemaLocation="..\objekty\hranice_udrzovane_zelene.xsd" namespace="hraudz"/>
+    <xs:import schemaLocation="..\objekty\hranice_vodniho_dila.xsd" namespace="hravod"/>
+    <xs:import schemaLocation="..\objekty\hranice_zdi.xsd" namespace="hrazdi"/>
+    <xs:import schemaLocation="..\objekty\identicky_bod.xsd" namespace="idebod"/>
+    <xs:import schemaLocation="..\objekty\jaderne_zarizeni_bod.xsd" namespace="jazbod"/>
+    <xs:import schemaLocation="..\objekty\jina_technologicka_stavba_TI.xsd" namespace="jitsti"/>
+    <xs:import schemaLocation="..\objekty\jine_zarizeni_odstranovani_vyuzivani_sber_odpadu_bod.xsd" namespace="jzobod"/>
+    <xs:import schemaLocation="..\objekty\jine_zarizeni_staveb_TI.xsd" namespace="jizsti"/>
+    <xs:import schemaLocation="..\objekty\kabelvod.xsd" namespace="kabelo"/>
+    <xs:import schemaLocation="..\objekty\kolektor.xsd" namespace="kolekt"/>
+    <xs:import schemaLocation="..\objekty\letecka_stavba_bod.xsd" namespace="ltsbod"/>
+    <xs:import schemaLocation="..\objekty\melioracni_sachta.xsd" namespace="melios"/>
+    <xs:import schemaLocation="..\objekty\neidentifikovany_bodovy_objekt.xsd" namespace="neboob"/>
+    <xs:import schemaLocation="..\objekty\nosic_technickeho_zarizeni.xsd" namespace="noteza"/>
+    <xs:import schemaLocation="..\objekty\objekt_zarizeni_ochrana_pred_povodnemi.xsd" namespace="obzopp"/>
+    <xs:import schemaLocation="..\objekty\obvod_drahy.xsd" namespace="obvodr"/>
+    <xs:import schemaLocation="..\objekty\obvod_mostu_bod.xsd" namespace="omobod"/>
+    <xs:import schemaLocation="..\objekty\obvod_pozemni_komunikace.xsd" namespace="obvopk"/>
+    <xs:import schemaLocation="..\objekty\ochranna_sachta_vrtu.xsd" namespace="ocsavr"/>
+    <xs:import schemaLocation="..\objekty\odkaliste_bod.xsd" namespace="odkbod"/>
+    <xs:import schemaLocation="..\objekty\op_drazni_stavby.xsd" namespace="opdrst"/>
+    <xs:import schemaLocation="..\objekty\op_jaderneho_zarizeni.xsd" namespace="opjaza"/>
+    <xs:import schemaLocation="..\objekty\op_kolektoru_kabelovodu.xsd" namespace="opkoka"/>
+    <xs:import schemaLocation="..\objekty\op_leteckych_zabezpecovacich_zarizeni.xsd" namespace="oplezz"/>
+    <xs:import schemaLocation="..\objekty\op_letiste.xsd" namespace="opleti"/>
+    <xs:import schemaLocation="..\objekty\op_objektu_elektricke_site.xsd" namespace="opobel"/>
+    <xs:import schemaLocation="..\objekty\op_objektu_kanalizace.xsd" namespace="opobka"/>
+    <xs:import schemaLocation="..\objekty\op_objektu_vodovodu.xsd" namespace="opobvo"/>
+    <xs:import schemaLocation="..\objekty\op_objektu_vyrobny_elektriny.xsd" namespace="opobve"/>
+    <xs:import schemaLocation="..\objekty\op_plynovodni_site.xsd" namespace="opplsi"/>
+    <xs:import schemaLocation="..\objekty\op_silnicni_stavby.xsd" namespace="opsist"/>
+    <xs:import schemaLocation="..\objekty\op_site_EK.xsd" namespace="opsiek"/>
+    <xs:import schemaLocation="..\objekty\op_site_produktovodu.xsd" namespace="opsipr"/>
+    <xs:import schemaLocation="..\objekty\op_stavby_pro_vodni_dopravu.xsd" namespace="opstvd"/>
+    <xs:import schemaLocation="..\objekty\op_teplovodni_site.xsd" namespace="optesi"/>
+    <xs:import schemaLocation="..\objekty\op_vodniho_dila_I_II_kategorie_hledisko_TBD.xsd" namespace="opvodi"/>
+    <xs:import schemaLocation="..\objekty\op_zarizeni_odpadoveho_hospodarstvi.xsd" namespace="opzodh"/>
+    <xs:import schemaLocation="..\objekty\op_zarizeni_PKO.xsd" namespace="opzpko"/>
+    <xs:import schemaLocation="..\objekty\orientacni_sloupek_TI.xsd" namespace="orislo"/>
+    <xs:import schemaLocation="..\objekty\osa_hraze_zdi_mobilni_zabrany.xsd" namespace="osahzm"/>
+    <xs:import schemaLocation="..\objekty\osa_koleje_pozemni_lanove_drahy.xsd" namespace="oskpld"/>
+    <xs:import schemaLocation="..\objekty\osa_koleje_specialni_zeleznicni_drahy.xsd" namespace="oskszd"/>
+    <xs:import schemaLocation="..\objekty\osa_koleje_tramvajove_drahy.xsd" namespace="osktra"/>
+    <xs:import schemaLocation="..\objekty\osa_koleje_zeleznicni_trate.xsd" namespace="osazet"/>
+    <xs:import schemaLocation="..\objekty\osa_melioracniho_prikopu_zlabu_drenu.xsd" namespace="osampz"/>
+    <xs:import schemaLocation="..\objekty\osa_pozemni_komunikace.xsd" namespace="osapok"/>
+    <xs:import schemaLocation="..\objekty\osa_pozemni_lanove_drahy.xsd" namespace="osapld"/>
+    <xs:import schemaLocation="..\objekty\osa_sledovane_vodni_cesty.xsd" namespace="osasvc"/>
+    <xs:import schemaLocation="..\objekty\osa_specialni_zeleznicni_drahy.xsd" namespace="osaszd"/>
+    <xs:import schemaLocation="..\objekty\osa_tramvajove_drahy.xsd" namespace="osatra"/>
+    <xs:import schemaLocation="..\objekty\osa_visute_lanove_drahy.xsd" namespace="osavld"/>
+    <xs:import schemaLocation="..\objekty\osa_zeleznice.xsd" namespace="osazel"/>
+    <xs:import schemaLocation="..\objekty\plavebni_draha.xsd" namespace="pladra"/>
+    <xs:import schemaLocation="..\objekty\plavebni_komora_bod.xsd" namespace="plkbod"/>
+    <xs:import schemaLocation="..\objekty\plocha_budovy.xsd" namespace="budpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_cela_propustku.xsd" namespace="ceppol"/>
+    <xs:import schemaLocation="..\objekty\plocha_chodniku.xsd" namespace="chopol"/>
+    <xs:import schemaLocation="..\objekty\plocha_cyklostezky.xsd" namespace="cykpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_deliciho_pasu.xsd" namespace="delpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_dolu_lomu.xsd" namespace="dulpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_dopravniho_ostruvku.xsd" namespace="doopol"/>
+    <xs:import schemaLocation="..\objekty\plocha_drobne_kulturni_stavby.xsd" namespace="dkspol"/>
+    <xs:import schemaLocation="..\objekty\plocha_drobne_sakralni_stavby.xsd" namespace="dsspol"/>
+    <xs:import schemaLocation="..\objekty\plocha_dvoru_nadvori.xsd" namespace="dvnpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_hospodarsky_nevyuzivane_plochy.xsd" namespace="hnppol"/>
+    <xs:import schemaLocation="..\objekty\plocha_hraze_jezu.xsd" namespace="hrjpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_hrbitova.xsd" namespace="hrbpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_hriste.xsd" namespace="hripol"/>
+    <xs:import schemaLocation="..\objekty\plocha_jezera.xsd" namespace="jezpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_jineho_dulniho_dila_stavby.xsd" namespace="jddpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_kominu.xsd" namespace="kompol"/>
+    <xs:import schemaLocation="..\objekty\plocha_lesa.xsd" namespace="lespol"/>
+    <xs:import schemaLocation="..\objekty\plocha_letiste.xsd" namespace="letpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_manipulacni.xsd" namespace="mappol"/>
+    <xs:import schemaLocation="..\objekty\plocha_melioracniho_prikopu_zlabu.xsd" namespace="mpzpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_mostni_vahy.xsd" namespace="movpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_mostovky.xsd" namespace="mospol"/>
+    <xs:import schemaLocation="..\objekty\plocha_najezdu_sjezdu_vjezdu.xsd" namespace="nsvpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_nastupiste.xsd" namespace="naspol"/>
+    <xs:import schemaLocation="..\objekty\plocha_parkoviste_odstavne_plochy.xsd" namespace="paopol"/>
+    <xs:import schemaLocation="..\objekty\plocha_patky_desky_monolitu_pilire.xsd" namespace="pdmpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_podezdivky.xsd" namespace="podpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_podzemniho_objektu_ZPS.xsd" namespace="poopol"/>
+    <xs:import schemaLocation="..\objekty\plocha_portalu_podchodu.xsd" namespace="ppopol"/>
+    <xs:import schemaLocation="..\objekty\plocha_portalu_tunelu.xsd" namespace="ptupol"/>
+    <xs:import schemaLocation="..\objekty\plocha_pozemni_komunikace.xsd" namespace="pokpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_pozemni_lanove_drahy.xsd" namespace="pldpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_prelivu_stupne.xsd" namespace="prspol"/>
+    <xs:import schemaLocation="..\objekty\plocha_prikopu_nasypu_zarezu_dopravni_stavby.xsd" namespace="pnzpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_protipovodnove_zabrany.xsd" namespace="przpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_prubehu_podchodu.xsd" namespace="prppol"/>
+    <xs:import schemaLocation="..\objekty\plocha_prubehu_tunelu.xsd" namespace="prtpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_rampy.xsd" namespace="rampol"/>
+    <xs:import schemaLocation="..\objekty\plocha_rekultivace.xsd" namespace="rekpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_schodiste.xsd" namespace="schpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_skleniku.xsd" namespace="sklpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_specialni_zeleznicni_drahy.xsd" namespace="szdpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_stavby_pro_zpevneni_povrchu.xsd" namespace="szppol"/>
+    <xs:import schemaLocation="..\objekty\plocha_stavebne_upraveneho_koryta.xsd" namespace="sukpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_suche_nadrze.xsd" namespace="sunpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_terasy.xsd" namespace="terpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_tramvajove_drahy.xsd" namespace="trapol"/>
+    <xs:import schemaLocation="..\objekty\plocha_udrzovane_plochy_zelene.xsd" namespace="upzpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_ulozneho_mista_tezebniho_odpadu.xsd" namespace="utopol"/>
+    <xs:import schemaLocation="..\objekty\plocha_vodniho_toku.xsd" namespace="votpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_vodni_nadrze.xsd" namespace="vonpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_vzletove_pristavaci_drahy.xsd" namespace="vpdpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_zahradniho_bazenu.xsd" namespace="zabpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_zahrady.xsd" namespace="zahpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_zdi.xsd" namespace="zedpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_zeleznicniho_prejezdu.xsd" namespace="zprpol"/>
+    <xs:import schemaLocation="..\objekty\plocha_zemedelske_plochy.xsd" namespace="zeppol"/>
+    <xs:import schemaLocation="..\objekty\plot.xsd" namespace="plotli"/>
+    <xs:import schemaLocation="..\objekty\podperne_zarizeni.xsd" namespace="podzar"/>
+    <xs:import schemaLocation="..\objekty\podrobny_bod_ZPS.xsd" namespace="pobzps"/>
+    <xs:import schemaLocation="..\objekty\povrchovy_znak_TI.xsd" namespace="poznti"/>
+    <xs:import schemaLocation="..\objekty\pristav_bod.xsd" namespace="pribod"/>
+    <xs:import schemaLocation="..\objekty\prubeh_jine_technologicke_stavby_TI.xsd" namespace="pjtsti"/>
+    <xs:import schemaLocation="..\objekty\prubeh_propustku.xsd" namespace="prupro"/>
+    <xs:import schemaLocation="..\objekty\prubeh_technologicke_konstrukce.xsd" namespace="prteko"/>
+    <xs:import schemaLocation="..\objekty\rozvadec_IS_bod.xsd" namespace="rozisb"/>
+    <xs:import schemaLocation="..\objekty\rozvadec_IS_linie.xsd" namespace="rozisl"/>
+    <xs:import schemaLocation="..\objekty\skladka_odpadu_bod.xsd" namespace="skobod"/>
+    <xs:import schemaLocation="..\objekty\sledovana_vodni_cesta.xsd" namespace="slvoce"/>
+    <xs:import schemaLocation="..\objekty\sloup_technologicke_konstrukce.xsd" namespace="slteko"/>
+    <xs:import schemaLocation="..\objekty\spalovna_bod.xsd" namespace="spabod"/>
+    <xs:import schemaLocation="..\objekty\stanice_elektricke_site_bod.xsd" namespace="sesbod"/>
+    <xs:import schemaLocation="..\objekty\stavebne_upraveny_vjezd_pozemek.xsd" namespace="suvjpo"/>
+    <xs:import schemaLocation="..\objekty\studna_verejne_prostranstvi.xsd" namespace="stuvep"/>
+    <xs:import schemaLocation="..\objekty\technologicky_objekt_kanalizacni_site_bod.xsd" namespace="tokbod"/>
+    <xs:import schemaLocation="..\objekty\technologicky_objekt_plynovodni_site_bod.xsd" namespace="topbod"/>
+    <xs:import schemaLocation="..\objekty\technologicky_objekt_privadece_vody_bod.xsd" namespace="torbod"/>
+    <xs:import schemaLocation="..\objekty\technologicky_objekt_site_EK_bod.xsd" namespace="tosbod"/>
+    <xs:import schemaLocation="..\objekty\technologicky_objekt_site_produktovodu_bod.xsd" namespace="toobod"/>
+    <xs:import schemaLocation="..\objekty\technologicky_objekt_teplovodni_site_bod.xsd" namespace="tolbod"/>
+    <xs:import schemaLocation="..\objekty\technologicky_objekt_vodovodni_site_bod.xsd" namespace="tovbod"/>
+    <xs:import schemaLocation="..\objekty\terenni_hrana.xsd" namespace="terhra"/>
+    <xs:import schemaLocation="..\objekty\trasa_domovni_pripojky_elektricke_site.xsd" namespace="trdpes"/>
+    <xs:import schemaLocation="..\objekty\trasa_domovni_pripojky_kanalizacni_site.xsd" namespace="trdpks"/>
+    <xs:import schemaLocation="..\objekty\trasa_domovni_pripojky_plynovodni_site.xsd" namespace="trdpps"/>
+    <xs:import schemaLocation="..\objekty\trasa_domovni_pripojky_vodovodni_site.xsd" namespace="trdpvs"/>
+    <xs:import schemaLocation="..\objekty\trasa_elektricke_site.xsd" namespace="trelsi"/>
+    <xs:import schemaLocation="..\objekty\trasa_kanalizacni_site.xsd" namespace="trkasi"/>
+    <xs:import schemaLocation="..\objekty\trasa_mistni_elektricke_site.xsd" namespace="trmesi"/>
+    <xs:import schemaLocation="..\objekty\trasa_PKO.xsd" namespace="trprko"/>
+    <xs:import schemaLocation="..\objekty\trasa_plynovodni_site.xsd" namespace="trplsi"/>
+    <xs:import schemaLocation="..\objekty\trasa_potrubni_posty.xsd" namespace="trpopo"/>
+    <xs:import schemaLocation="..\objekty\trasa_privadece_vody.xsd" namespace="trprvo"/>
+    <xs:import schemaLocation="..\objekty\trasa_radioreleovych_spoju.xsd" namespace="trrars"/>
+    <xs:import schemaLocation="..\objekty\trasa_site_EK.xsd" namespace="trsiek"/>
+    <xs:import schemaLocation="..\objekty\trasa_site_produktovodu.xsd" namespace="trsipr"/>
+    <xs:import schemaLocation="..\objekty\trasa_teplovodni_site.xsd" namespace="trtesi"/>
+    <xs:import schemaLocation="..\objekty\trasa_vodovodni_site.xsd" namespace="trvosi"/>
+    <xs:import schemaLocation="..\objekty\vnitrni_cleneni_budov_staveb.xsd" namespace="vnclbs"/>
+    <xs:import schemaLocation="..\objekty\vrt.xsd" namespace="vrtbod"/>
+    <xs:import schemaLocation="..\objekty\vydejni_nabijeci_stojan.xsd" namespace="vynast"/>
+    <xs:import schemaLocation="..\objekty\vyrobna_elektriny_bod.xsd" namespace="velbod"/>
+    <xs:import schemaLocation="..\objekty\vyskovy_bod_teren.xsd" namespace="vybote"/>
+    <xs:import schemaLocation="..\objekty\vytah_v_chodniku.xsd" namespace="vytcho"/>
+    <xs:import schemaLocation="..\objekty\zabradli.xsd" namespace="zabrad"/>
+    <xs:import schemaLocation="..\objekty\zamer_cyklostezka_bod.xsd" namespace="zacybo"/>
+    <xs:import schemaLocation="..\objekty\zamer_heliport_bod.xsd" namespace="zahebo"/>
+    <xs:import schemaLocation="..\objekty\zamer_jaderne_zarizeni_bod.xsd" namespace="zajzbo"/>
+    <xs:import schemaLocation="..\objekty\zamer_jine_zamery_na_vodni_ceste_bod.xsd" namespace="zajvbo"/>
+    <xs:import schemaLocation="..\objekty\zamer_jine_zarizeni_odstranovani_vyuzivani_sber_odpadu_bod.xsd" namespace="zajobo"/>
+    <xs:import schemaLocation="..\objekty\zamer_kabelovod.xsd" namespace="zakabe"/>
+    <xs:import schemaLocation="..\objekty\zamer_kolektor_linie.xsd" namespace="zakoli"/>
+    <xs:import schemaLocation="..\objekty\zamer_letecka_stavba_bod.xsd" namespace="zalsbo"/>
+    <xs:import schemaLocation="..\objekty\zamer_letiste_bod.xsd" namespace="zalebo"/>
+    <xs:import schemaLocation="..\objekty\zamer_melioracni_prikop_zlab_bod.xsd" namespace="zampbo"/>
+    <xs:import schemaLocation="..\objekty\zamer_technologicky_objekt_site_EK_bod.xsd" namespace="zaosbo"/>
+    <xs:import schemaLocation="..\objekty\zamer_objekt_zarizeni_ochrana_pred_povodnemi.xsd" namespace="zaozop"/>
+    <xs:import schemaLocation="..\objekty\zamer_obvod_drahy.xsd" namespace="zaobdr"/>
+    <xs:import schemaLocation="..\objekty\zamer_obvod_pozemni_komunikace.xsd" namespace="zaobpk"/>
+    <xs:import schemaLocation="..\objekty\zamer_osa_hraze_zdi_mobilni_zabrany.xsd" namespace="zahzmz"/>
+    <xs:import schemaLocation="..\objekty\zamer_osa_melioracniho_prikopu_zlabu_linie.xsd" namespace="zaomli"/>
+    <xs:import schemaLocation="..\objekty\zamer_osa_pozemni_komunikace.xsd" namespace="zaospk"/>
+    <xs:import schemaLocation="..\objekty\zamer_osa_zeleznicni_trate.xsd" namespace="zaoszt"/>
+    <xs:import schemaLocation="..\objekty\zamer_plavebni_draha_linie.xsd" namespace="zapdli"/>
+    <xs:import schemaLocation="..\objekty\zamer_plavebni_komora_bod.xsd" namespace="zapkbo"/>
+    <xs:import schemaLocation="..\objekty\zamer_pozemni_lanova_draha_linie.xsd" namespace="zaplli"/>
+    <xs:import schemaLocation="..\objekty\zamer_pristav_bod.xsd" namespace="zapsbo"/>
+    <xs:import schemaLocation="..\objekty\zamer_protipovodnova_zabrana_bod.xsd" namespace="zapzbo"/>
+    <xs:import schemaLocation="..\objekty\zamer_skladka_odpadu_bod.xsd" namespace="zasobo"/>
+    <xs:import schemaLocation="..\objekty\zamer_sledovana_vodni_cesta_linie.xsd" namespace="zavcli"/>
+    <xs:import schemaLocation="..\objekty\zamer_spalovna_bod.xsd" namespace="zaspbo"/>
+    <xs:import schemaLocation="..\objekty\zamer_specialni_zeleznicni_draha_linie.xsd" namespace="zaszli"/>
+    <xs:import schemaLocation="..\objekty\zamer_stanice_elektricke_site_bod.xsd" namespace="zasebo"/>
+    <xs:import schemaLocation="..\objekty\zamer_sucha_nadrz_bod.xsd" namespace="zasnbo"/>
+    <xs:import schemaLocation="..\objekty\zamer_technologicky_objekt_kanalizacni_site_bod.xsd" namespace="zatabo"/>
+    <xs:import schemaLocation="..\objekty\zamer_technologicky_objekt_plynovodni_site_bod.xsd" namespace="zatlbo"/>
+    <xs:import schemaLocation="..\objekty\zamer_technologicky_objekt_privadece_vody_bod.xsd" namespace="zatcbo"/>
+    <xs:import schemaLocation="..\objekty\zamer_technologicky_objekt_site_produktovodu_bod.xsd" namespace="zatubo"/>
+    <xs:import schemaLocation="..\objekty\zamer_technologicky_objekt_teplovodni_site_bod.xsd" namespace="zatdbo"/>
+    <xs:import schemaLocation="..\objekty\zamer_technologicky_objekt_vodovodni_site_bod.xsd" namespace="zatobo"/>
+    <xs:import schemaLocation="..\objekty\zamer_tramvajova_draha_linie.xsd" namespace="zatjli"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_elektricke_site_linie.xsd" namespace="zateli"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_kanalizacni_site_linie.xsd" namespace="zatkli"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_mistni_elektricke_site_linie.xsd" namespace="zatmli"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_plynovodni_site_linie.xsd" namespace="zatpli"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_privadece_vody_linie.xsd" namespace="zatili"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_radioreleovych_spoju.xsd" namespace="zatrrs"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_site_EK_linie.xsd" namespace="zatsli"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_site_produktovodu_linie.xsd" namespace="zatrli"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_teplovodni_site_linie.xsd" namespace="zattli"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_vodovodni_site_linie.xsd" namespace="zatvli"/>
+    <xs:import schemaLocation="..\objekty\zamer_visuta_lanova_draha_linie.xsd" namespace="zavlli"/>
+    <xs:import schemaLocation="..\objekty\zamer_vodni_nadrz_bod.xsd" namespace="zavnbo"/>
+    <xs:import schemaLocation="..\objekty\zamer_vyrobna_elektriny_bod.xsd" namespace="zavebo"/>
+    <xs:import schemaLocation="..\objekty\zamer_vzletova_pristavaci_draha_bod.xsd" namespace="zavdbo"/>
+    <xs:import schemaLocation="..\objekty\zamer_zarizeni_letecky_provoz.xsd" namespace="zazalp"/>
+    <xs:import schemaLocation="..\objekty\zamer_zeleznicni_prejezd_bod.xsd" namespace="zazpbo"/>
+    <xs:import schemaLocation="..\objekty\zamer_zeleznicni_stanice_zastavka_bod.xsd" namespace="zazsbo"/>
+    <xs:import schemaLocation="..\objekty\zarizeni_domovni_pripojky_kanalizacni_site.xsd" namespace="zadpks"/>
+    <xs:import schemaLocation="..\objekty\zarizeni_domovni_pripojky_vodovodni_site.xsd" namespace="zadpvs"/>
+    <xs:import schemaLocation="..\objekty\zarizeni_elektricke_site.xsd" namespace="zaelsi"/>
+    <xs:import schemaLocation="..\objekty\zarizeni_kanalizacni_site_bod.xsd" namespace="zakasb"/>
+    <xs:import schemaLocation="..\objekty\zarizeni_kanalizacni_site_linie.xsd" namespace="zakasl"/>
+    <xs:import schemaLocation="..\objekty\zarizeni_letecky_provoz.xsd" namespace="zarplp"/>
+    <xs:import schemaLocation="..\objekty\zarizeni_PKO_bod.xsd" namespace="zapkob"/>
+    <xs:import schemaLocation="..\objekty\zarizeni_plynovodni_site.xsd" namespace="zaplsi"/>
+    <xs:import schemaLocation="..\objekty\zarizeni_potrubni_posty.xsd" namespace="zapopo"/>
+    <xs:import schemaLocation="..\objekty\zarizeni_privadece_vody.xsd" namespace="zaprvo"/>
+    <xs:import schemaLocation="..\objekty\zarizeni_site_EK.xsd" namespace="zasiek"/>
+    <xs:import schemaLocation="..\objekty\zarizeni_site_produktovodu.xsd" namespace="zasipr"/>
+    <xs:import schemaLocation="..\objekty\zarizeni_teplovodni_site.xsd" namespace="zatesi"/>
+    <xs:import schemaLocation="..\objekty\zarizeni_vodovodni_site.xsd" namespace="zavosi"/>
+    <xs:import schemaLocation="..\objekty\zed.xsd" namespace="zedlin"/>
+    <xs:import schemaLocation="..\objekty\zeleznicni_stanice_zastavka_bod.xsd" namespace="zszbod"/>
+    <xs:import schemaLocation="..\objekty\dopravni_uzel_silnicni_site.xsd" namespace="douzss"/>
+    <xs:import schemaLocation="..\objekty\def_bod_pridruzene_plochy.xsd" namespace="ppldef"/>
+    <xs:import schemaLocation="..\objekty\plocha_pridruzene_plochy.xsd" namespace="pplpol"/>
+    <xs:import schemaLocation="..\objekty\obvod_pridruzene_plochy.xsd" namespace="pplobv"/>
+    <xs:import schemaLocation="..\objekty\plocha_zeleznice.xsd" namespace="zelpol"/>
+    <xs:import schemaLocation="..\objekty\zeleznicni_stanice_zastavka_plocha.xsd" namespace="zszpol"/>
+    <xs:import schemaLocation="..\objekty\plavebni_komora_plocha.xsd" namespace="plkpol"/>
+    <xs:import schemaLocation="..\objekty\pristav_plocha.xsd" namespace="pripol"/>
+    <xs:import schemaLocation="..\objekty\heliport_plocha.xsd" namespace="helpol"/>
+    <xs:import schemaLocation="..\objekty\letecka_stavba_plocha.xsd" namespace="ltspol"/>
+    <xs:import schemaLocation="..\objekty\obvod_mostu_plocha.xsd" namespace="omopol"/>
+    <xs:import schemaLocation="..\objekty\svodidlo.xsd" namespace="svodid"/>
+    <xs:import schemaLocation="..\objekty\protihlukova_stena.xsd" namespace="proste"/>
+    <xs:import schemaLocation="..\objekty\vyrobna_elektriny_plocha.xsd" namespace="velpol"/>
+    <xs:import schemaLocation="..\objekty\stanice_elektricke_site_plocha.xsd" namespace="sespol"/>
+    <xs:import schemaLocation="..\objekty\jaderne_zarizeni_plocha.xsd" namespace="jazpol"/>
+    <xs:import schemaLocation="..\objekty\technologicky_objekt_site_EK_plocha.xsd" namespace="tospol"/>
+    <xs:import schemaLocation="..\objekty\technologicky_objekt_plynovodni_site_plocha.xsd" namespace="toppol"/>
+    <xs:import schemaLocation="..\objekty\technologicky_objekt_vodovodni_site_plocha.xsd" namespace="tovpol"/>
+    <xs:import schemaLocation="..\objekty\technologicky_objekt_privadece_vody_plocha.xsd" namespace="torpol"/>
+    <xs:import schemaLocation="..\objekty\technologicky_objekt_kanalizacni_site_plocha.xsd" namespace="tokpol"/>
+    <xs:import schemaLocation="..\objekty\technologicky_objekt_site_produktovodu_plocha.xsd" namespace="toopol"/>
+    <xs:import schemaLocation="..\objekty\technologicky_objekt_teplovodni_site_plocha.xsd" namespace="tolpol"/>
+    <xs:import schemaLocation="..\objekty\skladka_odpadu_plocha.xsd" namespace="skopol"/>
+    <xs:import schemaLocation="..\objekty\spalovna_plocha.xsd" namespace="spapol"/>
+    <xs:import schemaLocation="..\objekty\jine_zarizeni_odstranovani_vyuzivani_sber_odpadu_plocha.xsd" namespace="jzopol"/>
+    <xs:import schemaLocation="..\objekty\odkaliste_plocha.xsd" namespace="odkpol"/>
+    <xs:import schemaLocation="..\objekty\def_bod_ostatni_zastresene_stavby.xsd" namespace="ozsdef"/>
+    <xs:import schemaLocation="..\objekty\plocha_ostatni_zastresene_stavby.xsd" namespace="ozspol"/>
+    <xs:import schemaLocation="..\objekty\obvod_ostatni_zastresene_stavby.xsd" namespace="ozsobv"/>
+    <xs:import schemaLocation="..\objekty\def_bod_zastreseni.xsd" namespace="zasdef"/>
+    <xs:import schemaLocation="..\objekty\plocha_zastreseni.xsd" namespace="zaspol"/>
+    <xs:import schemaLocation="..\objekty\obvod_zastreseni.xsd" namespace="zasobv"/>
+    <xs:import schemaLocation="..\objekty\neidentifikovany_liniovy_objekt.xsd" namespace="neliob"/>
+    <xs:import schemaLocation="..\objekty\provozni_prostor_elektricke_site.xsd" namespace="prprel"/>
+    <xs:import schemaLocation="..\objekty\op_stanice_elektricke_site.xsd" namespace="opstel"/>
+    <xs:import schemaLocation="..\objekty\op_zarizeni_elektricke_site.xsd" namespace="opzael"/>
+    <xs:import schemaLocation="..\objekty\vnitrni_cleneni_dopravni_plochy.xsd" namespace="vncldp"/>
+    <xs:import schemaLocation="..\objekty\obvod_budovy.xsd" namespace="budobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_provozni_plochy_pozemni_komunikace.xsd" namespace="pokobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_chodniku.xsd" namespace="choobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_cyklostezky.xsd" namespace="cykobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_parkoviste_odstavne_plochy.xsd" namespace="paoobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_dopravniho_ostruvku.xsd" namespace="dooobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_deliciho_pasu.xsd" namespace="delobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_najezdu_sjezdu_vjezdu.xsd" namespace="nsvobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_tramvajove_drahy.xsd" namespace="traobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_pozemni_lanove_drahy.xsd" namespace="pldobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_specialni_zeleznicni_drahy.xsd" namespace="szdobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_prikopu_nasypu_zarezu_dopravni_stavby.xsd" namespace="pnzobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_nastupiste.xsd" namespace="nasobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_manipulacni_plochy.xsd" namespace="mapobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_mostovky.xsd" namespace="mosobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_portalu_tunelu.xsd" namespace="ptuobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_prubehu_tunelu.xsd" namespace="prtobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_portalu_podchodu.xsd" namespace="ppoobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_prubehu_podchodu.xsd" namespace="prpobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_mostni_vahy.xsd" namespace="movobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_vodni_nadrze.xsd" namespace="vonobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_hraze_jezu.xsd" namespace="hrjobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_prelivu_stupne.xsd" namespace="prsobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_stavebne_upraveneho_koryta.xsd" namespace="sukobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_melioracniho_prikopu_zlabu.xsd" namespace="mpzobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_protipovodnove_zabrany.xsd" namespace="przobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_suche_nadrze.xsd" namespace="sunobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_dolu_lomu.xsd" namespace="dulobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_rekultivace.xsd" namespace="rekobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_ulozneho_mista_tezebniho_odpadu.xsd" namespace="utoobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_jineho_dulniho_dila_stavby.xsd" namespace="jddobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_hriste.xsd" namespace="hriobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_drobne_kulturni_stavby.xsd" namespace="dksobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_hrbitova.xsd" namespace="hrbobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_drobne_sakralni_stavby.xsd" namespace="dssobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_podezdivky.xsd" namespace="podobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_schodiste.xsd" namespace="schobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_zdi.xsd" namespace="zedobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_rampy.xsd" namespace="ramobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_terasy.xsd" namespace="terobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_skleniku.xsd" namespace="sklobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_zahradniho_bazenu.xsd" namespace="zabobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_kominu.xsd" namespace="komobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_patky_desky_monolitu_pilire.xsd" namespace="pdmobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_stavby_pro_zpevneni_povrchu.xsd" namespace="szpobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_dvoru_nadvori.xsd" namespace="dvnobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_cela_propustku.xsd" namespace="cepobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_podzemniho_objektu_ZPS.xsd" namespace="pooobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_vodniho_toku.xsd" namespace="votobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_jezera.xsd" namespace="jezobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_zemedelske_plochy.xsd" namespace="zepobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_zahrady.xsd" namespace="zahobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_lesa.xsd" namespace="lesobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_hospodarsky_nevyuzivane_plochy.xsd" namespace="hnpobv"/>
+    <xs:import schemaLocation="..\objekty\obvod_udrzovane_plochy_zelene.xsd" namespace="upzobv"/>
+    <xs:import schemaLocation="..\objekty\zamer_kolektor_plocha.xsd" namespace="zakopl"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_elektricke_site_plocha.xsd" namespace="zatepl"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_mistni_elektricke_site_plocha.xsd" namespace="zatmpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_vyrobna_elektriny_plocha.xsd" namespace="zavepl"/>
+    <xs:import schemaLocation="..\objekty\zamer_stanice_elektricke_site_plocha.xsd" namespace="zasepl"/>
+    <xs:import schemaLocation="..\objekty\zamer_jaderne_zarizeni_plocha.xsd" namespace="zajzpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_site_EK_plocha.xsd" namespace="zatspl"/>
+    <xs:import schemaLocation="..\objekty\zamer_technologicky_objekt_site_EK_plocha.xsd" namespace="zaospl"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_plynovodni_site_plocha.xsd" namespace="zatppl"/>
+    <xs:import schemaLocation="..\objekty\zamer_technologicky_objekt_plynovodni_site_plocha.xsd" namespace="zatlpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_vodovodni_site_plocha.xsd" namespace="zatvpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_technologicky_objekt_vodovodni_site_plocha.xsd" namespace="zatopl"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_kanalizacni_site_plocha.xsd" namespace="zatkpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_technologicky_objekt_kanalizacni_site_plocha.xsd" namespace="zatapl"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_site_produktovodu_plocha.xsd" namespace="zatrpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_technologicky_objekt_site_produktovodu_plocha.xsd" namespace="zatupl"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_teplovodni_site_plocha.xsd" namespace="zattpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_technologicky_objekt_teplovodni_site_plocha.xsd" namespace="zatdpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_vodni_nadrz_plocha.xsd" namespace="zavnpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_melioracni_prikop_zlab_plocha.xsd" namespace="zamppl"/>
+    <xs:import schemaLocation="..\objekty\zamer_osa_melioracniho_prikopu_zlabu_plocha.xsd" namespace="zaompl"/>
+    <xs:import schemaLocation="..\objekty\zamer_protipovodnova_zabrana_plocha.xsd" namespace="zapzpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_sucha_nadrz_plocha.xsd" namespace="zasnpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_trasa_privadece_vody_plocha.xsd" namespace="zatipl"/>
+    <xs:import schemaLocation="..\objekty\zamer_technologicky_objekt_privadece_vody_plocha.xsd" namespace="zatcpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_skladka_odpadu_plocha.xsd" namespace="zasopl"/>
+    <xs:import schemaLocation="..\objekty\zamer_spalovna_plocha.xsd" namespace="zasppl"/>
+    <xs:import schemaLocation="..\objekty\zamer_jine_zarizeni_odstranovani_vyuzivani_sber_odpadu_plocha.xsd" namespace="zajopl"/>
+    <xs:import schemaLocation="..\objekty\zamer_cyklostezka_plocha.xsd" namespace="zacypl"/>
+    <xs:import schemaLocation="..\objekty\zamer_zeleznicni_prejezd_plocha.xsd" namespace="zazppl"/>
+    <xs:import schemaLocation="..\objekty\zamer_tramvajova_draha_plocha.xsd" namespace="zatjpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_pozemni_lanova_draha_plocha.xsd" namespace="zaplpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_specialni_zeleznicni_draha_plocha.xsd" namespace="zaszpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_visuta_lanova_draha_plocha.xsd" namespace="zavlpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_zeleznicni_stanice_zastavka_plocha.xsd" namespace="zazspl"/>
+    <xs:import schemaLocation="..\objekty\zamer_plavebni_komora_plocha.xsd" namespace="zapkpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_sledovana_vodni_cesta_plocha.xsd" namespace="zavcpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_plavebni_draha_plocha.xsd" namespace="zapdpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_pristav_plocha.xsd" namespace="zapspl"/>
+    <xs:import schemaLocation="..\objekty\zamer_jine_zamery_na_vodni_ceste_plocha.xsd" namespace="zajvpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_vzletova_pristavaci_draha_plocha.xsd" namespace="zavdpl"/>
+    <xs:import schemaLocation="..\objekty\zamer_letiste_plocha.xsd" namespace="zalepl"/>
+    <xs:import schemaLocation="..\objekty\zamer_heliport_plocha.xsd" namespace="zahepl"/>
+    <xs:import schemaLocation="..\objekty\zamer_letecka_stavba_plocha.xsd" namespace="zalspl"/>
+    <xs:import schemaLocation="..\objekty\def_bod_zeleznice.xsd" namespace="zeldef"/>
+    <xs:import schemaLocation="..\objekty\obvod_zeleznice.xsd" namespace="zelobv"/>
+    <xs:element name="JVFDTM">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="objtyp:DataJVFDTM"/>
+                <xs:element ref="ext:ExtenzeJVFDTM" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="DataJVFDTM">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="cmn:VerzeJVFDTM"/>
+                <xs:element ref="cmn:DatumZapisu"/>
+                <xs:element ref="cmn:TypZapisu"/>
+                <xs:element ref="cmn:OntologickyKatalogObjektuJVFDTM"/>
+                <xs:element ref="cmn:KatalogObjektuJVFDTM"/>
+                <xs:element ref="objtyp:Data"/>
+                <xs:element ref="dopinf:DoprovodneInformace" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Data">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" ref="objtyp:ObjektJVFDTM"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element abstract="true" name="ObjektJVFDTM"/>
+    <xs:element name="BPPlynovodniSite" type="bpplsi:BPPlynovodniSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="BPZarizeniPKO" type="bpzpko:BPZarizeniPKOType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodBudovy" type="buddef:DefinicniBodBudovyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodCelaPropustku" type="cepdef:DefinicniBodCelaPropustkuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodChodniku" type="chodef:DefinicniBodChodnikuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodCyklostezky" type="cykdef:DefinicniBodCyklostezkyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodDelicihoPasu" type="deldef:DefinicniBodDelicihoPasuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodDoluLomu" type="duldef:DefinicniBodDoluLomuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodDopravnihoOstruvku" type="doodef:DefinicniBodDopravnihoOstruvkuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodDrobneKulturniStavby" type="dksdef:DefinicniBodDrobneKulturniStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodDrobneSakralniStavby" type="dssdef:DefinicniBodDrobneSakralniStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodDvoruNadvori" type="dvndef:DefinicniBodDvoruNadvoriType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodHospodarskyNevyuzivanePlochy" type="hnpdef:DefinicniBodHospodarskyNevyuzivanePlochyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodHrazeJezu" type="hrjdef:DefinicniBodHrazeJezuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodHrbitova" type="hrbdef:DefinicniBodHrbitovaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodHriste" type="hridef:DefinicniBodHristeType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodJezera" type="jezdef:DefinicniBodJezeraType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodJinehoDulnihoDilaStavby" type="jdddef:DefinicniBodJinehoDulnihoDilaStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodKominu" type="komdef:DefinicniBodKominuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodLesa" type="lesdef:DefinicniBodLesaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodManipulacniPlochy" type="mapdef:DefinicniBodManipulacniPlochyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodMelioracnihoPrikopuZlabu" type="mpzdef:DefinicniBodMelioracnihoPrikopuZlabuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodMostniVahy" type="movdef:DefinicniBodMostniVahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodMostovky" type="mosdef:DefinicniBodMostovkyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodNajezduSjezduVjezdu" type="nsvdef:DefinicniBodNajezduSjezduVjezduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodNastupiste" type="nasdef:DefinicniBodNastupisteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodParkovisteOdstavnePlochy" type="paodef:DefinicniBodParkovisteOdstavnePlochyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodPatkyDeskyMonolituPilire" type="pdmdef:DefinicniBodPatkyDeskyMonolituPilireType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodPodezdivky" type="poddef:DefinicniBodPodezdivkyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodPodzemnihoObjektuZPS" type="poodef:DefinicniBodPodzemnihoObjektuZPSType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodPortaluPodchodu" type="ppodef:DefinicniBodPortaluPodchoduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodPortaluTunelu" type="ptudef:DefinicniBodPortaluTuneluType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodProvozniPlochyPozemniKomunikace" type="pokdef:DefinicniBodProvozniPlochyPozemniKomunikaceType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodPozemniLanoveDrahy" type="plddef:DefinicniBodPozemniLanoveDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodPrelivuStupne" type="prsdef:DefinicniBodPrelivuStupneType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodPrikopuNasypuZarezuDopravniStavby" type="pnzdef:DefinicniBodPrikopuNasypuZarezuDopravniStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodProtipovodnoveZabrany" type="przdef:DefinicniBodProtipovodnoveZabranyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodPrubehuPodchodu" type="prpdef:DefinicniBodPrubehuPodchoduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodPrubehuTunelu" type="prtdef:DefinicniBodPrubehuTuneluType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodRampy" type="ramdef:DefinicniBodRampyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodRekultivace" type="rekdef:DefinicniBodRekultivaceType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodSchodiste" type="schdef:DefinicniBodSchodisteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodSkleniku" type="skldef:DefinicniBodSklenikuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodSpecialniZeleznicniDrahy" type="szddef:DefinicniBodSpecialniZeleznicniDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodStavbyProZpevneniPovrchu" type="szpdef:DefinicniBodStavbyProZpevneniPovrchuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodStavebneUpravenehoKoryta" type="sukdef:DefinicniBodStavebneUpravenehoKorytaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodSucheNadrze" type="sundef:DefinicniBodSucheNadrzeType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodTerasy" type="terdef:DefinicniBodTerasyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodTramvajoveDrahy" type="tradef:DefinicniBodTramvajoveDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodUdrzovanePlochyZelene" type="upzdef:DefinicniBodUdrzovanePlochyZeleneType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodUloznehoMistaTezebnihoOdpadu" type="utodef:DefinicniBodUloznehoMistaTezebnihoOdpaduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodVodnihoToku" type="votdef:DefinicniBodVodnihoTokuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodVodniNadrze" type="vondef:DefinicniBodVodniNadrzeType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodZahradnihoBazenu" type="zabdef:DefinicniBodZahradnihoBazenuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodZahrady" type="zahdef:DefinicniBodZahradyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodZdi" type="zeddef:DefinicniBodZdiType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodZemedelskePlochy" type="zepdef:DefinicniBodZemedelskePlochyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DrobnaKulturniStavba" type="drkust:DrobnaKulturniStavbaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DrobnaSakralniStavba" type="drsast:DrobnaSakralniStavbaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="HeliportBod" type="helbod:HeliportBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="HraniceBudovy" type="hrabud:HraniceBudovyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="HraniceDopravniStavbyPlochy" type="hradsp:HraniceDopravniStavbyPlochyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="HraniceOstatniPlochy" type="hraosp:HraniceOstatniPlochyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="HranicePodzemnihoObjektuZPS" type="hrapoo:HranicePodzemnihoObjektuZPSType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="HranicePrirodnihoPoloprirodnihoObjektu" type="hrappo:HranicePrirodnihoPoloprirodnihoObjektuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="HraniceSchodiste" type="hrasch:HraniceSchodisteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="HraniceStavby" type="hrasta:HraniceStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="HraniceUdrzovaneZelene" type="hraudz:HraniceUdrzovaneZeleneType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="HraniceVodnihoDila" type="hravod:HraniceVodnihoDilaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="HraniceZdi" type="hrazdi:HraniceZdiType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="IdentickyBod" type="idebod:IdentickyBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="JaderneZarizeniBod" type="jazbod:JaderneZarizeniBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="JinaTechnologickaStavbaTI" type="jitsti:JinaTechnologickaStavbaTIType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="JineZarizeniOdstranovaniVyuzivaniSberOdpaduBod" type="jzobod:JineZarizeniOdstranovaniVyuzivaniSberOdpaduBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="JineZarizeniStavebTI" type="jizsti:JineZarizeniStavebTIType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="Kabelovod" type="kabelo:KabelovodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="Kolektor" type="kolekt:KolektorType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="LeteckaStavbaBod" type="ltsbod:LeteckaStavbaBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="MelioracniSachta" type="melios:MelioracniSachtaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="NeidentifikovanyBodovyObjekt" type="neboob:NeidentifikovanyBodovyObjektType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="NosicTechnickehoZarizeni" type="noteza:NosicTechnickehoZarizeniType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObjektZarizeniOchranaPredPovodnemi" type="obzopp:ObjektZarizeniOchranaPredPovodnemiType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodDrahy" type="obvodr:ObvodDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodMostuBod" type="omobod:ObvodMostuBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodPozemniKomunikace" type="obvopk:ObvodPozemniKomunikaceType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OchrannaSachtaVrtu" type="ocsavr:OchrannaSachtaVrtuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OdkalisteBod" type="odkbod:OdkalisteBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPDrazniStavby" type="opdrst:OPDrazniStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPJadernehoZarizeni" type="opjaza:OPJadernehoZarizeniType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPKolektoruKabelovodu" type="opkoka:OPKolektoruKabelovoduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPLeteckychZabezpecovacichZarizeni" type="oplezz:OPLeteckychZabezpecovacichZarizeniType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPLetiste" type="opleti:OPLetisteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPObjektuElektrickeSite" type="opobel:OPObjektuElektrickeSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPObjektuKanalizace" type="opobka:OPObjektuKanalizaceType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPObjektuVodovodu" type="opobvo:OPObjektuVodovoduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPObjektuVyrobnyElektriny" type="opobve:OPObjektuVyrobnyElektrinyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPPlynovodniSite" type="opplsi:OPPlynovodniSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPSilnicniStavby" type="opsist:OPSilnicniStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPSiteEK" type="opsiek:OPSiteEKType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPSiteProduktovodu" type="opsipr:OPSiteProduktovoduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPStavbyProVodniDopravu" type="opstvd:OPStavbyProVodniDopravuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPTeplovodniSite" type="optesi:OPTeplovodniSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPVodnihoDilaIAIIKategorieHlediskaTBD" type="opvodi:OPVodnihoDilaIAIIKategorieHlediskaTBDType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPZarizeniOdpadovehoHospodarstvi" type="opzodh:OPZarizeniOdpadovehoHospodarstviType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPZarizeniPKO" type="opzpko:OPZarizeniPKOType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OrientacniSloupek" type="orislo:OrientacniSloupekType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OsaHrazeZdiMobilniZabrany" type="osahzm:OsaHrazeZdiMobilniZabranyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OsaKolejePozemniLanoveDrahy" type="oskpld:OsaKolejePozemniLanoveDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OsaKolejeSpecialniZeleznicniDrahy" type="oskszd:OsaKolejeSpecialniZeleznicniDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OsaKolejeTramvajoveDrahy" type="osktra:OsaKolejeTramvajoveDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OsaKolejeZeleznicniTrate" type="osazet:OsaKolejeZeleznicniTrateType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OsaMelioracnihoPrikopuZlabuDrenu" type="osampz:OsaMelioracnihoPrikopuZlabuDrenuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OsaPozemniKomunikace" type="osapok:OsaPozemniKomunikaceType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OsaPozemniLanoveDrahy" type="osapld:OsaPozemniLanoveDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OsaSledovaneVodniCesty" type="osasvc:OsaSledovaneVodniCestyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OsaSpecialniZeleznicniDrahy" type="osaszd:OsaSpecialniZeleznicniDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OsaTramvajoveDrahy" type="osatra:OsaTramvajoveDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OsaVisuteLanoveDrahy" type="osavld:OsaVisuteLanoveDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OsaZeleznicniTrate" type="osazel:OsaZeleznicniTrateType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlavebniDraha" type="pladra:PlavebniDrahaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlavebniKomoraBod" type="plkbod:PlavebniKomoraBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaBudovy" type="budpol:PlochaBudovyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaCelaPropustku" type="ceppol:PlochaCelaPropustkuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaChodniku" type="chopol:PlochaChodnikuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaCyklostezky" type="cykpol:PlochaCyklostezkyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaDelicihoPasu" type="delpol:PlochaDelicihoPasuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaDoluLomu" type="dulpol:PlochaDoluLomuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaDopravnihoOstruvku" type="doopol:PlochaDopravnihoOstruvkuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaDrobneKulturniStavby" type="dkspol:PlochaDrobneKulturniStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaDrobneSakralniStavby" type="dsspol:PlochaDrobneSakralniStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaDvoruNadvori" type="dvnpol:PlochaDvoruNadvoriType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="HospodarskyNevyuzivanaPlocha" type="hnppol:HospodarskyNevyuzivanaPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaHrazeJezu" type="hrjpol:PlochaHrazeJezuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaHrbitova" type="hrbpol:PlochaHrbitovaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaHriste" type="hripol:PlochaHristeType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaJezera" type="jezpol:PlochaJezeraType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaJinehoDulnihoDilaStavby" type="jddpol:PlochaJinehoDulnihoDilaStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaKominu" type="kompol:PlochaKominuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaLesa" type="lespol:PlochaLesaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaLetiste" type="letpol:PlochaLetisteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaManipulacniPlochy" type="mappol:PlochaManipulacniPlochyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaMelioracnihoPrikopuZlabu" type="mpzpol:PlochaMelioracnihoPrikopuZlabuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaMostniVahy" type="movpol:PlochaMostniVahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaMostovky" type="mospol:PlochaMostovkyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaNajezduSjezduVjezdu" type="nsvpol:PlochaNajezduSjezduVjezduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaNastupiste" type="naspol:PlochaNastupisteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaParkovisteOdstavnePlochy" type="paopol:PlochaParkovisteOdstavnePlochyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaPatkyDeskyMonolituPilire" type="pdmpol:PlochaPatkyDeskyMonolituPilireType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaPodezdivky" type="podpol:PlochaPodezdivkyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaPodzemnihoObjektuZPS" type="poopol:PlochaPodzemnihoObjektuZPSType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaPortaluPodchodu" type="ppopol:PlochaPortaluPodchoduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaPortaluTunelu" type="ptupol:PlochaPortaluTuneluType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ProvozniPlochaPozemniKomunikace" type="pokpol:ProvozniPlochaPozemniKomunikaceType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaPozemniLanoveDrahy" type="pldpol:PlochaPozemniLanoveDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaPrelivuStupne" type="prspol:PlochaPrelivuStupneType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaPrikopuNasypuZarezuDopravniStavby" type="pnzpol:PlochaPrikopuNasypuZarezuDopravniStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaProtipovodnoveZabrany" type="przpol:PlochaProtipovodnoveZabranyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaPrubehuPodchodu" type="prppol:PlochaPrubehuPodchoduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaPrubehuTunelu" type="prtpol:PlochaPrubehuTuneluType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaRampy" type="rampol:PlochaRampyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaRekultivace" type="rekpol:PlochaRekultivaceType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaSchodiste" type="schpol:PlochaSchodisteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaSkleniku" type="sklpol:PlochaSklenikuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaSpecialniZeleznicniDrahy" type="szdpol:PlochaSpecialniZeleznicniDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaStavbyProZpevneniPovrchu" type="szppol:PlochaStavbyProZpevneniPovrchuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaStavebneUpravenehoKoryta" type="sukpol:PlochaStavebneUpravenehoKorytaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaSucheNadrze" type="sunpol:PlochaSucheNadrzeType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaTerasy" type="terpol:PlochaTerasyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaTramvajoveDrahy" type="trapol:PlochaTramvajoveDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaUdrzovanePlochyZelene" type="upzpol:PlochaUdrzovanePlochyZeleneType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaUloznehoMistaTezebnihoOdpadu" type="utopol:PlochaUloznehoMistaTezebnihoOdpaduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaVodnihoToku" type="votpol:PlochaVodnihoTokuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaVodniNadrze" type="vonpol:PlochaVodniNadrzeType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaVzletovePristavaciDrahy" type="vpdpol:PlochaVzletovePristavaciDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaZahradnihoBazenu" type="zabpol:PlochaZahradnihoBazenuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaZahrady" type="zahpol:PlochaZahradyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaZdi" type="zedpol:PlochaZdiType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaZeleznicnihoPrejezdu" type="zprpol:PlochaZeleznicnihoPrejezduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZemedelskaPlocha" type="zeppol:ZemedelskaPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="Plot" type="plotli:PlotType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PodperneZarizeni" type="podzar:PodperneZarizeniType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PodrobnyBodZPS" type="pobzps:PodrobnyBodZPSType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PovrchovyZnakTI" type="poznti:PovrchovyZnakTIType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PristavBod" type="pribod:PristavBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PrubehJineTechnologickeStavbyTI" type="pjtsti:PrubehJineTechnologickeStavbyTIType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PrubehPropustku" type="prupro:PrubehPropustkuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PrubehTechnologickeKonstrukce" type="prteko:PrubehTechnologickeKonstrukceType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="RozvadecISBod" type="rozisb:RozvadecISBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="RozvadecISLinie" type="rozisl:RozvadecISLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="SkladkaOdpaduBod" type="skobod:SkladkaOdpaduBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="SledovanaVodniCesta" type="slvoce:SledovanaVodniCestaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="SloupTechnologickeKonstrukce" type="slteko:SloupTechnologickeKonstrukceType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="SpalovnaBod" type="spabod:SpalovnaBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="StaniceElektrickeSiteBod" type="sesbod:StaniceElektrickeSiteBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="StavebneUpravenyVjezdNaPozemek" type="suvjpo:StavebneUpravenyVjezdNaPozemekType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="StudnaNaVerejnemProstranstvi" type="stuvep:StudnaNaVerejnemProstranstviType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TechnologickyObjektKanalizacniSiteBod" type="tokbod:TechnologickyObjektKanalizacniSiteBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TechnologickyObjektPlynovodniSiteBod" type="topbod:TechnologickyObjektPlynovodniSiteBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TechnologickyObjektPrivadeceVodyBod" type="torbod:TechnologickyObjektPrivadeceVodyBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TechnologickyObjektSiteEKBod" type="tosbod:TechnologickyObjektSiteEKBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TechnologickyObjektSiteProduktovoduBod" type="toobod:TechnologickyObjektSiteProduktovoduBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TechnologickyObjektTeplovodniSiteBod" type="tolbod:TechnologickyObjektTeplovodniSiteBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TechnologickyObjektVodovodniSiteBod" type="tovbod:TechnologickyObjektVodovodniSiteBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TerenniHrana" type="terhra:TerenniHranaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TrasaDomovniPripojkyElektrickeSite" type="trdpes:TrasaDomovniPripojkyElektrickeSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TrasaDomovniPripojkyKanalizacniSite" type="trdpks:TrasaDomovniPripojkyKanalizacniSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TrasaDomovniPripojkyPlynovodniSite" type="trdpps:TrasaDomovniPripojkyPlynovodniSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TrasaDomovniPripojkyVodovodniSite" type="trdpvs:TrasaDomovniPripojkyVodovodniSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TrasaElektrickeSite" type="trelsi:TrasaElektrickeSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TrasaKanalizacniSite" type="trkasi:TrasaKanalizacniSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TrasaMistniElektrickeSite" type="trmesi:TrasaMistniElektrickeSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TrasaProtikorozniOchrany" type="trprko:TrasaProtikorozniOchranyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TrasaPlynovodniSite" type="trplsi:TrasaPlynovodniSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TrasaPotrubniPosty" type="trpopo:TrasaPotrubniPostyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TrasaPrivadeceVody" type="trprvo:TrasaPrivadeceVodyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TrasaRadioreleovychSpoju" type="trrars:TrasaRadioreleovychSpojuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TrasaSiteEK" type="trsiek:TrasaSiteEKType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TrasaSiteProduktovodu" type="trsipr:TrasaSiteProduktovoduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TrasaTeplovodniSite" type="trtesi:TrasaTeplovodniSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TrasaVodovodniSite" type="trvosi:TrasaVodovodniSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="VnitrniCleneniBudovStaveb" type="vnclbs:VnitrniCleneniBudovStavebType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="Vrt" type="vrtbod:VrtType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="VydejniNabijeciStojan" type="vynast:VydejniNabijeciStojanType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="VyrobnaElektrinyBod" type="velbod:VyrobnaElektrinyBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="VyskovyBodNaTerenu" type="vybote:VyskovyBodNaTerenuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="VytahVChodniku" type="vytcho:VytahVChodnikuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="Zabradli" type="zabrad:ZabradliType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerCyklostezkaBod" type="zacybo:ZamerCyklostezkaBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerHeliportBod" type="zahebo:ZamerHeliportBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerJaderneZarizeniBod" type="zajzbo:ZamerJaderneZarizeniBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="JineZameryNaVodniCesteBod" type="zajvbo:JineZameryNaVodniCesteBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerJineZarizeniOdstranovaniVyuzivaniSberOdpaduBod" type="zajobo:ZamerJineZarizeniOdstranovaniVyuzivaniSberOdpaduBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerKabelovod" type="zakabe:ZamerKabelovodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerKolektorLinie" type="zakoli:ZamerKolektorLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerLeteckaStavbaBod" type="zalsbo:ZamerLeteckaStavbaBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerLetisteBod" type="zalebo:ZamerLetisteBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerMelioracniPrikopZlabBod" type="zampbo:ZamerMelioracniPrikopZlabBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTechnologickyObjektSiteEKBod" type="zaosbo:ZamerTechnologickyObjektSiteEKBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerObjektZarizeniOchranePredPovodnemi" type="zaozop:ZamerObjektZarizeniOchranePredPovodnemiType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerObvodDrahy" type="zaobdr:ZamerObvodDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerObvodPozemniKomunikace" type="zaobpk:ZamerObvodPozemniKomunikaceType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerOsaHrazeZdiMobilniZabrany" type="zahzmz:ZamerOsaHrazeZdiMobilniZabranyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerOsaMelioracnihoPrikopuZlabuLinie" type="zaomli:ZamerOsaMelioracnihoPrikopuZlabuLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerOsaPozemniKomunikace" type="zaospk:ZamerOsaPozemniKomunikaceType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerOsaZeleznicniTrate" type="zaoszt:ZamerOsaZeleznicniTrateType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerPlavebniDrahaLinie" type="zapdli:ZamerPlavebniDrahaLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerPlavebniKomoraBod" type="zapkbo:ZamerPlavebniKomoraBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerPozemniLanovaDrahaLinie" type="zaplli:ZamerPozemniLanovaDrahaLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerPristavBod" type="zapsbo:ZamerPristavBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerProtipovodnovaZabranaBod" type="zapzbo:ZamerProtipovodnovaZabranaBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerSkladkaOdpaduBod" type="zasobo:ZamerSkladkaOdpaduBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerSledovanaVodniCestaLinie" type="zavcli:ZamerSledovanaVodniCestaLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerSpalovnaBod" type="zaspbo:ZamerSpalovnaBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerSpecialniZeleznicniDrahaLinie" type="zaszli:ZamerSpecialniZeleznicniDrahaLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerStaniceElektrickeSiteBod" type="zasebo:ZamerStaniceElektrickeSiteBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerSuchaNadrzBod" type="zasnbo:ZamerSuchaNadrzBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTechnologickyObjektKanalizacniSiteBod" type="zatabo:ZamerTechnologickyObjektKanalizacniSiteBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTechnologickyObjektPlynovodniSiteBod" type="zatlbo:ZamerTechnologickyObjektPlynovodniSiteBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTechnologickyObjektPrivadeceVodyBod" type="zatcbo:ZamerTechnologickyObjektPrivadeceVodyBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTechnologickyObjektSiteProduktovoduBod" type="zatubo:ZamerTechnologickyObjektSiteProduktovoduBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTechnologickyObjektTeplovodniSiteBod" type="zatdbo:ZamerTechnologickyObjektTeplovodniSiteBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTechnologickyObjektVodovodniSiteBod" type="zatobo:ZamerTechnologickyObjektVodovodniSiteBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTramvajoveDrahyLinie" type="zatjli:ZamerTramvajoveDrahyLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaElektrickeSiteLinie" type="zateli:ZamerTrasaElektrickeSiteLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaKanalizacniSiteLinie" type="zatkli:ZamerTrasaKanalizacniSiteLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaMistniElektrickeSiteLinie" type="zatmli:ZamerTrasaMistniElektrickeSiteLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaPlynovodniSiteLinie" type="zatpli:ZamerTrasaPlynovodniSiteLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaPrivadeceVodyLinie" type="zatili:ZamerTrasaPrivadeceVodyLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaRadioreleovychSpoju" type="zatrrs:ZamerTrasaRadioreleovychSpojuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaSiteEKLinie" type="zatsli:ZamerTrasaSiteEKLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaSiteProduktovoduLinie" type="zatrli:ZamerTrasaSiteProduktovoduLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaTeplovodniSiteLinie" type="zattli:ZamerTrasaTeplovodniSiteLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaVodovodniSiteLinie" type="zatvli:ZamerTrasaVodovodniSiteLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerVisutaLanovaDrahaLinie" type="zavlli:ZamerVisutaLanovaDrahaLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerVodniNadrzBod" type="zavnbo:ZamerVodniNadrzBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerVyrobnaElektrinyBod" type="zavebo:ZamerVyrobnaElektrinyBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerVzletovaPristavaciDrahaBod" type="zavdbo:ZamerVzletovaPristavaciDrahaBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerZarizeniProLeteckyProvoz" type="zazalp:ZamerZarizeniProLeteckyProvozType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerZeleznicniPrejezdBod" type="zazpbo:ZamerZeleznicniPrejezdBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerZeleznicniStaniceZastavkaBod" type="zazsbo:ZamerZeleznicniStaniceZastavkaBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZarizeniDomovniPripojkyKanalizacniSite" type="zadpks:ZarizeniDomovniPripojkyKanalizacniSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZarizeniDomovniPripojkyVodovodniSite" type="zadpvs:ZarizeniDomovniPripojkyVodovodniSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZarizeniElektrickeSite" type="zaelsi:ZarizeniElektrickeSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZarizeniKanalizacniSiteBod" type="zakasb:ZarizeniKanalizacniSiteBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZarizeniKanalizacniSiteLinie" type="zakasl:ZarizeniKanalizacniSiteLinieType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZarizeniProLeteckyProvoz" type="zarplp:ZarizeniProLeteckyProvozType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZarizeniProtikorozniOchranyBod" type="zapkob:ZarizeniProtikorozniOchranyBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZarizeniPlynovodniSite" type="zaplsi:ZarizeniPlynovodniSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZarizeniPotrubniPosty" type="zapopo:ZarizeniPotrubniPostyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZarizeniPrivadeceVody" type="zaprvo:ZarizeniPrivadeceVodyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZarizeniSiteEK" type="zasiek:ZarizeniSiteEKType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZarizeniSiteProduktovodu" type="zasipr:ZarizeniSiteProduktovoduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZarizeniTeplovodniSite" type="zatesi:ZarizeniTeplovodniSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZarizeniVodovodniSite" type="zavosi:ZarizeniVodovodniSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="Zed" type="zedlin:ZedType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZeleznicniStaniceZastavkaBod" type="zszbod:ZeleznicniStaniceZastavkaBodType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DopravniUzelSilnicniSite" type="douzss:DopravniUzelSilnicniSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodPridruzenePlochy" type="ppldef:DefinicniBodPridruzenePlochyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaPridruzenePlochy" type="pplpol:PlochaPridruzenePlochyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodPridruzenePlochy" type="pplobv:ObvodPridruzenePlochyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaZeleznice" type="zelpol:PlochaZelezniceType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZeleznicniStaniceZastavkaPlocha" type="zszpol:ZeleznicniStaniceZastavkaPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlavebniKomoraPlocha" type="plkpol:PlavebniKomoraPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PristavPlocha" type="pripol:PristavPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="HeliportPlocha" type="helpol:HeliportPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="LeteckaStavbaPlocha" type="ltspol:LeteckaStavbaPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodMostuPlocha" type="omopol:ObvodMostuPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="Svodidlo" type="svodid:SvodidloType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ProtihlukovaStena" type="proste:ProtihlukovaStenaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="VyrobnaElektrinyPlocha" type="velpol:VyrobnaElektrinyPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="StaniceElektrickeSitePlocha" type="sespol:StaniceElektrickeSitePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="JaderneZarizeniPlocha" type="jazpol:JaderneZarizeniPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TechnologickyObjektSiteEKPlocha" type="tospol:TechnologickyObjektSiteEKPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TechnologickyObjektPlynovodniSitePlocha" type="toppol:TechnologickyObjektPlynovodniSitePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TechnologickyObjektVodovodniSitePlocha" type="tovpol:TechnologickyObjektVodovodniSitePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TechnologickyObjektPrivadeceVodyPlocha" type="torpol:TechnologickyObjektPrivadeceVodyPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TechnologickyObjektKanalizacniSitePlocha" type="tokpol:TechnologickyObjektKanalizacniSitePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TechnologickyObjektSiteProduktovoduPlocha" type="toopol:TechnologickyObjektSiteProduktovoduPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="TechnologickyObjektTeplovodniSitePlocha" type="tolpol:TechnologickyObjektTeplovodniSitePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="SkladkaOdpaduPlocha" type="skopol:SkladkaOdpaduPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="SpalovnaPlocha" type="spapol:SpalovnaPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="JineZarizeniOdstranovaniVyuzivaniSberOdpaduPlocha" type="jzopol:JineZarizeniOdstranovaniVyuzivaniSberOdpaduPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OdkalistePlocha" type="odkpol:OdkalistePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodOstatniZastreseneStavby" type="ozsdef:DefinicniBodOstatniZastreseneStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaOstatniZastreseneStavby" type="ozspol:PlochaOstatniZastreseneStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodOstatniZastreseneStavby" type="ozsobv:ObvodOstatniZastreseneStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodZastreseni" type="zasdef:DefinicniBodZastreseniType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="PlochaZastreseni" type="zaspol:PlochaZastreseniType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodZastreseni" type="zasobv:ObvodZastreseniType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="NeidentifikovanyLiniovyObjekt" type="neliob:NeidentifikovanyLiniovyObjektType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ProvozniProstorElektrickeSite" type="prprel:ProvozniProstorElektrickeSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPStaniceElektrickeSite" type="opstel:OPStaniceElektrickeSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="OPZarizeniElektrickeSite" type="opzael:OPZarizeniElektrickeSiteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="VnitrniCleneniDopravniPlochy" type="vncldp:VnitrniCleneniDopravniPlochyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodBudovy" type="budobv:ObvodBudovyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodProvozniPlochyPozemniKomunikace" type="pokobv:ObvodProvozniPlochyPozemniKomunikaceType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodChodniku" type="choobv:ObvodChodnikuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodCyklostezky" type="cykobv:ObvodCyklostezkyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodParkovisteOdstavnePlochy" type="paoobv:ObvodParkovisteOdstavnePlochyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodDopravnihoOstruvku" type="dooobv:ObvodDopravnihoOstruvkuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodDelicihoPasu" type="delobv:ObvodDelicihoPasuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodNajezduSjezduVjezdu" type="nsvobv:ObvodNajezduSjezduVjezduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodTramvajoveDrahy" type="traobv:ObvodTramvajoveDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodPozemniLanoveDrahy" type="pldobv:ObvodPozemniLanoveDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodSpecialniZeleznicniDrahy" type="szdobv:ObvodSpecialniZeleznicniDrahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodPrikopuNasypuZarezuDopravniStavby" type="pnzobv:ObvodPrikopuNasypuZarezuDopravniStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodNastupiste" type="nasobv:ObvodNastupisteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodManipulacniPlochy" type="mapobv:ObvodManipulacniPlochyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodMostovky" type="mosobv:ObvodMostovkyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodPortaluTunelu" type="ptuobv:ObvodPortaluTuneluType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodPrubehuTunelu" type="prtobv:ObvodPrubehuTuneluType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodPortaluPodchodu" type="ppoobv:ObvodPortaluPodchoduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodPrubehuPodchodu" type="prpobv:ObvodPrubehuPodchoduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodMostniVahy" type="movobv:ObvodMostniVahyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodVodniNadrze" type="vonobv:ObvodVodniNadrzeType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodHrazeJezu" type="hrjobv:ObvodHrazeJezuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodPrelivuStupne" type="prsobv:ObvodPrelivuStupneType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodStavebneUpravenehoKoryta" type="sukobv:ObvodStavebneUpravenehoKorytaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodMelioracnihoPrikopuZlabu" type="mpzobv:ObvodMelioracnihoPrikopuZlabuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodProtipovodnoveZabrany" type="przobv:ObvodProtipovodnoveZabranyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodSucheNadrze" type="sunobv:ObvodSucheNadrzeType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodDoluLomu" type="dulobv:ObvodDoluLomuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodRekultivace" type="rekobv:ObvodRekultivaceType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodUloznehoMistaTezebnihoOdpadu" type="utoobv:ObvodUloznehoMistaTezebnihoOdpaduType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodJinehoDulnihoDilaStavby" type="jddobv:ObvodJinehoDulnihoDilaStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodHriste" type="hriobv:ObvodHristeType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodDrobneKulturniStavby" type="dksobv:ObvodDrobneKulturniStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodHrbitova" type="hrbobv:ObvodHrbitovaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodDrobneSakralniStavby" type="dssobv:ObvodDrobneSakralniStavbyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodPodezdivky" type="podobv:ObvodPodezdivkyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodSchodiste" type="schobv:ObvodSchodisteType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodZdi" type="zedobv:ObvodZdiType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodRampy" type="ramobv:ObvodRampyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodTerasy" type="terobv:ObvodTerasyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodSkleniku" type="sklobv:ObvodSklenikuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodZahradnihoBazenu" type="zabobv:ObvodZahradnihoBazenuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodKominu" type="komobv:ObvodKominuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodPatkyDeskyMonolituPilire" type="pdmobv:ObvodPatkyDeskyMonolituPilireType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodStavbyProZpevneniPovrchu" type="szpobv:ObvodStavbyProZpevneniPovrchuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodDvoruNadvori" type="dvnobv:ObvodDvoruNadvoriType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodCelaPropustku" type="cepobv:ObvodCelaPropustkuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodPodzemnihoObjektuZPS" type="pooobv:ObvodPodzemnihoObjektuZPSType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodVodnihoToku" type="votobv:ObvodVodnihoTokuType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodJezera" type="jezobv:ObvodJezeraType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodZemedelskePlochy" type="zepobv:ObvodZemedelskePlochyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodZahrady" type="zahobv:ObvodZahradyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodLesa" type="lesobv:ObvodLesaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodHospodarskyNevyuzivanePlochy" type="hnpobv:ObvodHospodarskyNevyuzivanePlochyType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodUdrzovanePlochyZelene" type="upzobv:ObvodUdrzovanePlochyZeleneType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerKolektorPlocha" type="zakopl:ZamerKolektorPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaElektrickeSitePlocha" type="zatepl:ZamerTrasaElektrickeSitePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaMistniElektrickeSitePlocha" type="zatmpl:ZamerTrasaMistniElektrickeSitePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerVyrobnaElektrinyPlocha" type="zavepl:ZamerVyrobnaElektrinyPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerStaniceElektrickeSitePlocha" type="zasepl:ZamerStaniceElektrickeSitePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerJaderneZarizeniPlocha" type="zajzpl:ZamerJaderneZarizeniPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaSiteEKPlocha" type="zatspl:ZamerTrasaSiteEKPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTechnologickyObjektSiteEKPlocha" type="zaospl:ZamerTechnologickyObjektSiteEKPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaPlynovodniSitePlocha" type="zatppl:ZamerTrasaPlynovodniSitePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTechnologickyObjektPlynovodniSitePlocha" type="zatlpl:ZamerTechnologickyObjektPlynovodniSitePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaVodovodniSitePlocha" type="zatvpl:ZamerTrasaVodovodniSitePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTechnologickyObjektVodovodniSitePlocha" type="zatopl:ZamerTechnologickyObjektVodovodniSitePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaKanalizacniSitePlocha" type="zatkpl:ZamerTrasaKanalizacniSitePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTechnologickyObjektKanalizacniSitePlocha" type="zatapl:ZamerTechnologickyObjektKanalizacniSitePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaSiteProduktovoduPlocha" type="zatrpl:ZamerTrasaSiteProduktovoduPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTechnologickyObjektSiteProduktovoduPlocha" type="zatupl:ZamerTechnologickyObjektSiteProduktovoduPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaTeplovodniSitePlocha" type="zattpl:ZamerTrasaTeplovodniSitePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTechnologickyObjektTeplovodniSitePlocha" type="zatdpl:ZamerTechnologickyObjektTeplovodniSitePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerVodniNadrzPlocha" type="zavnpl:ZamerVodniNadrzPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerMelioracniPrikopZlabPlocha" type="zamppl:ZamerMelioracniPrikopZlabPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerOsaMelioracnihoPrikopuZlabuPlocha" type="zaompl:ZamerOsaMelioracnihoPrikopuZlabuPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerProtipovodnovaZabranaPlocha" type="zapzpl:ZamerProtipovodnovaZabranaPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerSuchaNadrzPlocha" type="zasnpl:ZamerSuchaNadrzPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTrasaPrivadeceVodyPlocha" type="zatipl:ZamerTrasaPrivadeceVodyPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTechnologickyObjektPrivadeceVodyPlocha" type="zatcpl:ZamerTechnologickyObjektPrivadeceVodyPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerSkladkaOdpaduPlocha" type="zasopl:ZamerSkladkaOdpaduPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerSpalovnaPlocha" type="zasppl:ZamerSpalovnaPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerJineZarizeniOdstranovaniVyuzivaniSberOdpaduPlocha" type="zajopl:ZamerJineZarizeniOdstranovaniVyuzivaniSberOdpaduPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerCyklostezkaPlocha" type="zacypl:ZamerCyklostezkaPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerZeleznicniPrejezdPlocha" type="zazppl:ZamerZeleznicniPrejezdPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerTramvajoveDrahyPlocha" type="zatjpl:ZamerTramvajoveDrahyPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerPozemniLanovaDrahaPlocha" type="zaplpl:ZamerPozemniLanovaDrahaPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerSpecialniZeleznicniDrahaPlocha" type="zaszpl:ZamerSpecialniZeleznicniDrahaPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerVisutaLanovaDrahaPlocha" type="zavlpl:ZamerVisutaLanovaDrahaPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerZeleznicniStaniceZastavkaPlocha" type="zazspl:ZamerZeleznicniStaniceZastavkaPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerPlavebniKomoraPlocha" type="zapkpl:ZamerPlavebniKomoraPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerSledovanaVodniCestaPlocha" type="zavcpl:ZamerSledovanaVodniCestaPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerPlavebniDrahaPlocha" type="zapdpl:ZamerPlavebniDrahaPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerPristavPlocha" type="zapspl:ZamerPristavPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="JineZameryNaVodniCestePlocha" type="zajvpl:JineZameryNaVodniCestePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerVzletovaPristavaciDrahaPlocha" type="zavdpl:ZamerVzletovaPristavaciDrahaPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerLetistePlocha" type="zalepl:ZamerLetistePlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerHeliportPlocha" type="zahepl:ZamerHeliportPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ZamerLeteckaStavbaPlocha" type="zalspl:ZamerLeteckaStavbaPlochaType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="DefinicniBodZeleznice" type="zeldef:DefinicniBodZelezniceType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+    <xs:element name="ObvodZeleznice" type="zelobv:ObvodZelezniceType" substitutionGroup="objtyp:ObjektJVFDTM"/>
+</xs:schema>
