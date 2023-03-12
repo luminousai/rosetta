@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objtyp:JVFDTM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:plotli="plotli" xmlns:pobzps="pobzps" xmlns:zahdef="zahdef" xmlns:pokobv="pokobv" xmlns:pokpol="pokpol" xmlns:trkasi="trkasi" xmlns:helbod="helbod" xmlns:dopinf="dopinf" xmlns:objtyp="objtyp" xmlns:cmn="cmn" xmlns:atr="atr">
+  <objtyp:DataJVFDTM>
+    <cmn:VerzeJVFDTM>1.4.2.1</cmn:VerzeJVFDTM>
+    <cmn:DatumZapisu>2022-08-15T10:00:00</cmn:DatumZapisu>
+    <cmn:TypZapisu>kompletní zápis</cmn:TypZapisu>
+    <cmn:OntologickyKatalogObjektuJVFDTM>https://jvfdtm.ogibeta2.gov.cz/SpravaJVFDTM/ontology/prostorovy_objekt/</cmn:OntologickyKatalogObjektuJVFDTM>
+    <cmn:KatalogObjektuJVFDTM>https://jvfdtm.ogibeta2.gov.cz/SpravaJVFDTM/data-model-management/1</cmn:KatalogObjektuJVFDTM>
+    <objtyp:Data>
+      <objtyp:Plot>
+        <plotli:ObjektovyTypNazev code_base="0100000162" code_suffix="02">plot</plotli:ObjektovyTypNazev>
+        <plotli:KategorieObjektu>Součásti a příslušenství staveb</plotli:KategorieObjektu>
+        <plotli:SkupinaObjektu>Stavby společné pro více skupin</plotli:SkupinaObjektu>
+        <plotli:ObsahovaCast>ZPS</plotli:ObsahovaCast>
+        <plotli:ZaznamyObjektu>
+          <plotli:ZaznamObjektu>
+            <cmn:ZapisObjektu>i</cmn:ZapisObjektu>
+            <plotli:AtributyObjektu>
+              <atr:SpolecneAtributyVsechObjektu>
+                <atr:ID>00000000000000001</atr:ID>
+                <atr:IDZmeny>1</atr:IDZmeny>
+                <atr:PopisObjektu />
+                <atr:IDEditora>1</atr:IDEditora>
+                <atr:DatumVkladu>2022-01-31T10:00:00</atr:DatumVkladu>
+                <atr:VkladOsoba>vložil</atr:VkladOsoba>
+                <atr:DatumZmeny>2022-01-31T10:00:00</atr:DatumZmeny>
+                <atr:ZmenaOsoba>změnil</atr:ZmenaOsoba>
+                <atr:DatumPlatnosti>2022-01-31T10:00:00</atr:DatumPlatnosti>
+              </atr:SpolecneAtributyVsechObjektu>
+              <atr:SpolecneAtributyObjektuZPS>
+                <atr:UrovenUmisteniObjektuZPS>0</atr:UrovenUmisteniObjektuZPS>
+              </atr:SpolecneAtributyObjektuZPS>
+              <atr:DruhPlotu>3</atr:DruhPlotu>
+              <atr:TridaPresnosti>3</atr:TridaPresnosti>
+              <atr:ZpusobPorizeniZPS>1</atr:ZpusobPorizeniZPS>
+              <atr:HraniceJinehoObjektu>1</atr:HraniceJinehoObjektu>
+              <atr:ICS>ics01</atr:ICS>
+            </plotli:AtributyObjektu>
+            <plotli:GeometrieObjektu>
+              <gml:curveProperty xmlns:gml="http://www.opengis.net/gml/3.2">
+                <gml:LineString gml:id="ID00000000000000001" srsDimension="3" srsName="EPSG:5514">
+                  <gml:posList>-473141.53 -1089191.39 228.01 -473141.22 -1089179.22 228.01 -473140.82 -1089173.58 228.01</gml:posList>
+                </gml:LineString>
+              </gml:curveProperty>
+            </plotli:GeometrieObjektu>
+          </plotli:ZaznamObjektu>
+        </plotli:ZaznamyObjektu>
+      </objtyp:Plot>
+      <objtyp:Plot>
+        <plotli:ObjektovyTypNazev code_base="0100000162" code_suffix="02">plot</plotli:ObjektovyTypNazev>
+        <plotli:KategorieObjektu>Součásti a příslušenství staveb</plotli:KategorieObjektu>
+        <plotli:SkupinaObjektu>Stavby společné pro více skupin</plotli:SkupinaObjektu>
+        <plotli:ObsahovaCast>ZPS</plotli:ObsahovaCast>
+        <plotli:ZaznamyObjektu>
+          <plotli:ZaznamObjektu>
+            <cmn:ZapisObjektu>i</cmn:ZapisObjektu>
+            <plotli:AtributyObjektu>
+              <atr:SpolecneAtributyVsechObjektu>
+                <atr:ID>00000000000000008</atr:ID>
+                <atr:IDZmeny>1</atr:IDZmeny>
+                <atr:PopisObjektu />
+                <atr:IDEditora>1</atr:IDEditora>
+                <atr:DatumVkladu>2022-01-31T10:00:00</atr:DatumVkladu>
+                <atr:VkladOsoba>vložil</atr:VkladOsoba>
+                <atr:DatumZmeny>2022-01-31T10:00:00</atr:DatumZmeny>
+                <atr:ZmenaOsoba>změnil</atr:ZmenaOsoba>
+                <atr:DatumPlatnosti>2022-01-31T10:00:00</atr:DatumPlatnosti>
+              </atr:SpolecneAtributyVsechObjektu>
+              <atr:SpolecneAtributyObjektuZPS>
+                <atr:UrovenUmisteniObjektuZPS>0</atr:UrovenUmisteniObjektuZPS>
+              </atr:SpolecneAtributyObjektuZPS>
+              <atr:DruhPlotu>3</atr:DruhPlotu>
+              <atr:TridaPresnosti>3</atr:TridaPresnosti>
+              <atr:ZpusobPorizeniZPS>1</atr:ZpusobPorizeniZPS>
+              <atr:HraniceJinehoObjektu>1</atr:HraniceJinehoObjektu>
+              <atr:ICS>ics01</atr:ICS>
+            </plotli:AtributyObjektu>
+            <plotli:GeometrieObjektu>
+              <gml:curveProperty xmlns:gml="http://www.opengis.net/gml/3.2">
+                <gml:LineString gml:id="ID00000000000000010" srsDimension="3" srsName="EPSG:5514">
+                  <gml:posList>-473141.53 -1089191.39 228.01 -473141.22 -1089179.22 228.01 -473140.82 -1089173.58 228.01</gml:posList>
+                </gml:LineString>
+              </gml:curveProperty>
+            </plotli:GeometrieObjektu>
+          </plotli:ZaznamObjektu>
+        </plotli:ZaznamyObjektu>
+      </objtyp:Plot>
+      <objtyp:DefinicniBodZahrady>
+        <zahdef:ObjektovyTypNazev code_base="0100000209" code_suffix="04">definiční bod plochy zahrady</zahdef:ObjektovyTypNazev>
+        <zahdef:KategorieObjektu>Vodstvo, vegetace a terén</zahdef:KategorieObjektu>
+        <zahdef:SkupinaObjektu>Hospodářská plocha</zahdef:SkupinaObjektu>
+        <zahdef:ObsahovaCast>ZPS</zahdef:ObsahovaCast>
+        <zahdef:ZaznamyObjektu>
+          <zahdef:ZaznamObjektu>
+            <cmn:ZapisObjektu>i</cmn:ZapisObjektu>
+            <zahdef:AtributyObjektu>
+              <atr:SpolecneAtributyVsechObjektu>
+                <atr:ID>00000000000000002</atr:ID>
+                <atr:IDZmeny>1</atr:IDZmeny>
+                <atr:PopisObjektu />
+                <atr:IDEditora>1</atr:IDEditora>
+                <atr:DatumVkladu>2022-01-31T10:00:00</atr:DatumVkladu>
+                <atr:VkladOsoba>vložil</atr:VkladOsoba>
+                <atr:DatumZmeny>2022-01-31T10:00:00</atr:DatumZmeny>
+                <atr:ZmenaOsoba>změnil</atr:ZmenaOsoba>
+                <atr:DatumPlatnosti>2022-01-31T10:00:00</atr:DatumPlatnosti>
+              </atr:SpolecneAtributyVsechObjektu>
+              <atr:SpolecneAtributyObjektuZPS>
+                <atr:UrovenUmisteniObjektuZPS>0</atr:UrovenUmisteniObjektuZPS>
+              </atr:SpolecneAtributyObjektuZPS>
+              <atr:ICS>ics01</atr:ICS>
+            </zahdef:AtributyObjektu>
+            <zahdef:GeometrieObjektu>
+              <gml:pointProperty xmlns:gml="http://www.opengis.net/gml/3.2">
+                <gml:Point gml:id="ID00000000000000002" srsDimension="2" srsName="EPSG:5514">
+                  <gml:pos>-473161.43 -1089169.32</gml:pos>
+                </gml:Point>
+              </gml:pointProperty>
+            </zahdef:GeometrieObjektu>
+          </zahdef:ZaznamObjektu>
+        </zahdef:ZaznamyObjektu>
+      </objtyp:DefinicniBodZahrady>
+      <objtyp:ProvozniPlochaPozemniKomunikace>
+        <pokpol:ObjektovyTypNazev code_base="0100000005" code_suffix="03">provozní plocha pozemní komunikace</pokpol:ObjektovyTypNazev>
+        <pokpol:KategorieObjektu>Dopravní stavby</pokpol:KategorieObjektu>
+        <pokpol:SkupinaObjektu>Silniční doprava</pokpol:SkupinaObjektu>
+        <pokpol:ObsahovaCast>ZPS</pokpol:ObsahovaCast>
+        <pokpol:ZaznamyObjektu>
+          <pokpol:ZaznamObjektu>
+            <cmn:ZapisObjektu>i</cmn:ZapisObjektu>
+            <pokpol:AtributyObjektu>
+              <atr:SpolecneAtributyVsechObjektu>
+                <atr:ID>00000000000000003</atr:ID>
+                <atr:IDZmeny>1</atr:IDZmeny>
+                <atr:PopisObjektu />
+                <atr:IDEditora>1</atr:IDEditora>
+                <atr:DatumVkladu>2022-01-31T10:00:00</atr:DatumVkladu>
+                <atr:VkladOsoba>vložil</atr:VkladOsoba>
+                <atr:DatumZmeny>2022-01-31T10:00:00</atr:DatumZmeny>
+                <atr:ZmenaOsoba>změnil</atr:ZmenaOsoba>
+                <atr:DatumPlatnosti>2022-01-31T10:00:00</atr:DatumPlatnosti>
+              </atr:SpolecneAtributyVsechObjektu>
+              <atr:SpolecneAtributyObjektuZPS>
+                <atr:UrovenUmisteniObjektuZPS>1</atr:UrovenUmisteniObjektuZPS>
+              </atr:SpolecneAtributyObjektuZPS>
+              <atr:TypPozemniKomunikace>1</atr:TypPozemniKomunikace>
+              <atr:PrevazujiciPovrch>1</atr:PrevazujiciPovrch>
+              <atr:TridaPresnosti>3</atr:TridaPresnosti>
+              <atr:ICS>ics01</atr:ICS>
+            </pokpol:AtributyObjektu>
+            <pokpol:GeometrieObjektu>
+              <gml:surfaceProperty xmlns:gml="http://www.opengis.net/gml/3.2">
+                <gml:Polygon gml:id="ID00000000000000003" srsDimension="2" srsName="EPSG:5514">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>-508541.87 -1107720.52 -508540.85 -1107729.95 -508548.35 -1107736.98 -508550.28 -1107728.89 -508541.87 -1107720.52</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </gml:Polygon>
+              </gml:surfaceProperty>
+            </pokpol:GeometrieObjektu>
+          </pokpol:ZaznamObjektu>   
+        </pokpol:ZaznamyObjektu>
+      </objtyp:ProvozniPlochaPozemniKomunikace>
+      <objtyp:ObvodProvozniPlochyPozemniKomunikace>
+        <pokobv:ObjektovyTypNazev code_base="0100000005" code_suffix="05">obvod provozní plochy pozemní komunikace</pokobv:ObjektovyTypNazev>
+        <pokobv:KategorieObjektu>Dopravní stavby</pokobv:KategorieObjektu>
+        <pokobv:SkupinaObjektu>Silniční doprava</pokobv:SkupinaObjektu>
+        <pokobv:ObsahovaCast>ZPS</pokobv:ObsahovaCast>
+        <pokobv:ZaznamyObjektu>
+          <pokobv:ZaznamObjektu>
+            <cmn:ZapisObjektu>i</cmn:ZapisObjektu>
+            <pokobv:AtributyObjektu>
+              <atr:SpolecneAtributyVsechObjektu>
+                <atr:ID>00000000000000004</atr:ID>
+                <atr:IDZmeny>1</atr:IDZmeny>
+                <atr:PopisObjektu />
+                <atr:IDEditora>1</atr:IDEditora>
+                <atr:DatumVkladu>2022-01-31T10:00:00</atr:DatumVkladu>
+                <atr:VkladOsoba>vložil</atr:VkladOsoba>
+                <atr:DatumZmeny>2022-01-31T10:00:00</atr:DatumZmeny>
+                <atr:ZmenaOsoba>změnil</atr:ZmenaOsoba>
+                <atr:DatumPlatnosti>2022-01-31T10:00:00</atr:DatumPlatnosti>
+              </atr:SpolecneAtributyVsechObjektu>
+              <atr:SpolecneAtributyObjektuZPS>
+                <atr:UrovenUmisteniObjektuZPS>1</atr:UrovenUmisteniObjektuZPS>
+              </atr:SpolecneAtributyObjektuZPS>
+              <atr:TypPozemniKomunikace>1</atr:TypPozemniKomunikace>
+              <atr:PrevazujiciPovrch>1</atr:PrevazujiciPovrch>
+              <atr:TridaPresnosti>3</atr:TridaPresnosti>
+              <atr:ICS>ics01</atr:ICS>
+            </pokobv:AtributyObjektu>
+            <pokobv:GeometrieObjektu>
+              <gml:curveProperty xmlns:gml="http://www.opengis.net/gml/3.2">
+                <gml:LineString gml:id="ID00000000000000004" srsDimension="3" srsName="EPSG:5514">
+                  <gml:posList>-508541.87 -1107720.52 228.01 -508540.85 -1107729.95 228.01 -508548.35 -1107736.98 228.01 -508550.28 -1107728.89 228.01 -508541.87 -1107720.52 228.01</gml:posList>
+                </gml:LineString>
+              </gml:curveProperty>
+            </pokobv:GeometrieObjektu>
+          </pokobv:ZaznamObjektu>   
+        </pokobv:ZaznamyObjektu>
+      </objtyp:ObvodProvozniPlochyPozemniKomunikace>
+      <objtyp:PodrobnyBodZPS>
+        <pobzps:ObjektovyTypNazev code_base="0100000218" code_suffix="01">podrobný bod ZPS</pobzps:ObjektovyTypNazev>
+        <pobzps:KategorieObjektu>Geodetické prvky</pobzps:KategorieObjektu>
+        <pobzps:SkupinaObjektu>Podrobný bod</pobzps:SkupinaObjektu>
+        <pobzps:ObsahovaCast>ZPS</pobzps:ObsahovaCast>
+        <pobzps:ZaznamyObjektu>
+          <pobzps:ZaznamObjektu>
+            <cmn:ZapisObjektu>i</cmn:ZapisObjektu>
+            <pobzps:AtributyObjektu>
+              <atr:SpolecneAtributyVsechObjektu>
+                <atr:ID>00000000000000005</atr:ID>
+                <atr:IDZmeny>1</atr:IDZmeny>
+                <atr:PopisObjektu />
+                <atr:IDEditora>1</atr:IDEditora>
+                <atr:DatumVkladu>2022-01-31T10:00:00</atr:DatumVkladu>
+                <atr:VkladOsoba>vložil</atr:VkladOsoba>
+                <atr:DatumZmeny>2022-01-31T10:00:00</atr:DatumZmeny>
+                <atr:ZmenaOsoba>změnil</atr:ZmenaOsoba>
+                <atr:DatumPlatnosti>2022-01-31T10:00:00</atr:DatumPlatnosti>
+              </atr:SpolecneAtributyVsechObjektu>
+              <atr:SpolecneAtributyObjektuZPS>
+                <atr:UrovenUmisteniObjektuZPS>0</atr:UrovenUmisteniObjektuZPS>
+              </atr:SpolecneAtributyObjektuZPS>
+              <atr:ZpusobPorizeniZPS>1</atr:ZpusobPorizeniZPS>
+              <atr:CisloBodu>10001</atr:CisloBodu>
+              <atr:TridaPresnostiPoloha>3</atr:TridaPresnostiPoloha>
+              <atr:TridaPresnostiVyska>3</atr:TridaPresnostiVyska>
+            </pobzps:AtributyObjektu>
+            <pobzps:GeometrieObjektu>
+              <gml:pointProperty xmlns:gml="http://www.opengis.net/gml/3.2">
+                <gml:Point gml:id="ID00000000000000005" srsDimension="3" srsName="EPSG:5514">
+                  <gml:pos>-473170.37 -1089189.18 228.01</gml:pos>
+                </gml:Point>
+              </gml:pointProperty>
+            </pobzps:GeometrieObjektu>
+          </pobzps:ZaznamObjektu>
+        </pobzps:ZaznamyObjektu>
+      </objtyp:PodrobnyBodZPS>
+      <objtyp:TrasaKanalizacniSite>
+        <trkasi:ObjektovyTypNazev code_base="0100000121" code_suffix="02">trasa kanalizační sítě</trkasi:ObjektovyTypNazev>
+        <trkasi:KategorieObjektu>Stavby technické infrastruktury</trkasi:KategorieObjektu>
+        <trkasi:SkupinaObjektu>Kanalizace</trkasi:SkupinaObjektu>
+        <trkasi:ObsahovaCast>TI</trkasi:ObsahovaCast>
+        <trkasi:ZaznamyObjektu>
+          <trkasi:ZaznamObjektu>
+            <cmn:ZapisObjektu>i</cmn:ZapisObjektu>
+            <trkasi:AtributyObjektu>
+              <atr:SpolecneAtributyVsechObjektu>
+                <atr:ID>00000000000000006</atr:ID>
+                <atr:IDZmeny>2</atr:IDZmeny>
+                <atr:PopisObjektu />
+                <atr:IDEditora>2</atr:IDEditora>
+                <atr:DatumVkladu>2022-01-31T10:00:00</atr:DatumVkladu>
+                <atr:VkladOsoba>vložil</atr:VkladOsoba>
+                <atr:DatumZmeny>2022-01-31T10:00:00</atr:DatumZmeny>
+                <atr:ZmenaOsoba>změnil</atr:ZmenaOsoba>
+                <atr:DatumPlatnosti>2022-01-31T10:00:00</atr:DatumPlatnosti>
+              </atr:SpolecneAtributyVsechObjektu>
+              <atr:SpolecneAtributyObjektuTI>
+                <atr:IDVlastnika>1</atr:IDVlastnika>
+                <atr:IDProvozovateleZeZakona />
+                <atr:IDSpravce />
+                <atr:IDProvozovatele />
+                <atr:IDExterni>1</atr:IDExterni>
+                <atr:NeuplnaData>0</atr:NeuplnaData>
+                <atr:TridaPresnostiPoloha>3</atr:TridaPresnostiPoloha>
+                <atr:TridaPresnostiVyska>3</atr:TridaPresnostiVyska>
+                <atr:UrovenUmisteniObjektuTI>-1</atr:UrovenUmisteniObjektuTI>
+                <atr:EvidencniCisloObjektu>1</atr:EvidencniCisloObjektu>
+              </atr:SpolecneAtributyObjektuTI>
+              <atr:ZpusobPorizeniTI>1</atr:ZpusobPorizeniTI>
+              <atr:StavObjektu>1</atr:StavObjektu>
+              <atr:TypTrasyKanalizacniSite>1</atr:TypTrasyKanalizacniSite>
+              <atr:TypKanalizacniSite>2</atr:TypKanalizacniSite>
+              <atr:TypPohybuKanalizacnihoMedia>1</atr:TypPohybuKanalizacnihoMedia>
+              <atr:Dimenze>400</atr:Dimenze>
+              <atr:Material>kamenina</atr:Material>
+              <atr:ICS>ics01</atr:ICS>
+            </trkasi:AtributyObjektu>
+            <trkasi:GeometrieObjektu>
+              <gml:curveProperty xmlns:gml="http://www.opengis.net/gml/3.2">
+                <gml:LineString gml:id="ID00000000000000006" srsDimension="3" srsName="EPSG:5514">
+                  <gml:posList>-473130.56 -1089179.20 225.88 -473198.28 -1089153.12 226.14</gml:posList>
+                </gml:LineString>
+              </gml:curveProperty>
+            </trkasi:GeometrieObjektu>
+          </trkasi:ZaznamObjektu>   
+        </trkasi:ZaznamyObjektu>
+      </objtyp:TrasaKanalizacniSite>
+      <objtyp:HeliportBod>
+        <helbod:ObjektovyTypNazev code_base="0100000048" code_suffix="01">heliport - bod</helbod:ObjektovyTypNazev>
+        <helbod:KategorieObjektu>Dopravní stavby</helbod:KategorieObjektu>
+        <helbod:SkupinaObjektu>Letecká doprava</helbod:SkupinaObjektu>
+        <helbod:ObsahovaCast>DI</helbod:ObsahovaCast>
+        <helbod:ZaznamyObjektu>
+          <helbod:ZaznamObjektu>
+            <cmn:ZapisObjektu>i</cmn:ZapisObjektu>
+            <helbod:AtributyObjektu>
+              <atr:SpolecneAtributyVsechObjektu>
+                <atr:ID>00000000000000007</atr:ID>
+                <atr:IDZmeny>3</atr:IDZmeny>
+                <atr:PopisObjektu />
+                <atr:IDEditora>3</atr:IDEditora>
+                <atr:DatumVkladu>2022-01-31T10:00:00</atr:DatumVkladu>
+                <atr:VkladOsoba>vložil</atr:VkladOsoba>
+                <atr:DatumZmeny>2022-01-31T10:00:00</atr:DatumZmeny>
+                <atr:ZmenaOsoba>změnil</atr:ZmenaOsoba>
+                <atr:DatumPlatnosti>2022-01-31T10:00:00</atr:DatumPlatnosti>
+              </atr:SpolecneAtributyVsechObjektu>
+              <atr:SpolecneAtributyObjektuDI>
+                <atr:IDVlastnika>2</atr:IDVlastnika>
+                <atr:IDSpravce />
+                <atr:IDProvozovatele />
+                <atr:IDExterni>2</atr:IDExterni>
+                <atr:NeuplnaData>0</atr:NeuplnaData>
+                <atr:TridaPresnostiPoloha>3</atr:TridaPresnostiPoloha>
+                <atr:TridaPresnostiVyska>3</atr:TridaPresnostiVyska>
+                <atr:UrovenUmisteniObjektuDI>0</atr:UrovenUmisteniObjektuDI>
+                <atr:EvidencniCisloObjektu>01</atr:EvidencniCisloObjektu>
+              </atr:SpolecneAtributyObjektuDI>
+              <atr:OznaceniObjektu>heliport 1</atr:OznaceniObjektu>
+              <atr:OznaceniHeliportu>hel_1</atr:OznaceniHeliportu>
+              <atr:UmisteniHeliportu>1</atr:UmisteniHeliportu>
+              <atr:ICS>ics01</atr:ICS>
+            </helbod:AtributyObjektu>
+            <helbod:GeometrieObjektu>
+              <gml:pointProperty xmlns:gml="http://www.opengis.net/gml/3.2">
+                <gml:Point gml:id="ID00000000000000007" srsDimension="3" srsName="EPSG:5514">
+                  <gml:pos>-473450.98 -1089033.12 228.99</gml:pos>
+                </gml:Point>
+              </gml:pointProperty>
+            </helbod:GeometrieObjektu>
+          </helbod:ZaznamObjektu>
+        </helbod:ZaznamyObjektu>
+      </objtyp:HeliportBod>
+    </objtyp:Data>
+    <dopinf:DoprovodneInformace>
+      <dopinf:UdajeOZmenach>
+        <dopinf:ZaznamZmeny>
+          <dopinf:IDZmeny>1</dopinf:IDZmeny>
+          <dopinf:NazevZakazky>sample XML</dopinf:NazevZakazky>
+          <dopinf:CisloStavbyZakazky>stavba 1</dopinf:CisloStavbyZakazky>
+          <dopinf:PartnerInvestor>investor</dopinf:PartnerInvestor>
+          <dopinf:Zpracovatel>zpracovatel</dopinf:Zpracovatel>
+          <dopinf:OrganizaceZpracovatele>organizace zpracovatele</dopinf:OrganizaceZpracovatele>
+          <dopinf:DatumMereni>2022-01-31T10:00:00</dopinf:DatumMereni>
+          <dopinf:DatumZpracovani>2022-01-31T10:00:00</dopinf:DatumZpracovani>
+          <dopinf:UOZI>ověřil</dopinf:UOZI>
+          <dopinf:DatumOvereni>2022-01-31T10:00:00</dopinf:DatumOvereni>
+          <dopinf:CisloOvereni>1</dopinf:CisloOvereni>
+        </dopinf:ZaznamZmeny>
+        <dopinf:ZaznamZmeny>
+          <dopinf:IDZmeny>2</dopinf:IDZmeny>
+          <dopinf:NazevZakazky>sample XML</dopinf:NazevZakazky>
+          <dopinf:CisloStavbyZakazky>stavba 2</dopinf:CisloStavbyZakazky>
+          <dopinf:PartnerInvestor>investor</dopinf:PartnerInvestor>
+          <dopinf:Zpracovatel>zpracovatel</dopinf:Zpracovatel>
+          <dopinf:OrganizaceZpracovatele>organizace zpracovatele</dopinf:OrganizaceZpracovatele>
+          <dopinf:DatumMereni>2022-01-31T10:00:00</dopinf:DatumMereni>
+          <dopinf:DatumZpracovani>2022-01-31T10:00:00</dopinf:DatumZpracovani>
+          <dopinf:UOZI>ověřil</dopinf:UOZI>
+          <dopinf:DatumOvereni>2022-01-31T10:00:00</dopinf:DatumOvereni>
+          <dopinf:CisloOvereni>2</dopinf:CisloOvereni>
+        </dopinf:ZaznamZmeny>
+      </dopinf:UdajeOZmenach>
+      <dopinf:UdajeOVlastnicichSpravcichProvozovatelich>
+        <dopinf:ZaznamVSP>
+          <dopinf:IDVSP>1</dopinf:IDVSP>
+          <dopinf:NazevVSP>vlastník 1</dopinf:NazevVSP>
+          <dopinf:IdentifikacniCisloVSP>ID VSP 1</dopinf:IdentifikacniCisloVSP>
+        </dopinf:ZaznamVSP>
+        <dopinf:ZaznamVSP>
+          <dopinf:IDVSP>2</dopinf:IDVSP>
+          <dopinf:NazevVSP>vlastník 2</dopinf:NazevVSP>
+          <dopinf:IdentifikacniCisloVSP>ID VSP 2</dopinf:IdentifikacniCisloVSP>
+        </dopinf:ZaznamVSP>
+      </dopinf:UdajeOVlastnicichSpravcichProvozovatelich>
+      <dopinf:IdentifikacniCislaStaveb>
+        <dopinf:ZaznamICS>
+          <dopinf:ICS>ics01</dopinf:ICS>
+          <dopinf:ObjektyDTM>
+            <dopinf:IDZaznamuObjektuDTM>00000000000000001</dopinf:IDZaznamuObjektuDTM>
+            <dopinf:IDZaznamuObjektuDTM>00000000000000002</dopinf:IDZaznamuObjektuDTM>
+            <dopinf:IDZaznamuObjektuDTM>00000000000000003</dopinf:IDZaznamuObjektuDTM>
+            <dopinf:IDZaznamuObjektuDTM>00000000000000004</dopinf:IDZaznamuObjektuDTM>
+            <dopinf:IDZaznamuObjektuDTM>00000000000000005</dopinf:IDZaznamuObjektuDTM>
+            <dopinf:IDZaznamuObjektuDTM>00000000000000006</dopinf:IDZaznamuObjektuDTM>
+            <dopinf:IDZaznamuObjektuDTM>00000000000000007</dopinf:IDZaznamuObjektuDTM>
+          </dopinf:ObjektyDTM>
+        </dopinf:ZaznamICS>
+      </dopinf:IdentifikacniCislaStaveb>
+    </dopinf:DoprovodneInformace>
+  </objtyp:DataJVFDTM>
+</objtyp:JVFDTM>

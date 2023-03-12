@@ -3,31 +3,50 @@ from pathlib import Path
 from dataclasses import dataclass
 from functools import cache
 
-from bs4 import BeautifulSoup
+from xmlschema import XMLSchema
 
 
-ROOT_DIR = Path(__file__).parent.parent / "data" / "jvfdtm"
+XSD_DIR = Path(__file__).parent.parent / "data" / "jvfdtm" / "xsd"
+XSD_INDEX = XMLSchema(XSD_DIR / "index" / "index.xsd")
 
 
 @dataclass
-class Object:
+class ObjectType:
     id: str
     name: str
+    schema: XMLSchema
 
     @cache
     @staticmethod
     def list():
-        objects = []
-        object_dir = ROOT_DIR / "xsd" / "objects"
+        object_types = []
 
-        for file in object_dir.iterdir():
-            with file.open(encoding="utf-8") as stream:
-                soup = BeautifulSoup(stream, features="xml")
-                element = soup.find(attrs=dict(name="ObjektovyTypNazev"))
-                name = element["fixed"]
+        for schema in XSD_INDEX.imports.values():
+            url = schema.source.url
 
-                obj = Object(file.stem, name)
+            if "objects" not in url:
+                continue
 
-                objects.append(obj)
+            element = schema.root.find(
+                ".//xs:element[@name='ObjektovyTypNazev']",
+                {"xs": "http://www.w3.org/2001/XMLSchema"}
+            )
 
-        return objects
+            id = Path(url).stem
+            name = element.attrib["fixed"]
+
+            object_type = ObjectType(id, name, schema)
+            object_types.append(object_type)
+
+        return object_types
+
+    @cache
+    @staticmethod
+    def find(name):
+        for object_type in ObjectType.list():
+            if object_type.name == name:
+                return object_type
+
+        raise NameError
+
+pass

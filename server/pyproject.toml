@@ -10,6 +10,10 @@ python = "^3.11"
 fastapi = {extras = ["all"], version = "^0.92.0"}
 lxml = "^4.9.2"
 beautifulsoup4 = "^4.11.2"
+pandas = "^1.5.3"
+python-multipart = "^0.0.6"
+openpyxl = "^3.1.1"
+xmlschema = "^2.2.1"
 
 [build-system]
 requires = ["poetry-core"]
