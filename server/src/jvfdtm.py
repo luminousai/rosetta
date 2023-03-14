@@ -3,25 +3,25 @@ from pathlib import Path
 from dataclasses import dataclass
 from functools import cache
 
-from xmlschema import XMLSchema
+import xmlschema
 
 
-XSD_DIR = Path(__file__).parent.parent / "data" / "jvfdtm" / "xsd"
-XSD_INDEX = XMLSchema(XSD_DIR / "index" / "index.xsd")
+_XSD_DIR = Path(__file__).parent.parent / "data" / "jvfdtm" / "xsd"
+_XSD_INDEX = xmlschema.XMLSchema(_XSD_DIR / "index" / "index.xsd")
 
 
 @dataclass
 class ObjectType:
     id: str
     name: str
-    schema: XMLSchema
+    schema: xmlschema.XMLSchema
 
     @cache
     @staticmethod
     def list():
         object_types = []
 
-        for schema in XSD_INDEX.imports.values():
+        for schema in _XSD_INDEX.imports.values():
             url = schema.source.url
 
             if "objects" not in url:
@@ -29,7 +29,7 @@ class ObjectType:
 
             element = schema.root.find(
                 ".//xs:element[@name='ObjektovyTypNazev']",
-                {"xs": "http://www.w3.org/2001/XMLSchema"}
+                schema.namespaces
             )
 
             id = Path(url).stem
@@ -48,5 +48,3 @@ class ObjectType:
                 return object_type
 
         raise NameError
-
-pass

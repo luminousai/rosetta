@@ -1,0 +1,1533 @@
+{
+  "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+  "@xmlns:atr": "atr",
+  "@xmlns:cmn": "cmn",
+  "@xmlns:gml": "http://www.opengis.net/gml/3.2",
+  "@xmlns:trkasi": "trkasi",
+  "@xmlns:objtyp": "objtyp",
+  "objtyp:DataJVFDTM": {
+    "cmn:VerzeJVFDTM": "1.4.2.1",
+    "cmn:DatumZapisu": "2023-03-14T18:10:44.177438",
+    "cmn:TypZapisu": "kompletn\u00ed z\u00e1pis",
+    "cmn:OntologickyKatalogObjektuJVFDTM": "https://jvfdtm.ogibeta2.gov.cz/SpravaJVFDTM/ontology/prostorovy_objekt/",
+    "cmn:KatalogObjektuJVFDTM": "https://jvfdtm.ogibeta2.gov.cz/SpravaJVFDTM/data-model-management/1",
+    "objtyp:Data": {
+      "objtyp:TrasaKanalizacniSite": [
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819223.27,
+                      6378079.93,
+                      1819230.05,
+                      6378075.83,
+                      1819296.96,
+                      6378036.82,
+                      1819313.7773382,
+                      6378030.5862415,
+                      1819347.46,
+                      6378022.26,
+                      1819364.97,
+                      6378020.79,
+                      1819407.73,
+                      6378020.56,
+                      1819466.5,
+                      6378027.68,
+                      1819509.92,
+                      6378032.93,
+                      1819568.3,
+                      6378039.35,
+                      1819607.93,
+                      6378043.54,
+                      1819621.3326219,
+                      6378053.9332575
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819239.89,
+                      6377894.6,
+                      1819297.08,
+                      6377896.7,
+                      1819341.63,
+                      6377895.89,
+                      1819367.81,
+                      6377898.4,
+                      1819421.58,
+                      6377897.61
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819411.22,
+                      6377848.79,
+                      1819450.4362214,
+                      6377836.4317249
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819463.97,
+                      6377882.45,
+                      1819455.12,
+                      6377931.44,
+                      1819456.5919733,
+                      6377941.8913182
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819352.83,
+                      6377807.24,
+                      1819404.6,
+                      6377831.72,
+                      1819411.22,
+                      6377848.79,
+                      1819403.26,
+                      6377866.88,
+                      1819412.9989806,
+                      6377880.6819792,
+                      1819421.58,
+                      6377897.61,
+                      1819441.9614484,
+                      6377921.7370237,
+                      1819449.7245841,
+                      6377933.3817272,
+                      1819456.5919733,
+                      6377941.8913182,
+                      1819477.92,
+                      6377951.54,
+                      1819477.92,
+                      6377951.54
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819477.92,
+                      6377951.54,
+                      1819517.9565694,
+                      6378001.6412402
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819501.4,
+                      6377704.64,
+                      1819526.58,
+                      6377745.11,
+                      1819522.74,
+                      6377775.98,
+                      1819531.9,
+                      6377809.33,
+                      1819536.29,
+                      6377839.18,
+                      1819528.06,
+                      6377886.15,
+                      1819517.99,
+                      6377925.96,
+                      1819517.9565694,
+                      6378001.6412402
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819623.57,
+                      6377912.63,
+                      1819560.33,
+                      6377964.17
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819623.57,
+                      6377912.63,
+                      1819739.4637346,
+                      6377832.2515749
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819587.9254588,
+                      6378012.1185107,
+                      1819517.9565694,
+                      6378001.6412402,
+                      1819506.2710819,
+                      6378002.4433957
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819560.33,
+                      6377964.17,
+                      1819587.9254588,
+                      6378012.1185107,
+                      1819607.93,
+                      6378043.54
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819815.88,
+                      6378030.41,
+                      1819835.0161308432,
+                      6378010.253566841,
+                      1819838.57,
+                      6377989.33,
+                      1819837.23,
+                      6377942.15,
+                      1819837.23,
+                      6377911.44
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819704.529624,
+                      6377980.9454815,
+                      1819764.81,
+                      6377990.44
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819771.65,
+                      6377923.33,
+                      1819773.0,
+                      6377950.41,
+                      1819769.89,
+                      6377972.65,
+                      1819764.81,
+                      6377990.44,
+                      1819798.33,
+                      6378007.28,
+                      1819815.88,
+                      6378030.41,
+                      1819812.0,
+                      6378055.22,
+                      1819807.0,
+                      6378101.87
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819568.31,
+                      6378091.8,
+                      1819626.73,
+                      6378138.3
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819659.883755,
+                      6378314.8808023,
+                      1819670.59,
+                      6378254.39,
+                      1819653.9360832,
+                      6378233.216734,
+                      1819629.38,
+                      6378209.04,
+                      1819617.0,
+                      6378204.36,
+                      1819593.64,
+                      6378184.98,
+                      1819601.83,
+                      6378160.81,
+                      1819626.73,
+                      6378138.3,
+                      1819664.2,
+                      6378170.76,
+                      1819678.19,
+                      6378184.82,
+                      1819721.64,
+                      6378164.22
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819682.6153687,
+                      6378308.3316657,
+                      1819732.7771685,
+                      6378229.5059803,
+                      1819721.64,
+                      6378164.22,
+                      1819739.88,
+                      6378152.13,
+                      1819783.95,
+                      6378146.82,
+                      1819825.24,
+                      6378112.16
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819416.23,
+                      6377973.09,
+                      1819417.07,
+                      6377978.93,
+                      1819417.07,
+                      6377978.93,
+                      1819417.07,
+                      6377978.93
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819410.56,
+                      6377971.04,
+                      1819416.23,
+                      6377973.09,
+                      1819439.93,
+                      6377969.19,
+                      1819447.72,
+                      6377972.91
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819447.72,
+                      6377972.91,
+                      1819464.0295476,
+                      6377980.2278307,
+                      1819485.264858048,
+                      6377960.7312594615
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819548.87,
+                      6378089.32,
+                      1819511.36,
+                      6378053.02,
+                      1819509.92,
+                      6378032.93
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "trkasi:ObjektovyTypNazev": {
+            "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+            "@code_base": "0100000121",
+            "@code_suffix": "02"
+          },
+          "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+          "trkasi:SkupinaObjektu": "Kanalizace",
+          "trkasi:ObsahovaCast": "TI",
+          "trkasi:ZaznamyObjektu": {
+            "trkasi:ZaznamObjektu": {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 99,
+                "atr:StavObjektu": 99,
+                "atr:TypTrasyKanalizacniSite": 99,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 99,
+                "atr:Dimenze": null,
+                "atr:Material": null,
+                "atr:ICS": null
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      1819622.72,
+                      6378057.18,
+                      1819586.04,
+                      6378076.17,
+                      1819548.87,
+                      6378089.32,
+                      1819522.33,
+                      6378117.5,
+                      1819470.35,
+                      6378185.52,
+                      1819423.85,
+                      6378209.8,
+                      1819392.19,
+                      6378234.08
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

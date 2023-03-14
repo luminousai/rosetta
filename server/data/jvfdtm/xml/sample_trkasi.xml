@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trkasi:TrasaKanalizacniSite xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:plotli="plotli" xmlns:pobzps="pobzps" xmlns:zahdef="zahdef" xmlns:pokobv="pokobv" xmlns:pokpol="pokpol" xmlns:trkasi="trkasi" xmlns:helbod="helbod" xmlns:dopinf="dopinf" xmlns:objtyp="objtyp" xmlns:cmn="cmn" xmlns:atr="atr">
+    <trkasi:ObjektovyTypNazev code_base="0100000121" code_suffix="02">trasa kanalizační sítě</trkasi:ObjektovyTypNazev>
+    <trkasi:KategorieObjektu>Stavby technické infrastruktury</trkasi:KategorieObjektu>
+    <trkasi:SkupinaObjektu>Kanalizace</trkasi:SkupinaObjektu>
+    <trkasi:ObsahovaCast>TI</trkasi:ObsahovaCast>
+    <trkasi:ZaznamyObjektu>
+        <trkasi:ZaznamObjektu>
+        <cmn:ZapisObjektu>i</cmn:ZapisObjektu>
+        <trkasi:AtributyObjektu>
+            <atr:SpolecneAtributyVsechObjektu>
+            <atr:ID>00000000000000006</atr:ID>
+            <atr:IDZmeny>2</atr:IDZmeny>
+            <atr:PopisObjektu />
+            <atr:IDEditora>2</atr:IDEditora>
+            <atr:DatumVkladu>2022-01-31T10:00:00</atr:DatumVkladu>
+            <atr:VkladOsoba>vložil</atr:VkladOsoba>
+            <atr:DatumZmeny>2022-01-31T10:00:00</atr:DatumZmeny>
+            <atr:ZmenaOsoba>změnil</atr:ZmenaOsoba>
+            <atr:DatumPlatnosti>2022-01-31T10:00:00</atr:DatumPlatnosti>
+            </atr:SpolecneAtributyVsechObjektu>
+            <atr:SpolecneAtributyObjektuTI>
+            <atr:IDVlastnika>1</atr:IDVlastnika>
+            <atr:IDProvozovateleZeZakona />
+            <atr:IDSpravce />
+            <atr:IDProvozovatele />
+            <atr:IDExterni>1</atr:IDExterni>
+            <atr:NeuplnaData>0</atr:NeuplnaData>
+            <atr:TridaPresnostiPoloha>3</atr:TridaPresnostiPoloha>
+            <atr:TridaPresnostiVyska>3</atr:TridaPresnostiVyska>
+            <atr:UrovenUmisteniObjektuTI>-1</atr:UrovenUmisteniObjektuTI>
+            <atr:EvidencniCisloObjektu>1</atr:EvidencniCisloObjektu>
+            </atr:SpolecneAtributyObjektuTI>
+            <atr:ZpusobPorizeniTI>1</atr:ZpusobPorizeniTI>
+            <atr:StavObjektu>1</atr:StavObjektu>
+            <atr:TypTrasyKanalizacniSite>1</atr:TypTrasyKanalizacniSite>
+            <atr:TypKanalizacniSite>2</atr:TypKanalizacniSite>
+            <atr:TypPohybuKanalizacnihoMedia>1</atr:TypPohybuKanalizacnihoMedia>
+            <atr:Dimenze>400</atr:Dimenze>
+            <atr:Material>kamenina</atr:Material>
+            <atr:ICS>ics01</atr:ICS>
+        </trkasi:AtributyObjektu>
+        <trkasi:GeometrieObjektu>
+            <gml:curveProperty xmlns:gml="http://www.opengis.net/gml/3.2">
+            <gml:LineString gml:id="ID00000000000000006" srsDimension="3" srsName="EPSG:5514">
+                <gml:posList>-473130.56 -1089179.20 225.88 -473198.28 -1089153.12 226.14</gml:posList>
+            </gml:LineString>
+            </gml:curveProperty>
+        </trkasi:GeometrieObjektu>
+        </trkasi:ZaznamObjektu>   
+    </trkasi:ZaznamyObjektu>
+</trkasi:TrasaKanalizacniSite>

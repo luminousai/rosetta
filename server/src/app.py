@@ -21,6 +21,7 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
+
 @app.post("/convert")
 async def convert(file: UploadFile):
     contents = await file.read()

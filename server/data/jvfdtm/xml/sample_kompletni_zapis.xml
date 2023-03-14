@@ -46,45 +46,6 @@
           </plotli:ZaznamObjektu>
         </plotli:ZaznamyObjektu>
       </objtyp:Plot>
-      <objtyp:Plot>
-        <plotli:ObjektovyTypNazev code_base="0100000162" code_suffix="02">plot</plotli:ObjektovyTypNazev>
-        <plotli:KategorieObjektu>Součásti a příslušenství staveb</plotli:KategorieObjektu>
-        <plotli:SkupinaObjektu>Stavby společné pro více skupin</plotli:SkupinaObjektu>
-        <plotli:ObsahovaCast>ZPS</plotli:ObsahovaCast>
-        <plotli:ZaznamyObjektu>
-          <plotli:ZaznamObjektu>
-            <cmn:ZapisObjektu>i</cmn:ZapisObjektu>
-            <plotli:AtributyObjektu>
-              <atr:SpolecneAtributyVsechObjektu>
-                <atr:ID>00000000000000008</atr:ID>
-                <atr:IDZmeny>1</atr:IDZmeny>
-                <atr:PopisObjektu />
-                <atr:IDEditora>1</atr:IDEditora>
-                <atr:DatumVkladu>2022-01-31T10:00:00</atr:DatumVkladu>
-                <atr:VkladOsoba>vložil</atr:VkladOsoba>
-                <atr:DatumZmeny>2022-01-31T10:00:00</atr:DatumZmeny>
-                <atr:ZmenaOsoba>změnil</atr:ZmenaOsoba>
-                <atr:DatumPlatnosti>2022-01-31T10:00:00</atr:DatumPlatnosti>
-              </atr:SpolecneAtributyVsechObjektu>
-              <atr:SpolecneAtributyObjektuZPS>
-                <atr:UrovenUmisteniObjektuZPS>0</atr:UrovenUmisteniObjektuZPS>
-              </atr:SpolecneAtributyObjektuZPS>
-              <atr:DruhPlotu>3</atr:DruhPlotu>
-              <atr:TridaPresnosti>3</atr:TridaPresnosti>
-              <atr:ZpusobPorizeniZPS>1</atr:ZpusobPorizeniZPS>
-              <atr:HraniceJinehoObjektu>1</atr:HraniceJinehoObjektu>
-              <atr:ICS>ics01</atr:ICS>
-            </plotli:AtributyObjektu>
-            <plotli:GeometrieObjektu>
-              <gml:curveProperty xmlns:gml="http://www.opengis.net/gml/3.2">
-                <gml:LineString gml:id="ID00000000000000010" srsDimension="3" srsName="EPSG:5514">
-                  <gml:posList>-473141.53 -1089191.39 228.01 -473141.22 -1089179.22 228.01 -473140.82 -1089173.58 228.01</gml:posList>
-                </gml:LineString>
-              </gml:curveProperty>
-            </plotli:GeometrieObjektu>
-          </plotli:ZaznamObjektu>
-        </plotli:ZaznamyObjektu>
-      </objtyp:Plot>
       <objtyp:DefinicniBodZahrady>
         <zahdef:ObjektovyTypNazev code_base="0100000209" code_suffix="04">definiční bod plochy zahrady</zahdef:ObjektovyTypNazev>
         <zahdef:KategorieObjektu>Vodstvo, vegetace a terén</zahdef:KategorieObjektu>

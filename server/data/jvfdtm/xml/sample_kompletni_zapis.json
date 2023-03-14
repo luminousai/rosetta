@@ -1,0 +1,507 @@
+{
+  "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+  "@xmlns:plotli": "plotli",
+  "@xmlns:pobzps": "pobzps",
+  "@xmlns:zahdef": "zahdef",
+  "@xmlns:pokobv": "pokobv",
+  "@xmlns:pokpol": "pokpol",
+  "@xmlns:trkasi": "trkasi",
+  "@xmlns:helbod": "helbod",
+  "@xmlns:dopinf": "dopinf",
+  "@xmlns:objtyp": "objtyp",
+  "@xmlns:cmn": "cmn",
+  "objtyp:DataJVFDTM": {
+    "cmn:VerzeJVFDTM": "1.4.2.1",
+    "cmn:DatumZapisu": "2022-08-15T10:00:00",
+    "cmn:TypZapisu": "kompletn\u00ed z\u00e1pis",
+    "cmn:OntologickyKatalogObjektuJVFDTM": "https://jvfdtm.ogibeta2.gov.cz/SpravaJVFDTM/ontology/prostorovy_objekt/",
+    "cmn:KatalogObjektuJVFDTM": "https://jvfdtm.ogibeta2.gov.cz/SpravaJVFDTM/data-model-management/1",
+    "objtyp:Data": {
+      "objtyp:Plot": {
+        "plotli:ObjektovyTypNazev": {
+          "@code_base": "0100000162",
+          "@code_suffix": "02",
+          "$": "plot"
+        },
+        "plotli:KategorieObjektu": "Sou\u010d\u00e1sti a p\u0159\u00edslu\u0161enstv\u00ed staveb",
+        "plotli:SkupinaObjektu": "Stavby spole\u010dn\u00e9 pro v\u00edce skupin",
+        "plotli:ObsahovaCast": "ZPS",
+        "plotli:ZaznamyObjektu": {
+          "plotli:ZaznamObjektu": [
+            {
+              "cmn:ZapisObjektu": "i",
+              "plotli:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000001",
+                  "atr:IDZmeny": "1",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "1",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuZPS": {
+                  "atr:UrovenUmisteniObjektuZPS": 0
+                },
+                "atr:DruhPlotu": 3,
+                "atr:TridaPresnosti": 3,
+                "atr:ZpusobPorizeniZPS": 1,
+                "atr:HraniceJinehoObjektu": 1,
+                "atr:ICS": "ics01"
+              },
+              "plotli:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "@xlink:type": "simple",
+                  "@owns": false,
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000001",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      -473141.53,
+                      -1089191.39,
+                      228.01,
+                      -473141.22,
+                      -1089179.22,
+                      228.01,
+                      -473140.82,
+                      -1089173.58,
+                      228.01
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "objtyp:DefinicniBodZahrady": {
+        "zahdef:ObjektovyTypNazev": {
+          "@code_base": "0100000209",
+          "@code_suffix": "04",
+          "$": "defini\u010dn\u00ed bod plochy zahrady"
+        },
+        "zahdef:KategorieObjektu": "Vodstvo, vegetace a ter\u00e9n",
+        "zahdef:SkupinaObjektu": "Hospod\u00e1\u0159sk\u00e1 plocha",
+        "zahdef:ObsahovaCast": "ZPS",
+        "zahdef:ZaznamyObjektu": {
+          "zahdef:ZaznamObjektu": [
+            {
+              "cmn:ZapisObjektu": "i",
+              "zahdef:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000002",
+                  "atr:IDZmeny": "1",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "1",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuZPS": {
+                  "atr:UrovenUmisteniObjektuZPS": 0
+                },
+                "atr:ICS": "ics01"
+              },
+              "zahdef:GeometrieObjektu": {
+                "gml:pointProperty": {
+                  "@xlink:type": "simple",
+                  "@owns": false,
+                  "gml:Point": {
+                    "@gml:id": "ID00000000000000002",
+                    "@srsDimension": 2,
+                    "@srsName": "EPSG:5514",
+                    "gml:pos": [
+                      -473161.43,
+                      -1089169.32
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "objtyp:ProvozniPlochaPozemniKomunikace": {
+        "pokpol:ObjektovyTypNazev": {
+          "@code_base": "0100000005",
+          "@code_suffix": "03",
+          "$": "provozn\u00ed plocha pozemn\u00ed komunikace"
+        },
+        "pokpol:KategorieObjektu": "Dopravn\u00ed stavby",
+        "pokpol:SkupinaObjektu": "Silni\u010dn\u00ed doprava",
+        "pokpol:ObsahovaCast": "ZPS",
+        "pokpol:ZaznamyObjektu": {
+          "pokpol:ZaznamObjektu": [
+            {
+              "cmn:ZapisObjektu": "i",
+              "pokpol:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000003",
+                  "atr:IDZmeny": "1",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "1",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuZPS": {
+                  "atr:UrovenUmisteniObjektuZPS": 1
+                },
+                "atr:TypPozemniKomunikace": 1,
+                "atr:PrevazujiciPovrch": 1,
+                "atr:TridaPresnosti": 3,
+                "atr:ICS": "ics01"
+              },
+              "pokpol:GeometrieObjektu": {
+                "gml:surfaceProperty": {
+                  "@xlink:type": "simple",
+                  "@owns": false,
+                  "gml:Polygon": {
+                    "@gml:id": "ID00000000000000003",
+                    "@srsDimension": 2,
+                    "@srsName": "EPSG:5514",
+                    "gml:exterior": {
+                      "gml:LinearRing": {
+                        "gml:posList": [
+                          -508541.87,
+                          -1107720.52,
+                          -508540.85,
+                          -1107729.95,
+                          -508548.35,
+                          -1107736.98,
+                          -508550.28,
+                          -1107728.89,
+                          -508541.87,
+                          -1107720.52
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "objtyp:ObvodProvozniPlochyPozemniKomunikace": {
+        "pokobv:ObjektovyTypNazev": {
+          "@code_base": "0100000005",
+          "@code_suffix": "05",
+          "$": "obvod provozn\u00ed plochy pozemn\u00ed komunikace"
+        },
+        "pokobv:KategorieObjektu": "Dopravn\u00ed stavby",
+        "pokobv:SkupinaObjektu": "Silni\u010dn\u00ed doprava",
+        "pokobv:ObsahovaCast": "ZPS",
+        "pokobv:ZaznamyObjektu": {
+          "pokobv:ZaznamObjektu": [
+            {
+              "cmn:ZapisObjektu": "i",
+              "pokobv:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000004",
+                  "atr:IDZmeny": "1",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "1",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuZPS": {
+                  "atr:UrovenUmisteniObjektuZPS": 1
+                },
+                "atr:TypPozemniKomunikace": 1,
+                "atr:PrevazujiciPovrch": 1,
+                "atr:TridaPresnosti": 3,
+                "atr:ICS": "ics01"
+              },
+              "pokobv:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "@xlink:type": "simple",
+                  "@owns": false,
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000004",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      -508541.87,
+                      -1107720.52,
+                      228.01,
+                      -508540.85,
+                      -1107729.95,
+                      228.01,
+                      -508548.35,
+                      -1107736.98,
+                      228.01,
+                      -508550.28,
+                      -1107728.89,
+                      228.01,
+                      -508541.87,
+                      -1107720.52,
+                      228.01
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "objtyp:PodrobnyBodZPS": {
+        "pobzps:ObjektovyTypNazev": {
+          "@code_base": "0100000218",
+          "@code_suffix": "01",
+          "$": "podrobn\u00fd bod ZPS"
+        },
+        "pobzps:KategorieObjektu": "Geodetick\u00e9 prvky",
+        "pobzps:SkupinaObjektu": "Podrobn\u00fd bod",
+        "pobzps:ObsahovaCast": "ZPS",
+        "pobzps:ZaznamyObjektu": {
+          "pobzps:ZaznamObjektu": [
+            {
+              "cmn:ZapisObjektu": "i",
+              "pobzps:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000005",
+                  "atr:IDZmeny": "1",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "1",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuZPS": {
+                  "atr:UrovenUmisteniObjektuZPS": 0
+                },
+                "atr:ZpusobPorizeniZPS": 1,
+                "atr:CisloBodu": "10001",
+                "atr:TridaPresnostiPoloha": 3,
+                "atr:TridaPresnostiVyska": 3
+              },
+              "pobzps:GeometrieObjektu": {
+                "gml:pointProperty": {
+                  "@xlink:type": "simple",
+                  "@owns": false,
+                  "gml:Point": {
+                    "@gml:id": "ID00000000000000005",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:pos": [
+                      -473170.37,
+                      -1089189.18,
+                      228.01
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "objtyp:TrasaKanalizacniSite": {
+        "trkasi:ObjektovyTypNazev": {
+          "@code_base": "0100000121",
+          "@code_suffix": "02",
+          "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b"
+        },
+        "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+        "trkasi:SkupinaObjektu": "Kanalizace",
+        "trkasi:ObsahovaCast": "TI",
+        "trkasi:ZaznamyObjektu": {
+          "trkasi:ZaznamObjektu": [
+            {
+              "cmn:ZapisObjektu": "i",
+              "trkasi:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000006",
+                  "atr:IDZmeny": "2",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "2",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuTI": {
+                  "atr:IDVlastnika": "1",
+                  "atr:IDProvozovateleZeZakona": null,
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "1",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuTI": -1,
+                  "atr:EvidencniCisloObjektu": "1"
+                },
+                "atr:ZpusobPorizeniTI": 1,
+                "atr:StavObjektu": 1,
+                "atr:TypTrasyKanalizacniSite": 1,
+                "atr:TypKanalizacniSite": 2,
+                "atr:TypPohybuKanalizacnihoMedia": 1,
+                "atr:Dimenze": 400,
+                "atr:Material": "kamenina",
+                "atr:ICS": "ics01"
+              },
+              "trkasi:GeometrieObjektu": {
+                "gml:curveProperty": {
+                  "@xlink:type": "simple",
+                  "@owns": false,
+                  "gml:LineString": {
+                    "@gml:id": "ID00000000000000006",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:posList": [
+                      -473130.56,
+                      -1089179.2,
+                      225.88,
+                      -473198.28,
+                      -1089153.12,
+                      226.14
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "objtyp:HeliportBod": {
+        "helbod:ObjektovyTypNazev": {
+          "@code_base": "0100000048",
+          "@code_suffix": "01",
+          "$": "heliport - bod"
+        },
+        "helbod:KategorieObjektu": "Dopravn\u00ed stavby",
+        "helbod:SkupinaObjektu": "Leteck\u00e1 doprava",
+        "helbod:ObsahovaCast": "DI",
+        "helbod:ZaznamyObjektu": {
+          "helbod:ZaznamObjektu": [
+            {
+              "cmn:ZapisObjektu": "i",
+              "helbod:AtributyObjektu": {
+                "atr:SpolecneAtributyVsechObjektu": {
+                  "atr:ID": "00000000000000007",
+                  "atr:IDZmeny": "3",
+                  "atr:PopisObjektu": null,
+                  "atr:IDEditora": "3",
+                  "atr:DatumVkladu": "2022-01-31T10:00:00",
+                  "atr:VkladOsoba": "vlo\u017eil",
+                  "atr:DatumZmeny": "2022-01-31T10:00:00",
+                  "atr:ZmenaOsoba": "zm\u011bnil",
+                  "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+                },
+                "atr:SpolecneAtributyObjektuDI": {
+                  "atr:IDVlastnika": "2",
+                  "atr:IDSpravce": null,
+                  "atr:IDProvozovatele": null,
+                  "atr:IDExterni": "2",
+                  "atr:NeuplnaData": 0,
+                  "atr:TridaPresnostiPoloha": 3,
+                  "atr:TridaPresnostiVyska": 3,
+                  "atr:UrovenUmisteniObjektuDI": 0,
+                  "atr:EvidencniCisloObjektu": "01"
+                },
+                "atr:OznaceniObjektu": "heliport 1",
+                "atr:OznaceniHeliportu": "hel_1",
+                "atr:UmisteniHeliportu": 1,
+                "atr:ICS": "ics01"
+              },
+              "helbod:GeometrieObjektu": {
+                "gml:pointProperty": {
+                  "@xlink:type": "simple",
+                  "@owns": false,
+                  "gml:Point": {
+                    "@gml:id": "ID00000000000000007",
+                    "@srsDimension": 3,
+                    "@srsName": "EPSG:5514",
+                    "gml:pos": [
+                      -473450.98,
+                      -1089033.12,
+                      228.99
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "dopinf:DoprovodneInformace": {
+      "dopinf:UdajeOZmenach": {
+        "dopinf:ZaznamZmeny": [
+          {
+            "dopinf:IDZmeny": "1",
+            "dopinf:NazevZakazky": "sample XML",
+            "dopinf:CisloStavbyZakazky": "stavba 1",
+            "dopinf:PartnerInvestor": "investor",
+            "dopinf:Zpracovatel": "zpracovatel",
+            "dopinf:OrganizaceZpracovatele": "organizace zpracovatele",
+            "dopinf:DatumMereni": "2022-01-31T10:00:00",
+            "dopinf:DatumZpracovani": "2022-01-31T10:00:00",
+            "dopinf:UOZI": "ov\u011b\u0159il",
+            "dopinf:DatumOvereni": "2022-01-31T10:00:00",
+            "dopinf:CisloOvereni": "1"
+          },
+          {
+            "dopinf:IDZmeny": "2",
+            "dopinf:NazevZakazky": "sample XML",
+            "dopinf:CisloStavbyZakazky": "stavba 2",
+            "dopinf:PartnerInvestor": "investor",
+            "dopinf:Zpracovatel": "zpracovatel",
+            "dopinf:OrganizaceZpracovatele": "organizace zpracovatele",
+            "dopinf:DatumMereni": "2022-01-31T10:00:00",
+            "dopinf:DatumZpracovani": "2022-01-31T10:00:00",
+            "dopinf:UOZI": "ov\u011b\u0159il",
+            "dopinf:DatumOvereni": "2022-01-31T10:00:00",
+            "dopinf:CisloOvereni": "2"
+          }
+        ]
+      },
+      "dopinf:UdajeOVlastnicichSpravcichProvozovatelich": {
+        "dopinf:ZaznamVSP": [
+          {
+            "dopinf:IDVSP": "1",
+            "dopinf:NazevVSP": "vlastn\u00edk 1",
+            "dopinf:IdentifikacniCisloVSP": "ID VSP 1"
+          },
+          {
+            "dopinf:IDVSP": "2",
+            "dopinf:NazevVSP": "vlastn\u00edk 2",
+            "dopinf:IdentifikacniCisloVSP": "ID VSP 2"
+          }
+        ]
+      },
+      "dopinf:IdentifikacniCislaStaveb": {
+        "dopinf:ZaznamICS": [
+          {
+            "dopinf:ICS": "ics01",
+            "dopinf:ObjektyDTM": {
+              "dopinf:IDZaznamuObjektuDTM": [
+                "00000000000000001",
+                "00000000000000002",
+                "00000000000000003",
+                "00000000000000004",
+                "00000000000000005",
+                "00000000000000006",
+                "00000000000000007"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

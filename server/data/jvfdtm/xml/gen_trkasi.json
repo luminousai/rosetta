@@ -1,0 +1,85 @@
+{
+  "trkasi:ObjektovyTypNazev": {
+    "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b",
+    "@code_base": "0100000121",
+    "@code_suffix": "02"
+  },
+  "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+  "trkasi:SkupinaObjektu": "Kanalizace",
+  "trkasi:ObsahovaCast": "TI",
+  "trkasi:ZaznamyObjektu": {
+    "trkasi:ZaznamObjektu": {
+      "cmn:ZapisObjektu": "i",
+      "trkasi:AtributyObjektu": {
+        "atr:SpolecneAtributyVsechObjektu": {
+          "ID": 1,
+          "IDZmeny": null,
+          "PopisObjektu": null,
+          "IDEditora": null,
+          "DatumVkladu": "2023-03-13T21:46:56.578273",
+          "VkladOsoba": null,
+          "DatumZmeny": "2022-08-15T10:00:00",
+          "ZmenaOsoba": null,
+          "DatumPlatnosti": "2022-08-15T10:00:00"
+        },
+        "atr:SpolecneAtributyObjektuTI": {
+          "IDVlastnika": null,
+          "IDProvozovateleZeZakona": null,
+          "IDSpravce": null,
+          "IDProvozovatele": null,
+          "IDExterni": "TKS_01",
+          "NeuplnaData": 1,
+          "TridaPresnostiPoloha": 9,
+          "TridaPresnostiVyska": 9,
+          "UrovenUmisteniObjektuTI": null,
+          "EvidencniCisloObjektu": "Text"
+        },
+        "atr:ZpusobPorizeniTI": 99,
+        "atr:StavObjektu": 99,
+        "atr:TypTrasyKanalizacniSite": 99,
+        "atr:TypKanalizacniSite": 2,
+        "atr:TypPohybuKanalizacnihoMedia": 99,
+        "atr:Dimenze": null,
+        "atr:Material": null,
+        "atr:ICS": null
+      },
+      "trkasi:GeometrieObjektu": {
+        "gml:curveProperty": {
+          "@xlink:type": "simple",
+          "@owns": false,
+          "gml:LineString": {
+            "@gml:id": "ID00000000000000001",
+            "@srsDimension": 3,
+            "@srsName": "EPSG:5514",
+            "gml:posList": [
+              1819223.27,
+              6378079.93,
+              1819230.05,
+              6378075.83,
+              1819296.96,
+              6378036.82,
+              1819313.7773382,
+              6378030.5862415,
+              1819347.46,
+              6378022.26,
+              1819364.97,
+              6378020.79,
+              1819407.73,
+              6378020.56,
+              1819466.5,
+              6378027.68,
+              1819509.92,
+              6378032.93,
+              1819568.3,
+              6378039.35,
+              1819607.93,
+              6378043.54,
+              1819621.3326219,
+              6378053.9332575
+            ]
+          }
+        }
+      }
+    }
+  }
+}

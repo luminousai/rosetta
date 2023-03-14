@@ -1,0 +1,74 @@
+{
+  "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+  "@xmlns:gml": "http://www.opengis.net/gml/3.2",
+  "@xmlns:trkasi": "trkasi",
+  "@xmlns:cmn": "cmn",
+  "@xmlns:atr": "atr",
+  "trkasi:ObjektovyTypNazev": {
+    "@code_base": "0100000121",
+    "@code_suffix": "02",
+    "$": "trasa kanaliza\u010dn\u00ed s\u00edt\u011b"
+  },
+  "trkasi:KategorieObjektu": "Stavby technick\u00e9 infrastruktury",
+  "trkasi:SkupinaObjektu": "Kanalizace",
+  "trkasi:ObsahovaCast": "TI",
+  "trkasi:ZaznamyObjektu": {
+    "trkasi:ZaznamObjektu": [
+      {
+        "cmn:ZapisObjektu": "i",
+        "trkasi:AtributyObjektu": {
+          "atr:SpolecneAtributyVsechObjektu": {
+            "atr:ID": "00000000000000006",
+            "atr:IDZmeny": "2",
+            "atr:PopisObjektu": null,
+            "atr:IDEditora": "2",
+            "atr:DatumVkladu": "2022-01-31T10:00:00",
+            "atr:VkladOsoba": "vlo\u017eil",
+            "atr:DatumZmeny": "2022-01-31T10:00:00",
+            "atr:ZmenaOsoba": "zm\u011bnil",
+            "atr:DatumPlatnosti": "2022-01-31T10:00:00"
+          },
+          "atr:SpolecneAtributyObjektuTI": {
+            "atr:IDVlastnika": "1",
+            "atr:IDProvozovateleZeZakona": null,
+            "atr:IDSpravce": null,
+            "atr:IDProvozovatele": null,
+            "atr:IDExterni": "1",
+            "atr:NeuplnaData": 0,
+            "atr:TridaPresnostiPoloha": 3,
+            "atr:TridaPresnostiVyska": 3,
+            "atr:UrovenUmisteniObjektuTI": -1,
+            "atr:EvidencniCisloObjektu": "1"
+          },
+          "atr:ZpusobPorizeniTI": 1,
+          "atr:StavObjektu": 1,
+          "atr:TypTrasyKanalizacniSite": 1,
+          "atr:TypKanalizacniSite": 2,
+          "atr:TypPohybuKanalizacnihoMedia": 1,
+          "atr:Dimenze": 400,
+          "atr:Material": "kamenina",
+          "atr:ICS": "ics01"
+        },
+        "trkasi:GeometrieObjektu": {
+          "gml:curveProperty": {
+            "@xlink:type": "simple",
+            "@owns": false,
+            "gml:LineString": {
+              "@gml:id": "ID00000000000000006",
+              "@srsDimension": 3,
+              "@srsName": "EPSG:5514",
+              "gml:posList": [
+                -473130.56,
+                -1089179.2,
+                225.88,
+                -473198.28,
+                -1089153.12,
+                226.14
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}
